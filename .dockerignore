@@ -1,0 +1,8 @@
+output/
+thesis/
+literature/
+ideas/
+.git/
+.gitignore
+*.md
+*.xlsx

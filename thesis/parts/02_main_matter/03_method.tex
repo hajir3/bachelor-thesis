@@ -1,0 +1,193 @@
+This chapter describes the methodology used to characterise the persistent packages in Debian's minbase installation across releases. The analysis spans the 13 stable Debian releases from Potato (2000) to Trixie (2025), covering over 25 years of distribution development. The approach is exploratory-descriptive: the aim is to produce, for every release, a comparable set of measurements and visualisations that describe the state of the persistent core, rather than to test a specific hypothesis about how or why it has changed. The entire pipeline is automated through shell scripts orchestrated by a Makefile and executed inside a Docker container to ensure reproducibility.
+
+\section{Overview}
+\label{sec:method-overview}
+
+The methodology follows a four-stage pipeline: data acquisition, parsing and package identification, metric computation, and visualization (\autoref{fig:pipeline-overview}). First, package metadata and source archives are downloaded from official Debian mirrors. Second, the metadata is parsed into structured formats, the minbase installation is defined for each release, and packages that persist across releases are identified. Third, five quantitative metrics are computed for these persistent packages: installed size, dependency count, lines of code, distribution-specific patch volume, and cyclomatic complexity. Finally, the results are visualized as trend plots across all releases.
+
+\begin{figure}[ht]
+  \centering
+  \begin{tikzpicture}[
+      stage/.style={draw, rounded corners, align=center, minimum height=1.1cm, text width=2.7cm, font=\small\bfseries},
+      artefacts/.style={align=center, font=\scriptsize, text width=2.9cm},
+      flow/.style={-{Stealth[length=2.5mm]}, semithick}
+    ]
+    \node[stage]                       (acq)   {Data\\acquisition};
+    \node[stage, right=0.7cm of acq]   (parse) {Parsing and\\identification};
+    \node[stage, right=0.7cm of parse] (metr)  {Metric\\computation};
+    \node[stage, right=0.7cm of metr]  (vis)   {Visualization};
+
+    \draw[flow] (acq)   -- (parse);
+    \draw[flow] (parse) -- (metr);
+    \draw[flow] (metr)  -- (vis);
+
+    \node[artefacts, below=0.3cm of acq]   {\texttt{Packages.gz},\\ \texttt{Sources.gz},\\ source archives};
+    \node[artefacts, below=0.3cm of parse] {normalised CSVs,\\ minbase lists,\\ persistent set};
+    \node[artefacts, below=0.3cm of metr]  {size, dependencies,\\ lines of code, patches,\\ complexity};
+    \node[artefacts, below=0.3cm of vis]   {per-release\\ figures};
+  \end{tikzpicture}
+  \caption[Overview of the analysis pipeline.]{Overview of the four-stage analysis pipeline. Each box is one stage and each arrow the flow of artefacts between consecutive stages; the label beneath a box names the principal artefacts that the stage downloads or produces. The pipeline runs inside a Docker container and is orchestrated by a Makefile.}
+  \label{fig:pipeline-overview}
+\end{figure}
+
+\section{Dataset and Scope}
+\label{sec:dataset}
+
+The dataset comprises 13 stable Debian releases, listed in Table~\ref{tab:releases}. These releases span from version 2.2 (Potato, released 2000) to version 13 (Trixie, released 2025), covering over 25 years of distribution development. Releases prior to Potato are excluded because \texttt{debootstrap}~\cite{debootstrap} does not provide bootstrap scripts for those releases, and their source archives lack consolidated machine-readable indices (\texttt{Sources.gz}), which the pipeline requires for automated analysis. Both binary and source package indices are available for all 13 releases.
+
+\begin{table}[ht]
+  \centering
+  \caption{Debian releases included in the analysis.}
+  \label{tab:releases}
+  \begin{tabular}{llcl}
+    \hline
+    Codename & Version & Year & Architecture \\
+    \hline
+    Potato   & 2.2  & 2000 & i386  \\
+    Woody    & 3.0  & 2002 & i386  \\
+    Sarge    & 3.1  & 2005 & i386  \\
+    Etch     & 4.0  & 2007 & i386  \\
+    Lenny    & 5.0  & 2009 & i386  \\
+    Squeeze  & 6.0  & 2011 & amd64 \\
+    Wheezy   & 7.0  & 2013 & amd64 \\
+    Jessie   & 8.0  & 2015 & amd64 \\
+    Stretch  & 9    & 2017 & amd64 \\
+    Buster   & 10   & 2019 & amd64 \\
+    Bullseye & 11   & 2021 & amd64 \\
+    Bookworm & 12   & 2023 & amd64 \\
+    Trixie   & 13   & 2025 & amd64 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+The analysis targets the \texttt{main} component of each release, which contains only free software as defined by the Debian Free Software Guidelines. Releases from Potato through Lenny are analyzed on the i386 architecture, while Squeeze onward are analyzed on amd64, reflecting the architecture transition that occurred in the Debian project around 2011. Package metadata is retrieved from \texttt{archive.debian.org} for historical releases and from \texttt{deb.debian.org} for the most recent releases still hosted on the primary mirror.
+
+\section{Defining the Minbase Installation}
+\label{sec:minbase}
+
+A central concept in this analysis is the \emph{minbase installation}, the package set produced by \texttt{debootstrap}~\cite{debootstrap} when invoked with the \texttt{-{}-variant=minbase} option. It contains every binary package marked as \texttt{Essential: yes} or \texttt{Priority: required} in the release's package index, together with the transitive closure of their declared dependencies~\cite{debianPolicy}. With the \texttt{-{}-print-debs} flag, \texttt{debootstrap} reports this list without performing an actual installation, which allows the pipeline to reproduce the exact minbase set for every release from Potato (2000) to Trixie (2025). Because all 13 releases in the dataset are supported by \texttt{debootstrap}, the definition is applied consistently across the entire scope of the analysis.
+
+The term \emph{minbase installation} is chosen deliberately, rather than the looser phrase ``minimal installation'', because Debian distinguishes several distinct base tiers of differing size. Table~\ref{tab:install-tiers} summarizes them, ordered from smallest to largest. Each tier adds packages on top of the previous one; only the tiers that include a kernel image and a bootloader can boot on bare hardware.
+
+\begin{table}[ht]
+  \centering
+  \caption{Debian installation tiers, ordered by increasing size.} 
+  \label{tab:install-tiers}
+  \footnotesize
+  \begin{tabular}{p{0.35\textwidth}p{0.48\textwidth}c}
+    \hline
+    Tier & Contents & Bootable  \\
+    \hline
+    \texttt{debootstrap -{}-variant=buildd}    & Subset of minbase tailored for package-build chroots & no \\
+    \hline
+    \texttt{debootstrap -{}-variant=minbase}   & \texttt{Essential: yes} plus \texttt{Priority: required} and transitive dependencies & no \\
+    \hline
+    \texttt{debootstrap} (default variant)     & Minbase plus all \texttt{Priority: important} packages (e.g., \texttt{apt}, basic network tools, \texttt{less}) & no \\
+    \hline
+    Installer ``base system''                  & Default debootstrap plus kernel, bootloader, and firmware & yes \\
+    \hline
+    Installer plus ``standard'' task           & Base system plus the standard system utilities task & yes \\
+    \hline
+  \end{tabular}
+\end{table}
+
+The minbase tier is not bootable on bare hardware because it contains no kernel image, no bootloader, and no hardware-specific firmware. It is designed instead to populate chroot environments and container base images; the official \texttt{debian:*-slim} Docker images are built from a package set close to this tier. Measuring the minbase tier, rather than a full installer image, removes two major confounders from the longitudinal comparison: the size of the Linux kernel (an upstream concern, not a Debian packaging decision) and the choice of bootloader (which varies across hardware eras). All subsequent metrics in this thesis are computed with respect to the minbase set and its persistent subset (\autoref{sec:persistent}).
+
+\section{Identifying Persistent Packages}
+\label{sec:persistent}
+
+Not all packages in the minbase installation are suitable for longitudinal complexity analysis. Packages that appear only in a few releases provide insufficient data for trend observation. Therefore, the analysis focuses on \emph{persistent packages}: source packages that are present in the minbase installation across a large majority of releases.
+
+The identification proceeds in three steps. First, for each release, the binary packages in the minbase installation are mapped to their corresponding source packages using the \texttt{Source} field from the parsed package metadata. Second, package aliases are resolved to account for historical renames; for example, the source package \texttt{shellutils} was merged into \texttt{coreutils} in later releases. An alias configuration file maps these historical names to their current equivalents. Third, the number of releases in which each source package appears is counted. Packages present in at least 80\% of all releases (at least 11 out of 13) are classified as persistent. This threshold ensures that only packages with a substantial longitudinal presence are included, while allowing for the fact that some packages did not exist in the earliest releases.
+
+Applying the procedure to the 13 releases yields the 25 source packages listed in Table~\ref{tab:persistent-packages}. Twenty of them appear in every release (13/13); the remaining five clear the threshold with 11 or 12 appearances. This set constitutes the study population for all subsequent metrics (installed size of the persistent subset, lines of code, cyclomatic complexity, and patch volume).
+
+\begin{table}[ht]
+  \centering
+  \caption[Persistent source packages analyzed in this thesis.]{Persistent source packages analyzed in this thesis. A package qualifies if its source name appears in the minbase set of at least 11 of 13 releases ($\geq 80\%$).}
+  \label{tab:persistent-packages}
+  \begin{tabular}{lc@{\qquad}lc@{\qquad}lc}
+    \hline
+    Package & $n$/13 & Package & $n$/13 & Package & $n$/13 \\
+    \hline
+    \texttt{acl}          & 11 & \texttt{dpkg}       & 13 & \texttt{pam}        & 13 \\
+    \texttt{attr}         & 11 & \texttt{e2fsprogs}  & 12 & \texttt{perl}       & 12 \\
+    \texttt{base-files}   & 13 & \texttt{findutils}  & 13 & \texttt{sed}        & 13 \\
+    \texttt{base-passwd}  & 13 & \texttt{glibc}      & 13 & \texttt{shadow}     & 13 \\
+    \texttt{bash}         & 13 & \texttt{grep}       & 13 & \texttt{sysvinit}   & 13 \\
+    \texttt{coreutils}    & 13 & \texttt{gzip}       & 13 & \texttt{tar}        & 13 \\
+    \texttt{debconf}      & 13 & \texttt{hostname}   & 13 & \texttt{util-linux} & 13 \\
+    \texttt{debianutils}  & 13 & \texttt{mawk}       & 13 &                     &    \\
+    \texttt{diffutils}    & 11 & \texttt{ncurses}    & 13 &                     &    \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\section{Data Acquisition}
+\label{sec:acquisition}
+
+Data acquisition proceeds in three stages, corresponding to the three types of artifacts required for the analysis.
+
+\subsection*{Package Metadata}
+For each release, the compressed binary package index (\texttt{Packages.gz}) is downloaded from the appropriate Debian mirror. This file contains one stanza per binary package, with fields including the package name, version, priority, section, installed size, download size, and dependency list. The file is decompressed and stored locally for parsing.
+
+\subsection*{Source Package Indices}
+For each release, the \texttt{Sources.gz} file is downloaded. Each stanza in this file describes a source package and lists the associated upstream tarball (\texttt{.orig.tar.*}) and Debian-specific archive (\texttt{.debian.tar.*} or \texttt{.diff.gz}), along with their file paths relative to the mirror root.
+
+\subsection*{Source Archives}
+For each persistent package in each release, the upstream source tarball and the Debian-specific patch archive are downloaded. The upstream tarball contains the original source code as released by the upstream maintainer. The Debian-specific archive contains the packaging metadata and any patches applied by Debian maintainers to adapt the software for the distribution. These archives are required for lines-of-code counting, complexity analysis, and patch volume measurement.
+
+All downloads use retry logic with retry delays (up to three attempts) and a 120-second timeout per request. Downloads are idempotent: files already present on disk are not re-downloaded.
+
+\section{Data Parsing}
+\label{sec:parsing}
+
+The raw Debian metadata files use a stanza-based format that is not directly suitable for quantitative analysis. Each \texttt{Packages} file is parsed into a comma-separated values (CSV) file using AWK, extracting the fields: package name, source package, version, priority, section, installed size, download size, and dependencies. Dependency lists, which use commas as separators in the original format, are converted to semicolons to preserve CSV integrity. Field matching is performed case-insensitively to accommodate formatting variations in the earliest releases.
+
+Similarly, each \texttt{Sources} file is parsed into a CSV containing the source package name, version, directory path, and the filenames and sizes of the upstream and Debian-specific archives. These parsed CSVs serve as the structured input for all subsequent analysis steps.
+
+\section{Metrics}
+\label{sec:metrics}
+
+Five quantitative metrics are computed for the persistent packages across all releases. Each metric captures a different dimension of software complexity or distribution maintenance effort.
+
+\subsection{Installed Size}
+\label{sec:metric-size}
+
+The installed size of a package, as reported in the \texttt{Installed-Size} field of the package metadata, represents the disk space (in kilobytes) consumed by the package after installation. For each release, two aggregate values are computed: the total installed size of the minbase installation, and the total installed size of only the persistent packages within the minbase installation. This metric provides a measure of the overall footprint growth of the base system.
+
+\subsection{Dependency Count}
+\label{sec:metric-deps}
+
+The dependency count for each package is derived from its \texttt{Depends} field, which lists the other packages required for the package to function. Each entry in the dependency list is counted as one dependency edge, where alternative dependencies (expressions of the form \texttt{a | b}) are treated as a single dependency edge. For each release, the per-package dependency counts are recorded over all packages in the minbase installation (rather than over the persistent subset only), because dependency structure is a graph-level property of the minbase as a whole: restricting the computation to the fixed persistent population would obscure the arrival of new hub packages such as \texttt{systemd} that enter the required set mid-timeline. The resulting per-release distributions are visualised as boxplots so that the central tendency (median), the spread (interquartile range), and the extreme hub packages (outliers above the whiskers) are readable simultaneously. This metric quantifies the interconnectedness of the minbase installation and is an indicator of system-level coupling~\cite{interPackageDependency}.
+
+\subsection{Lines of Code}
+\label{sec:metric-nloc}
+
+The number of lines of code (NLOC) is measured using \texttt{tokei}~\cite{tokei}, a source code statistics tool that distinguishes between code lines, comment lines, and blank lines. For each persistent package in each release, the upstream source tarball is extracted and analyzed with \texttt{tokei}. The tool automatically detects programming languages and reports per-language statistics, so every language present in a tarball, whether compiled or interpreted, contributes to the count. Results are aggregated at two levels: per package (total code, comments, and blanks across all languages) and per release (total code volume and language composition). To produce a consistent language breakdown, related language variants are first normalized: C header files are merged with C, Bash and Zsh are merged into a single Shell category, and GNU-style assembly is merged with Assembly. The breakdown then records C, Shell, Assembly, Python, and Perl as individual categories and groups all remaining languages under an ``Other'' category.
+
+\subsection{Patch Volume}
+\label{sec:metric-patches}
+
+Debian maintainers apply patches to upstream source code to fix bugs, adapt software to Debian policies, or backport security fixes. The volume of these distribution-specific patches is measured for each persistent package by examining the Debian-specific archive. The form of this archive is determined by the source-package format that the package declares~\cite{debsrc3quilt}. Under the older \texttt{1.0} format, all distribution-specific material, that is, the packaging files under \texttt{debian/} together with any modifications to upstream files, is bundled into a single \texttt{.diff.gz} file. Under the \texttt{3.0 (quilt)} format, named after the \texttt{quilt} patch-management tool, the packaging metadata is carried in a \texttt{.debian.tar.*} archive and modifications to upstream source are kept as individual named patch files in unified diff format under \texttt{debian/patches/}. For each package, three values are recorded: the size of the Debian archive in bytes, the total number of patch lines across all patch files, and the number of individual patch files. Per-release aggregates include the total patch lines, the average patch lines per package, and the number of packages that carry at least one patch.
+
+\subsection{Cyclomatic Complexity}
+\label{sec:metric-cc}
+
+Cyclomatic complexity (CC) measures the number of linearly independent paths through a function's control flow graph~\cite{CyclomaticComplexity}. A higher CC value indicates more complex branching logic and, by extension, greater difficulty in testing and maintaining the function. CC is computed using \texttt{pmccabe}~\cite{pmccabe}, a static analysis tool for C and C++ source code. For each persistent package, all C and C++ source files (\texttt{.c}, \texttt{.h}, \texttt{.cc}, \texttt{.cpp}, \texttt{.cxx}) are extracted from the upstream tarball and analyzed. The tool reports the modified cyclomatic complexity for each function, which differs from the classic McCabe count in treating a multi-way \texttt{switch} statement as a single decision point rather than counting each \texttt{case} label separately; this convention avoids inflating the complexity of the \texttt{switch}-heavy C code that comprises much of the Debian base system.
+
+Per-package aggregates include the number of functions analyzed, the average CC, the maximum CC, and the sum of all CC values. Per-release aggregates include the total number of functions, the average CC, the maximum CC, and the median CC. The median is computed from the sorted list of all function-level CC values in the release and is reported alongside the mean to reduce the influence of outlier functions with exceptionally high complexity.
+
+Because \texttt{pmccabe} parses only C and C++ source, the complexity metric covers the subset of persistent packages that ship such source. Packages implemented entirely in other languages yield no complexity measurement. Two persistent packages are affected: \texttt{debconf}, which is written in Perl, and \texttt{base-files}, which consists of shell fragments and static configuration data. Neither contains C or C++ source, so neither contributes to the complexity results, although both are still measured for the remaining metrics, including lines of code. The consequences of this language restriction for the interpretation of the complexity trends are addressed in Section~\ref{sec:limitations}.
+
+\section{Reproducibility}
+\label{sec:reproducibility}
+
+The entire pipeline is containerized using Docker. The Docker image is based on Debian Bookworm and includes all required tools: \texttt{curl} and \texttt{gzip} for downloads, \texttt{gawk} for parsing, \texttt{debootstrap} for minbase installation resolution, \texttt{tokei} for code counting, \texttt{pmccabe} for complexity analysis, and \texttt{gnuplot} for visualization. The pipeline is orchestrated by a Makefile that enforces the correct execution order through dependency declarations. A single command (\texttt{make all}) builds the Docker image, executes the full pipeline, and produces all output files.
+
+All intermediate results are cached: parsed CSVs, minbase lists, and analysis outputs are preserved between runs, and downloads skip files that already exist on disk. Output figures are placed in a versioned directory named after the current Git commit hash, enabling traceability between specific pipeline outputs and the code that produced them.
+
+\section{Interactive Companion Application}
+\label{sec:companion-app}
+
+Alongside the batch pipeline, an interactive companion application was developed to support verification and diagnosis of the aggregate figures. The application, the Debian Bloat Explorer, is implemented with the Streamlit framework~\cite{streamlit} and reads the same per-release CSV files that the \texttt{gnuplot} scripts consume, so that the static figures and the interactive views are guaranteed to draw on identical data. It provides four views: a release timeline of the aggregate metrics, a per-package explorer that traces every metric for a single source package across all releases, a snapshot of a single release's minbase installation, and a comparison of two releases. The per-package and per-release granularity that the application exposes is used in \autoref{sec:webapp} to distinguish genuine changes in Debian from artefacts of the measurement, which the release-level aggregates alone cannot resolve.

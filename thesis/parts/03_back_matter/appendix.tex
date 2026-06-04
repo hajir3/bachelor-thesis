@@ -1,0 +1,118 @@
+\section{Source Code and Data Availability}
+\label{app:availability}
+
+The complete source code of the analysis pipeline and of the Debian Bloat Explorer is publicly available in the thesis repository:
+\begin{center}
+  \url{https://github.com/hajir3/bachelor-thesis}
+\end{center}
+The pipeline scripts reside under \texttt{scripts/}, the companion application under \texttt{webapp/}, and the \LaTeX{} source of this document under \texttt{thesis/}. The state of the repository at submission is marked by the git tag \texttt{BA-Submission}; an archival snapshot of this state, including the companion application, is permanently available on Zenodo (DOI: \href{https://doi.org/10.5281/zenodo.20546461}{10.5281/zenodo.20546461}). All figures and per-release values in this thesis derive from a single pipeline run, whose complete CSV files are preserved in the repository under
+\begin{center}
+  \texttt{output/results/BA-Submission/},
+\end{center}
+with the corresponding rendered figures under \texttt{output/figures/BA-Submission/}.
+
+A hosted instance of the Debian Bloat Explorer, pinned to the CSV files of this same pipeline run, is publicly available at
+\begin{center}
+  \url{https://debian-bloat-explorer.streamlit.app}
+\end{center}
+and requires no local installation.
+
+\clearpage
+\section{Per-Release Metric Summary}
+\label{app:metrics}
+
+The main chapters of this thesis report rounded values; \autoref{tab:metrics-size} and \autoref{tab:metrics-code} give the exact per-release figures, computed from the CSV files of the pipeline run named in \autoref{app:availability}.
+
+\begin{table}[ht!]
+  \centering
+  \setkomafont{caption}{\footnotesize}
+  \setcapindent{0pt}
+  \renewcommand{\arraystretch}{0.95}
+  \caption[Per-release composition and installed size of the minbase installation.]{Per-release composition and installed size of the minbase installation, from Potato to Trixie. The packages column counts the binary packages that \texttt{debootstrap -{}-variant=minbase} resolves, the persistent column the number of the 25 persistent source packages present, and the size columns the summed \texttt{Installed-Size} of the minbase and of its persistent subset in megabytes (1~MB = 1024~kB).}
+  \label{tab:metrics-size}
+  \footnotesize
+  \begin{tabular}{llrrrr}
+    \hline
+    Release & Year & Packages & Persistent & Minbase (MB) & Persistent (MB) \\
+    \hline
+    Potato   & 2000 & 46 & 20 & 28.5  & 19.6 \\
+    Woody    & 2002 & 44 & 21 & 35.4  & 26.1 \\
+    Sarge    & 2005 & 58 & 25 & 52.6  & 47.3 \\
+    Etch     & 2007 & 60 & 25 & 62.8  & 52.2 \\
+    Lenny    & 2009 & 60 & 25 & 68.1  & 56.6 \\
+    Squeeze  & 2011 & 61 & 24 & 78.8  & 55.2 \\
+    Wheezy   & 2013 & 67 & 24 & 72.8  & 52.7 \\
+    Jessie   & 2015 & 91 & 25 & 99.8  & 69.7 \\
+    Stretch  & 2017 & 69 & 25 & 88.3  & 77.3 \\
+    Buster   & 2019 & 83 & 25 & 112.1 & 82.5 \\
+    Bullseye & 2021 & 95 & 25 & 122.2 & 82.3 \\
+    Bookworm & 2023 & 87 & 25 & 114.6 & 82.0 \\
+    Trixie   & 2025 & 77 & 24 & 116.9 & 81.5 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[ht!]
+  \centering
+  \setkomafont{caption}{\footnotesize}
+  \setcapindent{0pt}
+  \renewcommand{\arraystretch}{0.95}
+  \caption[Per-release code volume, complexity, and patch totals of the persistent core.]{Per-release code volume, complexity, and patch totals of the persistent core, from Potato to Trixie. Lines of code are code lines without comments and blanks in the upstream source, measured with \texttt{tokei}; functions, mean, median, and max refer to the modified cyclomatic complexity over all C and C++ functions, measured with \texttt{pmccabe}; patch lines count all lines of the Debian patch archives, where values up to Wheezy stem from the \texttt{1.0} source format and are not comparable with the \texttt{3.0 (quilt)} values from Jessie onward.}
+  \label{tab:metrics-code}
+  \footnotesize
+  \setlength{\tabcolsep}{5pt}
+  \begin{tabular}{lrrrrrr}
+    \hline
+    Release & Lines of code & Functions & \multicolumn{3}{c}{Cyclomatic complexity} & Patch lines \\
+            &               &           & Mean & Median & Max &  \\
+    \hline
+    Potato   & 924{,}802   & 15{,}915 & 6.29 & 3 & 273    & 64{,}119  \\
+    Woody    & 1{,}585{,}701 & 21{,}272 & 6.34 & 3 & 737    & 145{,}921 \\
+    Sarge    & 1{,}974{,}840 & 25{,}950 & 6.40 & 3 & 730    & 580{,}535 \\
+    Etch     & 2{,}194{,}151 & 28{,}550 & 6.52 & 3 & 943    & 330{,}641 \\
+    Lenny    & 2{,}656{,}046 & 31{,}684 & 6.57 & 3 & 978    & 210{,}887 \\
+    Squeeze  & 2{,}988{,}824 & 35{,}744 & 6.56 & 3 & 978    & 259{,}154 \\
+    Wheezy   & 3{,}273{,}040 & 38{,}415 & 6.56 & 3 & 1{,}013 & 903{,}525 \\
+    Jessie   & 3{,}517{,}690 & 40{,}417 & 6.58 & 3 & 1{,}125 & 663{,}240 \\
+    Stretch  & 3{,}848{,}825 & 44{,}038 & 6.53 & 3 & 1{,}082 & 243{,}459 \\
+    Buster   & 4{,}422{,}039 & 46{,}972 & 6.41 & 3 & 1{,}102 & 160{,}748 \\
+    Bullseye & 4{,}502{,}254 & 49{,}082 & 6.33 & 3 & 995    & 174{,}743 \\
+    Bookworm & 4{,}754{,}678 & 51{,}505 & 6.20 & 3 & 1{,}016 & 147{,}970 \\
+    Trixie   & 4{,}919{,}410 & 55{,}003 & 6.08 & 3 & 1{,}048 & 50{,}694  \\
+    \hline
+  \end{tabular}
+\end{table}
+
+\section{Package Alias Configuration}
+\label{app:aliases}
+
+The persistent-package identification described in \autoref{sec:persistent} resolves historical source-package renames through the following configuration file 
+\newline (\texttt{scripts/config/package\_aliases.conf}), which maps each obsolete name to its canonical successor before the persistence count is taken.
+
+\lstinputlisting{../scripts/config/package_aliases.conf}
+
+\newpage
+
+\section{Reproducing the Analysis}
+\label{app:reproduction}
+
+Reproducing the full analysis requires git, GNU Make, and Docker; no other tools need to be installed on the host, because the pipeline runs inside a Docker container based on Debian Bookworm that provides all analysis tools. A single command executes the entire pipeline:
+
+\begin{lstlisting}
+git clone https://github.com/hajir3/bachelor-thesis.git
+cd bachelor-thesis
+make all
+\end{lstlisting}
+
+The run writes the per-release CSV files to a new numbered directory under \newline \texttt{output/results/} and the figures to a matching directory under \texttt{output/figures/}, each stamped with the git commit of the code that produced them. The first run downloads the package indices and the source archives of the persistent packages for all 13 releases and is therefore dominated by download time; downloads are idempotent and are reused by subsequent runs. \texttt{make clean} removes only the downloaded intermediates under \texttt{output/data/} and preserves all results and figures.
+
+The Debian Bloat Explorer requires Python~3 and the dependencies listed in \newline \texttt{webapp/requirements.txt}; it is launched as follows:
+
+\begin{lstlisting}
+cd webapp
+pip install -r requirements.txt
+cd ..
+make webapp
+\end{lstlisting}
+
+The application reads the same CSV files as the plotting scripts and exposes the views described in \autoref{sec:companion-app}.

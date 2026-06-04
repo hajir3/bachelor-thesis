@@ -1,0 +1,4 @@
+codename,year,persistent,legacy,modern,jessie_only
+wheezy,2013,53,14,0,0
+jessie,2015,53,10,11,17
+stretch,2017,53,0,16,0

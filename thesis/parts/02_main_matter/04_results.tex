@@ -1,0 +1,181 @@
+This chapter presents the descriptive artefacts produced by applying the pipeline of \autoref{ch:method} to the 13 stable Debian releases from Potato (2000) to Trixie (2025). Consistent with the exploratory-descriptive framing of the research question, each metric is reported as a release-wise series, and the figures describe what is observed rather than asserting a causal or correlational relationship between dimensions. \autoref{sec:webapp} first establishes the provenance and reliability of the measurements and isolates the one metric whose comparability is restricted. The subsequent sections then characterise the base system along the axes of the research question in turn: the composition of the minbase installation, which addresses the secondary research question (\autoref{sec:composition}); installed size (\autoref{sec:results-size}); dependency structure (\autoref{sec:results-deps}); lines of code (\autoref{sec:results-loc}); per-function cyclomatic complexity (\autoref{sec:results-cc}); and distribution-specific patch volume (\autoref{sec:results-patch}).
+
+\section{Interactive Data Exploration}
+\label{sec:webapp}
+
+The metrics defined in Chapter~\ref{ch:method} are rendered by the pipeline as a fixed set of per-release plots. These static figures summarise each metric at the granularity of a whole release, which is the appropriate level for the longitudinal trends that the research question targets. During review of the plots, however, several discontinuities appeared that could not be diagnosed from a release-level aggregate alone. The earliest pipeline runs, for example, showed an abrupt increase in lines of code between Wheezy and Jessie and isolated zero-valued segments in individual per-package trajectories (\autoref{fig:nloc-artefact}). Determining whether such a feature reflects a genuine change in Debian or an artefact of the measurement requires inspecting the contributing packages and releases individually, which a static aggregate plot does not support.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{persistent_growth_artefact.pdf}
+  \caption[Code growth of the five largest persistent base packages, from an early pipeline run.]{Lines of code for the five largest persistent base packages (\texttt{perl}, \texttt{glibc}, \texttt{util-linux}, \texttt{coreutils}, and \texttt{bash}), measured with \texttt{tokei} across the stable releases from Potato (2000) to Trixie (2025). Each curve traces one source package; the vertical axis gives total lines of code in thousands. The plot is taken from an early pipeline run and exhibits two measurement artefacts: a series that reads zero until it jumps abruptly at Jessie (\texttt{glibc}), and a series that falls to zero in individual releases (\texttt{coreutils}). These features are artefacts of the measurement rather than properties of the source code.}
+  \label{fig:nloc-artefact}
+\end{figure}
+
+To enable this inspection, the interactive companion application described in \autoref{sec:companion-app}, the Debian Bloat Explorer, was used. Because it reads the same CSV files that the plotting scripts consume, its views and the static figures are guaranteed to draw on identical data. The per-package explorer isolates the contribution of one package at a time and was therefore used to diagnose the discontinuities.
+
+Applying this tool resolved the first class of discontinuities and revealed a second. The lines-of-code discontinuity and the zero-valued segments were traced to three independent pipeline defects, namely the improper extraction of nested repacked tarballs, unresolved source-package aliases, and a detached signature file overwriting its tarball, and were corrected; after the fix the affected series grow smoothly and monotonically. The corrected aggregates therefore contain no remaining artefact of this kind. The interactive exploration of individual packages then exposed a second, qualitatively distinct inconsistency, one that the aggregate plots had concealed rather than introduced: the Debian patch-volume metric is not comparable across the release at which Debian changed its source-package format.
+
+\FloatBarrier
+\subsection{A Measurement Inconsistency in the Patch-Volume Metric}
+\label{sec:patch-inconsistency}
+
+The per-package explorer was used to examine \texttt{bash}, whose patch-volume series behaves anomalously. The number of Debian patch lines rises from roughly 9{,}000 in Potato to a peak of 63{,}000 in Sarge and then falls to 626 in Trixie (\autoref{fig:bash-patch-lines}), while the package's lines of code rise smoothly across the same period. Inspecting the historical source packages retrieved from the Debian snapshot archive, a timestamped store of every package version the project has distributed~\cite{debianSnapshot}, explains the discrepancy.
+
+\begin{figure}[ht]
+  \centering
+  \setlength{\fboxsep}{0pt}%
+  \setlength{\fboxrule}{0.4pt}%
+  {\color{black!40}\fbox{\includegraphics[width=\dimexpr\textwidth-2\fboxrule\relax]{bash-patch-lines.pdf}}}%
+  \caption[Debian patch-line count for \texttt{bash} across releases.]{Debian patch-line count for \texttt{bash} across the stable releases from Potato to Trixie, shown in the per-package view of the Debian Bloat Explorer. The vertical axis counts the total number of lines in \texttt{bash}'s Debian-specific patch archive for each release: the single \texttt{.diff.gz} file under the \texttt{1.0} source format, and the files under \texttt{debian/patches/} under the \texttt{3.0 (quilt)} format.}
+  \label{fig:bash-patch-lines}
+\end{figure}
+
+Until Jessie, Debian packaged \texttt{bash} in the \texttt{1.0} source format, in which all distribution-specific material is carried in a single \texttt{.diff.gz} file, and the patch-volume metric counts the lines of this file. Decomposing the file by content category (\autoref{tab:bash-patch-decomposition}) shows that the headline counts are dominated by material that does not modify the upstream source code. In Woody, 22{,}000 of the roughly 31{,}000 lines are an autotools build cache directory that the maintainer included in the diff. In Sarge, 45{,}000 lines are a single patch embedding the entire \texttt{bashdb} debugger project, a feature that was built only briefly and then disabled because breakpoints did not halt execution~\cite{bts224573}, and a further 13{,}000 lines are shell completion scripts. Across Potato to Lenny, the patches that genuinely modify upstream code never exceed roughly 11{,}000 lines in any release. The peak at Sarge arises because it is the only release in which the embedded debugger and a large completion-script collection are present at the same time.
+
+\begin{table}[ht]
+  \centering
+  \caption[Principal components of the \texttt{bash} \texttt{.diff.gz}.]{Principal components of the \texttt{bash} \texttt{.diff.gz} under the \texttt{1.0} source format, in thousands of lines. The listed rows are the dominant contributors rather than an exhaustive partition; the remaining lines are \texttt{configure}-script regeneration, examples, and other files below \texttt{debian/}.}
+  \label{tab:bash-patch-decomposition}
+  \begin{tabular}{lrrrrr}
+    \hline
+    Component & Potato & Woody & Sarge & Etch & Lenny \\
+    \hline
+    autotools build cache        & ---  & 22.2 & ---  & ---  & ---  \\
+    Embedded \texttt{bashdb}      & ---  & ---  & 44.7 & 0.6  & 0.6  \\
+    Completion scripts            & ---  & 5.3  & 12.9 & 17.5 & 0.0  \\
+    Upstream code-fix patches     & 4.4  & 1.1  & 2.5  & 7.9  & 10.6 \\
+    Changelog and packaging       & 1.4  & 2.1  & 3.2  & 4.5  & 5.9  \\
+    \hline
+    Total \texttt{.diff.gz}       & 9.4  & 30.9 & 63.3 & 30.5 & 17.2 \\
+    \hline
+  \end{tabular}
+\end{table}
+
+The subsequent decline is likewise an artefact of packaging rather than of reduced modification. The completion scripts were moved into a separate source package in Lenny~\cite{bashChangelog}, and from Jessie onward \texttt{bash} was packaged in the \texttt{3.0 (quilt)} source format~\cite{debsrc3quilt}, which the Debian archive has accepted since 2009~\cite{ddaNewFormats2009} and which had become the most widely used format by 2011~\cite{hertzog2011quilt}. This format separates packaging metadata from the patch set and retains only named, purpose-specific patches under \texttt{debian/patches/} following the DEP-3 tagging convention, a Debian Enhancement Proposal that standardises a metadata header recording each patch's description, origin, and upstream-forwarding status~\cite{dep3}. The drop from 30{,}000 patch lines in Etch to 5{,}600 in Jessie therefore reflects a change in what the metric captures, not a reduction in Debian's modifications to \texttt{bash}.
+
+The \texttt{bash} case indicates that the limitation extends to other packages. Because the \texttt{1.0} format bundles the entire \texttt{debian/} directory into a single diff~\cite{debsrc3quilt}, any package measured in that era is liable to carry patch-line counts inflated by changelogs, documentation, completion scripts, and other non-code material, so the metric is meaningfully comparable only within the \texttt{3.0 (quilt)} era from Jessie onward. The patch-volume series is consequently interpreted only within this later window. The case also illustrates why release-level aggregates are insufficient for diagnosing such inconsistencies: the artefact is invisible in the aggregate, which reports a single patch-line total per release, and became apparent only when the per-package composition could be inspected directly.
+
+\section{Composition of the Minbase Installation}
+\label{sec:composition}
+
+The first dimension addresses the secondary research question of how the minbase installation has changed across releases. \autoref{fig:package-count} plots the number of binary packages that \texttt{debootstrap} resolves for the minbase variant of each release. The series is non-monotonic. It begins at 46 packages in Potato, dips to 44 in Woody, climbs through 67 in Wheezy to a local peak of 91 in Jessie, falls sharply to 69 in Stretch, recovers to a maximum of 95 in Bullseye, and declines to 77 in Trixie. The count is therefore not a steadily rising quantity but one shaped by competing structural changes. The package count is, however, a weak indicator of size in isolation: splitting one codebase into runtime, development, and documentation sub-packages inflates the count without adding code, and consolidating packages deflates it without removing any. The installed-size and lines-of-code dimensions reported below are the stronger size signals. The remainder of this section resolves two movements of the series package by package: the swing from Wheezy through Jessie to Stretch, which is the largest in the series, and the decline from the Bullseye maximum to Trixie. The remaining transitions are reported at the level of package counts; the exact count of every release is listed in \autoref{tab:metrics-size}.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{package_count.pdf}
+  \caption[Minbase package count per release.]{Number of binary packages resolved by \texttt{debootstrap -{}-variant=minbase} for each stable release from Potato (2000) to Trixie (2025). The vertical axis gives the package count and each point is one release. The series is computed over the whole minbase population rather than the persistent subset.}
+  \label{fig:package-count}
+\end{figure}
+
+The swing from Wheezy (67) to Jessie (91) and on to Stretch (69) amounts to a rise of 24 packages to the local peak followed by a fall of 22. \autoref{fig:init-transition} decomposes the minbase of these three releases by set membership. A core of 53 binary packages is common to Wheezy and Stretch and is present throughout the window. In addition to this common core, Wheezy carries 14 packages that Stretch no longer includes; Jessie carries 10 of those legacy packages that it still shares with Wheezy, 11 newly arrived packages that persist into Stretch, and 17 that appear in Jessie alone ($53 + 10 + 11 + 17 = 91$); and Stretch carries 16 packages absent from Wheezy. The height of the Jessie bar is therefore produced not by any single new component but by the simultaneous presence of legacy packages, newly arrived packages, and a transient set unique to that release.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{init_transition.pdf}
+  \caption[Minbase composition across the init-system transition.]{Set-membership decomposition of the minbase binary-package list for Wheezy (2013), Jessie (2015), and Stretch (2017), drawn as stacked bars. The vertical axis counts binary packages. Each bar is partitioned into packages common to Wheezy and Stretch, legacy packages present in Wheezy but not Stretch, packages present only in Jessie, and modern packages present from Stretch onward.}
+  \label{fig:init-transition}
+\end{figure}
+
+This composition coincides with Debian's transition to \texttt{systemd} as the default init system, which took effect in Jessie~\cite{debianJessieReleaseNotes}. The \texttt{systemd} runtime stack entered the required set in Jessie, drawing in \texttt{udev}, which had been merged into \texttt{systemd} upstream~\cite{lwnUdevSystemd} and is built from the \texttt{systemd} source package from Stretch onward~\cite{pkgUdevStretch}, alongside device-management and capability-handling helpers. In Jessie the legacy \texttt{sysvinit} scaffolding (\texttt{initscripts}, \texttt{insserv}, \texttt{sysv-rc}) was still present alongside this new stack and constitutes the legacy band, while the \texttt{systemd} and \texttt{udev} binaries themselves, together with their device-mapper and cryptsetup helpers, make up most of the transient Jessie-only set. By Stretch the legacy scaffolding had been removed and the \texttt{systemd} binary itself had left the chroot-oriented minbase, leaving only the shared libraries that constitute the modern band from Stretch onward. The reduction is consistent with the project's ongoing effort to shrink the \texttt{Essential} and \texttt{Priority: required} sets~\cite{debianEssentialOnDiet,bts851747}, an effort that periodic priority-requalification reviews carry out across release cycles~\cite{debianBusterRequalification}.
+
+The later decline from the Bullseye maximum of 95 packages through 87 in Bookworm to 77 in Trixie is, like the Jessie movements, a composition effect rather than a contraction of the base system. Comparing the minbase sets of these releases attributes the decline to four packaging mechanisms. First, library soname and version bumps, changes to the versioned identity that a shared library exposes to its consumers, which require a correspondingly renamed binary package, retire an old runtime package as its successor arrives: the per-release \texttt{gcc-N-base} packages are replaced each cycle, \texttt{libffi7} gives way to \texttt{libffi8}, \texttt{libsemanage1} and \texttt{libsepol1} to their version-2 successors, and \texttt{libapt-pkg6.0} to \texttt{libapt-pkg7.0}. Second, the Trixie cycle carried out the project-wide 64-bit \texttt{time\_t} transition~\cite{debianTrixieReleaseNotes,debian64bitTime}, which widened the C type that represents calendar time from 32 to 64 bits to avert its overflow in 2038; because this alters the binary interface of every library that exposes the type, many libraries were rebuilt under new binary-package names carrying a \texttt{t64} suffix, so that \texttt{libnettle8} became \texttt{libnettle8t64} and \texttt{libdb5.3} became \texttt{libdb5.3t64}; these are renames of the same code rather than additions or removals. Third, several dependency chains left the required set as the packages that pulled them in were removed or replaced: the Sun RPC and NIS libraries (\texttt{libtirpc3}, \texttt{libnsl2}) and the Kerberos libraries they depended on left the required set between Bullseye and Bookworm, and between Bookworm and Trixie Debian's archive-signature verification moved from \texttt{gpgv} to the Sequoia tool \texttt{sqv}~\cite{aptSequoia}, with much of the surrounding GnuTLS and Nettle chain leaving the minbase alongside these changes.
+
+A smaller part of the decline is the requalification of what a minimal chroot needs rather than a library rename. The filesystem tools \texttt{e2fsprogs} and their libraries, the account-management tool \texttt{adduser}, and the LSB init-script helper \texttt{lsb-base}, which Bookworm reduces to an empty transitional package~\cite{lsbBaseObsolete}, all leave the required set across these releases; a chroot or container image creates no filesystems and manages no interactive accounts, so none of these is needed to populate it. The departure of \texttt{e2fsprogs} is also why the persistent subset present in Trixie's minbase numbers 24 rather than 25 source packages. Working in the opposite direction, the same window adds binary packages that carry no new code: \texttt{util-linux} was split so that \texttt{util-linux-extra} became a separate binary package in Bookworm, and the merged-\texttt{/usr} transition, the consolidation of \texttt{/bin}, \texttt{/sbin}, and \texttt{/lib} into their counterparts under \texttt{/usr} with compatibility symlinks, required from Bookworm~\cite{debianUsrMerge}, added the marker package \texttt{usr-is-merged}. These offsetting renames, splits, and requalifications are precisely why the package count is a weak indicator of size: across Bullseye to Trixie the count falls by 18 packages, yet over the same window the installed size of the persistent core (\autoref{fig:installed-size}) holds near 82~MB and its lines of code (\autoref{fig:nloc}) continue to rise. The recent decline therefore reflects packaging structure, not a reduction in the base system's code or capability.
+
+\section{Installed Size}
+\label{sec:results-size}
+
+\autoref{fig:installed-size} reports the installed footprint of the minbase installation and of its persistent subset across the 13 releases. The full minbase grows from approximately 28~MB in Potato to a maximum of approximately 122~MB in Bullseye, ending at approximately 117~MB in Trixie, an increase of roughly fourfold. The persistent subset grows in parallel from approximately 20~MB to approximately 82~MB. The shaded band between the two lines is the footprint contributed by transient packages that belong to the current minbase but not to the long-lived core.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{installed_size.pdf}
+  \caption[Installed size of the minbase installation and its persistent subset.]{Installed size in megabytes of the full minbase installation (upper line) and of its persistent subset (lower line) for each stable release from Potato to Trixie, computed from the \texttt{Installed-Size} field of the \texttt{Packages} index. The shaded band between the two lines is the footprint of the transient (non-persistent) packages. Both series are measured over the \texttt{-{}-variant=minbase} tier and differ only in which packages are summed.}
+  \label{fig:installed-size}
+\end{figure}
+
+Two features of the figure correspond to the composition analysis above. The step from Wheezy (approximately 73~MB) to Jessie (approximately 100~MB) in the minbase line is the largest single increase on the chart, and it coincides with the sharp rise in package count at Jessie and the init-system transition that produced it. The persistent line, by contrast, rises more smoothly and reaches an approximately 82~MB plateau from Buster onward, remaining nearly flat across Buster, Bullseye, Bookworm, and Trixie. Because the persistent subset measures a near-fixed population of long-lived packages, its flattening indicates that the footprint of the core has stabilised in recent releases, while the minbase line continues to oscillate as the surrounding transient set changes. The gap between the two lines, the transient footprint, widens to approximately 30 to 40~MB in the most recent releases: the transient set accounts for a growing share of the minbase total while the persistent core holds near its 82~MB plateau.
+
+\section{Dependency Structure}
+\label{sec:results-deps}
+
+The dependency dimension is computed over the whole minbase rather than the persistent subset, because inter-package coupling is a property of the installation as a whole and the arrival of new hub packages, which the fixed persistent core would not capture, is the coupling change this dimension is designed to detect. \autoref{fig:dependency-distribution} shows the per-release distribution of the number of dependencies each package declares. The centre of the distribution is stable: the median is one dependency per package in every release after Potato, the interquartile range spans zero to two in most releases, and the upper whisker ranges from two to five across releases. The typical minbase package has therefore declared between zero and two dependencies for the full 25-year span, and neither the central tendency nor the spread has shifted.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{dependency_distribution.pdf}
+  \caption[Distribution of per-package dependency counts per release.]{Per-release distribution of the number of entries each package declares in its \texttt{Depends} field, over the whole minbase installation, from Potato to Trixie. Boxes span the interquartile range (Q1 to Q3), the line inside each box is the median, whiskers extend to the most distant point within $1.5\times$ the interquartile range, and filled circles are outliers beyond the whiskers. Alternatives of the form \texttt{a | b} count as a single edge.}
+  \label{fig:dependency-distribution}
+\end{figure}
+
+The only quantity that moves is the upper tail of outliers. The maximum dependency count grows from 4 in Potato and Woody, through 6 to 7 in the middle releases, to a single outlier of 17 in Jessie, the highest value in the dataset, before settling at 10 to 12 from Buster onward. The package responsible for this outlier is \texttt{systemd} itself, whose binary package declares 17 dependencies in Jessie. Nine of these are the shared libraries that the \texttt{systemd} binaries link against, among them \texttt{libcap2}, \texttt{libselinux1}, \texttt{libcryptsetup4}, \texttt{libkmod2}, \texttt{libaudit1}, and \texttt{libpam0g}; the remainder are runtime and setup helpers together with the \texttt{sysvinit}-compatibility packages \texttt{initscripts} and \texttt{sysv-rc} and the device manager \texttt{udev}, all drawn into the required set when \texttt{systemd} becomes the default init system (\autoref{sec:composition}). The outlier is therefore the dependency-side signature of the same structural event visible in the package-count and installed-size figures. The dependency dimension thus indicates that increasing coupling in the minbase is concentrated in a small number of hub packages arriving over time, while the rest of the minbase remains as loosely coupled as it was in 2000.
+
+\section{Lines of Code}
+\label{sec:results-loc}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{nloc.pdf}
+  \caption[Lines of code, comments, and blank lines in the persistent core.]{Total lines of code, comment lines, and blank lines across the upstream source of the persistent packages, measured with \texttt{tokei}, for each stable release from Potato to Trixie. The vertical axis is in thousands of lines. The counts reflect the upstream source tarballs only and do not include Debian's patches.}
+  \label{fig:nloc}
+\end{figure}
+
+The lines-of-code dimension is presented through three figures that decompose the same total along different axes: by line type, by package, and by programming language. \autoref{fig:nloc} reports the aggregate total. The total lines of code across the upstream source of the persistent packages grow from approximately 0.92~million in Potato to approximately 4.92~million in Trixie, an increase of roughly 5.3-fold for a population that is fixed by construction. The growth is smooth and monotonic: every release is larger than its predecessor, with no step changes or plateaus. The proportions of code, comment, and blank lines remain stable at roughly 70, 20, and 10 percent throughout, which indicates that commenting density did not erode as the corpus grew fivefold. These counts reflect the upstream source tarballs only and do not include Debian's own modifications, which are treated separately in \autoref{sec:results-patch}. The sustained growth of a fixed set of long-lived packages is consistent with the continuing-growth tendency that Lehman~\cite{Lehman1980Laws} and Wirth~\cite{Wirth1995Plea} describe.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{persistent_growth.pdf}
+  \caption[Code growth of the five largest persistent packages.]{Lines of code for the five persistent source packages with the largest total code volume (\texttt{glibc}, \texttt{perl}, \texttt{coreutils}, \texttt{bash}, and \texttt{ncurses}), measured with \texttt{tokei} across the stable releases from Potato to Trixie. Each curve traces one source package and the vertical axis is in thousands of lines. The \texttt{perl} curve reads zero in Potato.}
+  \label{fig:persistent-growth}
+\end{figure}
+
+\autoref{fig:persistent-growth} attributes this aggregate to individual packages by tracing the five persistent source packages with the largest total code volume. \texttt{glibc} is the largest package in every release, growing from approximately 434{,}000 lines in Potato to approximately 1.44~million in Trixie. \texttt{perl}, which is absent from Potato's minbase and therefore reads zero there, enters at approximately 283{,}000 lines in Woody and grows to approximately 1.15~million, approaching \texttt{glibc} in total line count from Buster onward. \texttt{coreutils} shows the largest relative growth of the five, expanding roughly tenfold from approximately 36{,}000 to approximately 365{,}000 lines, while \texttt{bash} and \texttt{ncurses} grow more modestly, each roughly doubling to approximately 196{,}000 and 181{,}000 lines respectively. Unlike the early pipeline run reproduced in \autoref{fig:nloc-artefact}, which exhibited measurement artefacts, every curve here grows smoothly and without zero-valued gaps, confirming that the artefacts were resolved.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{language_breakdown.pdf}
+  \caption[Programming-language composition of the persistent core.]{Lines of code in the upstream source of the persistent packages, decomposed by programming language and stacked per release, measured with \texttt{tokei}, from Potato to Trixie. The vertical axis is in thousands of lines. The \texttt{Other} band collects translation files, documentation, build-system data, and configuration, and also absorbs Python.}
+  \label{fig:language-breakdown}
+\end{figure}
+
+\autoref{fig:language-breakdown} decomposes the same total by programming language. C is the largest single language in every release, growing from approximately 730{,}000 lines in Potato to approximately 3.25~million in Trixie. Measured by share of the total, however, C declines from approximately 79 percent to approximately 66 percent across the same span, because it grows more slowly than the corpus as a whole. The decline in C's share is offset chiefly by the growth of \texttt{perl}, which rises from roughly 1 percent of the total to roughly 10 percent as the \texttt{perl} package enters and grows. The remaining categories are comparatively stable in share: the \texttt{Other} band, which collects translation files, documentation, build-system data, and configuration, holds between roughly 12 and 16 percent, Assembly between roughly 4 and 7 percent, and Shell between roughly 2 and 3.5 percent. Python remains below 0.4 percent of the total in every release and is grouped into the \texttt{Other} band for that reason. No language displaces C from its dominant position, and no newer systems language, such as Rust, appears in the persistent core within the window. Because C alone accounts for at least three-fifths of the corpus in every release, the complexity analysis in the following section covers the majority of the core.
+
+\section{Per-Function Cyclomatic Complexity}
+\label{sec:results-cc}
+
+The complexity dimension is reported at two levels: the central tendency of the per-function complexity, and the shape of its distribution. \autoref{fig:complexity} plots the mean and median modified cyclomatic complexity per function across the C and C++ source of the persistent packages. The number of functions analysed grows from approximately 15{,}900 in Potato to approximately 55{,}000 in Trixie. The mean complexity per function rises by 0.29, from 6.29 in Potato to a peak of 6.58 in Jessie, and then declines to 6.08 in Trixie. The median is flat at exactly 3 in every one of the 13 releases. The typical function in the persistent core has therefore had a cyclomatic complexity of 3 for 25 years, even as the number of functions more than tripled.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{complexity.pdf}
+  \caption[Mean and median per-function cyclomatic complexity per release.]{Average (mean) and median modified cyclomatic complexity per function across the C and C++ source of the persistent packages, measured with \texttt{pmccabe}, for each stable release from Potato to Trixie. Each point aggregates all functions measured in that release. The vertical axis is cyclomatic complexity.}
+  \label{fig:complexity}
+\end{figure}
+
+\autoref{fig:cc-distribution} shows the per-release distribution behind these summary statistics. The boxes are nearly identical across the 13 releases: the first quartile sits at 1, the median at 3, and the third quartile at 7, narrowing slightly to 6 in Bookworm and Trixie. The interquartile range is thus stable across the full period, contracting slightly in the two most recent releases. The distribution has a long right tail, and the outliers beyond the whiskers are suppressed in the figure for legibility. The maximum complexity, reported here rather than plotted, grows from 273 in Potato to 1{,}125 in Jessie and stands at 1{,}048 in Trixie. The single most complex function in every release after Potato is the hand-written tokenizer and keyword recogniser of \texttt{perl} (the functions \texttt{Perl\_yylex} and \texttt{Perl\_keyword}); this extreme value is a property of one upstream source file rather than of the core as a whole.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{cc_distribution.pdf}
+  \caption[Per-function cyclomatic complexity distribution per release.]{Per-release distribution of modified cyclomatic complexity over all functions in the C and C++ source of the persistent packages, measured with \texttt{pmccabe}, from Potato to Trixie. The vertical axis is complexity per function. Boxes span the interquartile range, the line inside each box is the median, and whiskers extend to the most distant point within $1.5\times$ the interquartile range; outliers beyond the whiskers are suppressed for legibility.}
+  \label{fig:cc-distribution}
+\end{figure}
+
+The three observations, a function count that more than triples, a median that holds at 3, and a mean that rises gently to a peak before declining, indicate that the growth of the C and C++ core occurs through the addition of many small, low-complexity functions rather than through an increase in the complexity of the typical function. This pattern is consistent with the result that Israeli and Feitelson report for the Linux kernel, where total complexity rises while the average complexity of individual functions falls as new low-complexity functions are added~\cite{israeli2010linux}. The observation is reported here as a description of the measured trend and not as a causal claim. As noted in \autoref{sec:metric-cc}, the complexity measurement covers only the C and C++ source and therefore describes 23 of the 25 persistent packages; its scope is revisited in \autoref{sec:limitations}.
+
+\section{Distribution-Specific Patch Volume}
+\label{sec:results-patch}
+
+The final dimension is the volume of distribution-specific patches that Debian applies to the persistent packages. As established in \autoref{sec:patch-inconsistency}, this metric is not comparable across the change in Debian's source-package format: counts produced under the \texttt{1.0} (\texttt{.diff.gz}) format are inflated by non-code material bundled into the single diff, whereas the \texttt{3.0 (quilt)} format from Jessie onward records only named patches. \autoref{fig:patch-size} reflects this by drawing the \texttt{1.0}-era releases in grey for context, marking the format boundary, and drawing the comparable \texttt{3.0 (quilt)} era in solid colour. Within the grey era the series is volatile and peaks at approximately 904{,}000 lines in Wheezy, but these values are dominated by packaging artefacts rather than by code changes and are not interpreted.
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=\textwidth]{patch_size.pdf}
+  \caption[Debian patch lines applied to the persistent core per release.]{Total number of Debian patch lines across the persistent packages for each stable release from Potato to Trixie. The vertical axis counts patch lines. Releases packaged under the \texttt{1.0} (\texttt{.diff.gz}) source format are drawn in grey and those under the \texttt{3.0 (quilt)} format from Jessie onward in solid colour, with the format boundary marked. The counts are comparable only within the \texttt{3.0 (quilt)} era.}
+  \label{fig:patch-size}
+\end{figure}
+
+Within the comparable \texttt{3.0 (quilt)} era, the total patch volume across the persistent core declines from approximately 663{,}000 lines in Jessie to approximately 51{,}000 in Trixie. The \texttt{glibc} package is the dominant contributor in every release, accounting for approximately 570{,}000 of the Jessie total and approximately 37{,}000 of the Trixie total. The declining trend suggests that the named patch set Debian maintains against the persistent core has contracted over the most recent releases, although the metric counts patch lines, including diff context, rather than the number of semantic changes, so it should be read as an indicator of patch bulk rather than of maintenance effort.
+
+The secondary research question also asks about the file-level structure of these patches. The structure changes sharply at the format transition: under the \texttt{1.0} format a package's Debian-specific material is carried in a single \texttt{.diff.gz} file, while native packages such as \texttt{dpkg}, whose upstream is the Debian project itself and which therefore ship no separate patch archive, carry none, whereas under \texttt{3.0 (quilt)} the same material is split into many named patch files under \texttt{debian/patches/}. The transition occurs at different releases for different packages, around the Jessie to Stretch window, and several persistent packages had already migrated to the quilt format by Squeeze and Wheezy; \texttt{glibc}, for instance, moves from a single diff to 281 named patches at Jessie, while \texttt{coreutils} retains a single file until Stretch. This shift from one bundled diff to many purpose-specific patches following the DEP-3 tagging convention~\cite{dep3} is the file-level structural evolution the secondary question identifies, and it is also what confines the post-Jessie counts to Debian's code-level modifications.

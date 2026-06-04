@@ -1,0 +1,2500 @@
+codename,year,source_package,language,files,blank,comment,code
+potato,2000,util-linux,Alex,2,58,0,460
+potato,2000,util-linux,Autoconf,1,0,0,100
+potato,2000,util-linux,BASH,2,6,23,24
+potato,2000,util-linux,C,114,5074,6838,39726
+potato,2000,util-linux,C Header,40,301,514,1740
+potato,2000,util-linux,C#,1,1,0,27
+potato,2000,util-linux,HTML,2,107,0,2715
+potato,2000,util-linux,Makefile,14,249,132,727
+potato,2000,util-linux,Perl,1,16,39,65
+potato,2000,util-linux,Shell,8,88,151,499
+potato,2000,tar,Autoconf,15,719,420,2746
+potato,2000,tar,Automake,7,50,90,124
+potato,2000,tar,C,76,3742,4500,18228
+potato,2000,tar,C Header,29,552,889,1778
+potato,2000,tar,Emacs Lisp,1,129,147,592
+potato,2000,tar,Happy,1,113,0,948
+potato,2000,tar,Perl,1,4,19,111
+potato,2000,tar,Shell,16,186,238,702
+potato,2000,tar,TeX,1,610,1835,3547
+potato,2000,sysvinit,C,16,780,1438,4810
+potato,2000,sysvinit,C Header,6,25,68,158
+potato,2000,sysvinit,Makefile,1,23,16,75
+potato,2000,sysvinit,RPM Specfile,1,19,1,92
+potato,2000,shadow,Autoconf,20,998,540,4180
+potato,2000,shadow,Automake,12,52,70,130
+potato,2000,shadow,C,144,5563,9907,25445
+potato,2000,shadow,C Header,32,411,1008,1135
+potato,2000,shadow,Happy,1,82,0,942
+potato,2000,shadow,Perl,1,8,44,33
+potato,2000,shadow,RPM Specfile,2,28,63,197
+potato,2000,shadow,Shell,6,573,634,3926
+potato,2000,sed,Autoconf,9,403,142,1347
+potato,2000,sed,Automake,6,36,20,138
+potato,2000,sed,Batch,3,11,0,94
+potato,2000,sed,C,12,1604,2277,7320
+potato,2000,sed,C Header,7,191,406,442
+potato,2000,sed,Shell,6,72,108,293
+potato,2000,sed,TeX,1,608,1751,3069
+potato,2000,pam,BASH,8,49,19,295
+potato,2000,pam,C,76,3687,3775,14933
+potato,2000,pam,C Header,19,418,755,961
+potato,2000,pam,HTML,1,3,0,18
+potato,2000,pam,Happy,2,81,0,415
+potato,2000,pam,Makefile,42,950,754,2404
+potato,2000,pam,Perl,2,68,41,219
+potato,2000,pam,Shell,6,38,69,179
+potato,2000,ncurses,Ada,92,1168,4260,8217
+potato,2000,ncurses,Autoconf,24,940,1563,3903
+potato,2000,ncurses,Batch,4,33,0,326
+potato,2000,ncurses,C,267,7147,17633,43696
+potato,2000,ncurses,C Header,28,1158,1790,4125
+potato,2000,ncurses,C++,9,318,357,1723
+potato,2000,ncurses,HTML,149,3627,10,17697
+potato,2000,ncurses,Makefile,2,19,14,39
+potato,2000,ncurses,Module-Definition,4,0,0,659
+potato,2000,ncurses,Perl,2,20,29,103
+potato,2000,ncurses,Shell,19,109,626,1172
+potato,2000,mawk,Autoconf,2,28,37,108
+potato,2000,mawk,Batch,2,25,0,165
+potato,2000,mawk,C,39,2335,2452,11959
+potato,2000,mawk,C Header,28,413,843,1049
+potato,2000,mawk,Happy,1,229,0,1144
+potato,2000,mawk,Makefile,1,7,6,11
+potato,2000,mawk,Module-Definition,1,0,0,2
+potato,2000,mawk,Shell,2,48,27,90
+potato,2000,hostname,C,3,46,85,423
+potato,2000,hostname,C Header,1,6,16,31
+potato,2000,hostname,Makefile,2,22,5,86
+potato,2000,hostname,Objective-C,4,136,0,276
+potato,2000,gzip,Assembly,1,22,39,179
+potato,2000,gzip,Autoconf,8,121,134,757
+potato,2000,gzip,Batch,1,0,0,18
+potato,2000,gzip,C,22,962,1962,5125
+potato,2000,gzip,C Header,12,152,195,680
+potato,2000,gzip,GNU Style Assembly,1,47,53,279
+potato,2000,gzip,Module-Definition,2,0,0,5
+potato,2000,gzip,Shell,2,85,101,668
+potato,2000,gzip,TeX,1,512,810,2028
+potato,2000,grep,Autoconf,15,558,250,2383
+potato,2000,grep,Automake,10,34,27,137
+potato,2000,grep,Batch,1,11,0,76
+potato,2000,grep,C,31,2278,3492,11998
+potato,2000,grep,C Header,18,464,918,1324
+potato,2000,grep,Shell,11,100,121,306
+potato,2000,grep,TeX,1,606,1753,3125
+potato,2000,glibc,Alex,17,389,0,2909
+potato,2000,glibc,Autoconf,23,613,316,3479
+potato,2000,glibc,C,3338,45168,96767,316677
+potato,2000,glibc,C Header,1164,15678,34667,67969
+potato,2000,glibc,C++,1,2,7,15
+potato,2000,glibc,GNU Style Assembly,669,6564,12893,32835
+potato,2000,glibc,HTML,1,110,0,929
+potato,2000,glibc,Makefile,125,1392,1887,3747
+potato,2000,glibc,Module-Definition,13,101,0,780
+potato,2000,glibc,Perl,3,59,102,384
+potato,2000,glibc,Shell,18,139,234,934
+potato,2000,glibc,TeX,1,610,1835,3547
+potato,2000,findutils,Autoconf,10,296,179,839
+potato,2000,findutils,Automake,7,25,1,104
+potato,2000,findutils,C,39,2305,3360,11211
+potato,2000,findutils,C Header,10,220,487,616
+potato,2000,findutils,Shell,4,322,480,2390
+potato,2000,findutils,TeX,1,576,1282,2507
+potato,2000,dpkg,Autoconf,22,444,384,1312
+potato,2000,dpkg,Automake,1,8,3,8
+potato,2000,dpkg,C,62,2111,2897,16287
+potato,2000,dpkg,C Header,25,402,699,1373
+potato,2000,dpkg,C++,19,500,434,3756
+potato,2000,dpkg,Emacs Lisp,1,25,26,220
+potato,2000,dpkg,Perl,21,491,299,4760
+potato,2000,dpkg,Shell,4,94,81,523
+potato,2000,debianutils,BASH,4,18,16,133
+potato,2000,debianutils,C,4,84,91,588
+potato,2000,debianutils,Makefile,1,2,0,5
+potato,2000,debianutils,Shell,1,8,11,27
+potato,2000,debconf,Makefile,3,14,10,69
+potato,2000,debconf,Perl,56,1314,399,3879
+potato,2000,debconf,Shell,5,28,82,153
+potato,2000,debconf,XML,5,14,0,2073
+potato,2000,coreutils,Alex,184,0,0,116
+potato,2000,coreutils,Autoconf,23,1091,558,5008
+potato,2000,coreutils,Automake,13,70,40,330
+potato,2000,coreutils,C,106,4436,5941,23430
+potato,2000,coreutils,C Header,29,489,840,1452
+potato,2000,coreutils,Happy,1,88,0,961
+potato,2000,coreutils,Perl,3,82,80,358
+potato,2000,coreutils,SWIG,2,0,0,4
+potato,2000,coreutils,Shell,7,108,127,458
+potato,2000,coreutils,TeX,1,611,1829,3545
+potato,2000,bash,Autoconf,15,804,529,3021
+potato,2000,bash,BASH,35,330,928,1321
+potato,2000,bash,C,144,10355,10888,61330
+potato,2000,bash,C Header,86,1260,2262,3673
+potato,2000,bash,GNU Style Assembly,2,11,0,68
+potato,2000,bash,Happy,1,467,0,3296
+potato,2000,bash,Makefile,4,41,7,125
+potato,2000,bash,Module-Definition,41,1768,15,9775
+potato,2000,bash,Shell,19,282,511,1988
+potato,2000,bash,TeX,2,1184,2721,5209
+potato,2000,base-passwd,ASP.NET,2,0,0,61
+potato,2000,base-passwd,Autoconf,3,17,9,43
+potato,2000,base-passwd,C,2,292,165,1149
+potato,2000,base-passwd,Shell,1,51,47,153
+potato,2000,e2fsprogs,Autoconf,42,449,329,4315
+potato,2000,e2fsprogs,Batch,1,0,0,5
+potato,2000,e2fsprogs,C,146,3671,4146,24721
+potato,2000,e2fsprogs,C Header,44,803,1211,2852
+potato,2000,e2fsprogs,Perl,1,0,4,22
+potato,2000,e2fsprogs,RPM Specfile,1,17,0,103
+potato,2000,e2fsprogs,Shell,5,50,75,723
+potato,2000,e2fsprogs,TeX,2,1008,1882,3948
+woody,2002,util-linux,Alex,2,76,0,596
+woody,2002,util-linux,Autoconf,1,0,0,107
+woody,2002,util-linux,BASH,2,6,23,24
+woody,2002,util-linux,C,122,5435,7047,41844
+woody,2002,util-linux,C Header,50,311,500,1742
+woody,2002,util-linux,C#,1,1,0,27
+woody,2002,util-linux,HTML,2,107,0,2715
+woody,2002,util-linux,Makefile,13,254,111,751
+woody,2002,util-linux,Perl,2,38,47,114
+woody,2002,util-linux,Shell,9,102,222,656
+woody,2002,util-linux,SystemVerilog,1,11,15,45
+woody,2002,tar,Autoconf,13,673,376,2693
+woody,2002,tar,Automake,7,56,100,126
+woody,2002,tar,C,88,4249,5055,20840
+woody,2002,tar,C Header,35,574,983,1956
+woody,2002,tar,Happy,2,176,0,1351
+woody,2002,tar,Perl,1,5,22,111
+woody,2002,tar,Shell,19,203,270,784
+woody,2002,tar,TeX,1,614,1949,3725
+woody,2002,sysvinit,C,17,840,1515,5126
+woody,2002,sysvinit,C Header,6,25,69,158
+woody,2002,sysvinit,Makefile,1,23,16,76
+woody,2002,shadow,Autoconf,20,1028,542,4378
+woody,2002,shadow,Automake,12,59,63,173
+woody,2002,shadow,C,140,5500,9641,24908
+woody,2002,shadow,C Header,31,342,768,1039
+woody,2002,shadow,Happy,1,82,0,942
+woody,2002,shadow,Perl,1,8,44,33
+woody,2002,shadow,RPM Specfile,1,14,6,117
+woody,2002,shadow,Shell,6,573,634,3926
+woody,2002,sed,Autoconf,9,403,142,1347
+woody,2002,sed,Automake,6,36,20,138
+woody,2002,sed,Batch,3,11,0,94
+woody,2002,sed,C,12,1604,2277,7320
+woody,2002,sed,C Header,7,191,406,442
+woody,2002,sed,Shell,6,72,108,293
+woody,2002,sed,TeX,1,608,1751,3069
+woody,2002,pam,BASH,8,49,19,295
+woody,2002,pam,C,76,3687,3775,14933
+woody,2002,pam,C Header,19,418,755,961
+woody,2002,pam,HTML,1,3,0,18
+woody,2002,pam,Happy,2,81,0,415
+woody,2002,pam,Makefile,42,950,754,2404
+woody,2002,pam,Perl,2,68,41,219
+woody,2002,pam,Shell,6,38,69,179
+woody,2002,ncurses,Ada,139,1861,6462,12872
+woody,2002,ncurses,Autoconf,25,1066,1404,4549
+woody,2002,ncurses,Batch,4,33,0,326
+woody,2002,ncurses,C,274,7276,18135,47317
+woody,2002,ncurses,C Header,29,1107,1822,4607
+woody,2002,ncurses,C++,9,329,363,1787
+woody,2002,ncurses,HTML,213,4808,3462,33506
+woody,2002,ncurses,Makefile,2,24,25,95
+woody,2002,ncurses,Module-Definition,4,0,0,649
+woody,2002,ncurses,Perl,2,26,36,126
+woody,2002,ncurses,Prolog,1,1,16,18
+woody,2002,ncurses,Shell,21,121,689,1315
+woody,2002,mawk,Autoconf,2,28,37,108
+woody,2002,mawk,Batch,2,25,0,165
+woody,2002,mawk,C,39,2335,2452,11959
+woody,2002,mawk,C Header,28,413,843,1049
+woody,2002,mawk,Happy,1,229,0,1144
+woody,2002,mawk,Makefile,1,7,6,11
+woody,2002,mawk,Module-Definition,1,0,0,2
+woody,2002,mawk,Shell,2,48,27,90
+woody,2002,hostname,C,3,44,85,426
+woody,2002,hostname,C Header,3,7,16,33
+woody,2002,hostname,Makefile,2,22,5,86
+woody,2002,hostname,Objective-C,4,136,0,276
+woody,2002,gzip,Assembly,1,22,39,179
+woody,2002,gzip,Autoconf,11,182,143,1160
+woody,2002,gzip,Automake,1,20,14,55
+woody,2002,gzip,Batch,1,0,0,18
+woody,2002,gzip,C,26,1108,2165,5976
+woody,2002,gzip,C Header,12,158,229,683
+woody,2002,gzip,Module-Definition,2,0,0,5
+woody,2002,gzip,Shell,2,57,54,193
+woody,2002,gzip,TeX,1,614,1949,3725
+woody,2002,grep,Autoconf,15,558,250,2383
+woody,2002,grep,Automake,10,34,27,137
+woody,2002,grep,Batch,1,11,0,76
+woody,2002,grep,C,31,2278,3492,11998
+woody,2002,grep,C Header,18,464,918,1324
+woody,2002,grep,Shell,11,100,121,306
+woody,2002,grep,TeX,1,606,1753,3125
+woody,2002,glibc,Alex,17,389,0,2909
+woody,2002,glibc,Autoconf,28,715,409,5307
+woody,2002,glibc,Batch,1,4,0,22
+woody,2002,glibc,C,4926,54592,118189,452510
+woody,2002,glibc,C Header,1631,21798,47827,151481
+woody,2002,glibc,GNU Style Assembly,954,16117,40294,89018
+woody,2002,glibc,HTML,1,110,0,929
+woody,2002,glibc,Happy,1,55,0,351
+woody,2002,glibc,Makefile,145,1609,2045,4716
+woody,2002,glibc,Module-Definition,17,144,0,1554
+woody,2002,glibc,Perl,7,341,335,2130
+woody,2002,glibc,Shell,41,402,747,3370
+woody,2002,glibc,TeX,1,613,1943,3724
+woody,2002,findutils,Autoconf,20,1009,548,4628
+woody,2002,findutils,Automake,11,33,8,261
+woody,2002,findutils,C,71,3325,4891,17886
+woody,2002,findutils,C Header,27,457,870,1368
+woody,2002,findutils,Shell,3,95,115,348
+woody,2002,findutils,TeX,1,610,1835,3547
+woody,2002,dpkg,Autoconf,22,471,363,1505
+woody,2002,dpkg,C,68,2671,3656,17958
+woody,2002,dpkg,C Header,27,515,905,1856
+woody,2002,dpkg,C++,19,500,436,3770
+woody,2002,dpkg,Happy,1,56,0,357
+woody,2002,dpkg,Perl,23,580,369,5273
+woody,2002,dpkg,Shell,3,91,55,552
+woody,2002,debianutils,BASH,4,21,17,157
+woody,2002,debianutils,C,4,85,95,609
+woody,2002,debianutils,Makefile,1,2,0,5
+woody,2002,debianutils,Shell,1,9,10,37
+woody,2002,debconf,Makefile,3,18,17,109
+woody,2002,debconf,Perl,94,2676,665,8173
+woody,2002,debconf,Shell,6,33,82,178
+woody,2002,debconf,XML,2,15,0,1149
+woody,2002,coreutils,Alex,197,0,0,202
+woody,2002,coreutils,Autoconf,23,1245,703,5713
+woody,2002,coreutils,Automake,13,80,49,415
+woody,2002,coreutils,C,154,5867,8090,30355
+woody,2002,coreutils,C Header,59,808,1415,2669
+woody,2002,coreutils,Happy,1,120,0,993
+woody,2002,coreutils,Perl,4,180,177,722
+woody,2002,coreutils,SWIG,2,0,0,4
+woody,2002,coreutils,Shell,7,113,134,482
+woody,2002,coreutils,TeX,1,609,1846,3557
+woody,2002,bash,Autoconf,16,1041,792,3663
+woody,2002,bash,BASH,41,413,1102,1730
+woody,2002,bash,C,182,11716,12181,69195
+woody,2002,bash,C Header,99,1643,2889,4782
+woody,2002,bash,GNU Style Assembly,2,11,0,68
+woody,2002,bash,Happy,1,515,0,3706
+woody,2002,bash,Makefile,4,47,19,114
+woody,2002,bash,Module-Definition,42,1963,11,11001
+woody,2002,bash,Shell,22,342,603,2784
+woody,2002,bash,TeX,2,1196,3145,6073
+woody,2002,base-passwd,ASP.NET,2,0,0,57
+woody,2002,base-passwd,Autoconf,3,17,9,43
+woody,2002,base-passwd,C,1,228,107,805
+woody,2002,base-passwd,Shell,1,51,47,153
+woody,2002,perl,Autoconf,2,16,22,71
+woody,2002,perl,Batch,1,5,0,32
+woody,2002,perl,C,74,8883,8774,92480
+woody,2002,perl,C Header,92,3379,8569,31411
+woody,2002,perl,Emacs Lisp,1,561,1685,5992
+woody,2002,perl,HTML,4,78,2,1491
+woody,2002,perl,Happy,2,118,0,1021
+woody,2002,perl,Java,2,6,1,23
+woody,2002,perl,Makefile,7,449,509,2006
+woody,2002,perl,Mint,1,46,0,170
+woody,2002,perl,Module-Definition,2,0,0,984
+woody,2002,perl,Perl,686,18396,13320,136226
+woody,2002,perl,Shell,100,1393,3477,10896
+woody,2002,e2fsprogs,Autoconf,52,589,502,6318
+woody,2002,e2fsprogs,Batch,1,0,0,5
+woody,2002,e2fsprogs,C,187,5642,6626,36318
+woody,2002,e2fsprogs,C Header,63,1309,1955,4394
+woody,2002,e2fsprogs,Perl,1,0,4,25
+woody,2002,e2fsprogs,RPM Specfile,1,22,1,122
+woody,2002,e2fsprogs,Shell,5,21,25,217
+woody,2002,e2fsprogs,TeX,2,1008,1882,3948
+woody,2002,attr,Autoconf,3,59,77,235
+woody,2002,attr,C,5,175,178,1324
+woody,2002,attr,C Header,2,29,141,92
+woody,2002,attr,Makefile,17,109,536,272
+woody,2002,attr,Perl,2,37,12,229
+woody,2002,acl,Autoconf,5,70,93,258
+woody,2002,acl,C,53,738,1188,4178
+woody,2002,acl,C Header,11,133,135,402
+woody,2002,acl,Makefile,17,111,535,289
+woody,2002,acl,Perl,1,15,11,133
+woody,2002,acl,Shell,2,6,4,37
+sarge,2005,util-linux,Alex,2,76,0,596
+sarge,2005,util-linux,Autoconf,1,0,0,109
+sarge,2005,util-linux,BASH,2,6,23,24
+sarge,2005,util-linux,C,132,6197,8009,44767
+sarge,2005,util-linux,C Header,63,387,609,2074
+sarge,2005,util-linux,HTML,2,107,0,2715
+sarge,2005,util-linux,Makefile,13,270,110,810
+sarge,2005,util-linux,Perl,2,40,47,116
+sarge,2005,util-linux,Shell,7,50,214,580
+sarge,2005,util-linux,SystemVerilog,1,11,15,45
+sarge,2005,tar,Autoconf,13,545,383,4025
+sarge,2005,tar,Automake,6,118,156,201
+sarge,2005,tar,C,78,4049,4514,20675
+sarge,2005,tar,C Header,43,699,1513,2150
+sarge,2005,tar,Happy,1,138,0,1147
+sarge,2005,tar,Perl,1,4,19,111
+sarge,2005,tar,Shell,33,270,739,862
+sarge,2005,tar,TeX,1,574,2262,3843
+sarge,2005,sysvinit,C,18,958,1589,5634
+sarge,2005,sysvinit,C Header,6,38,80,193
+sarge,2005,sysvinit,Makefile,1,28,15,105
+sarge,2005,shadow,Autoconf,26,1346,529,7137
+sarge,2005,shadow,Automake,19,69,28,413
+sarge,2005,shadow,C,129,5474,9523,25595
+sarge,2005,shadow,C Header,31,357,763,1156
+sarge,2005,shadow,Happy,2,138,0,1299
+sarge,2005,shadow,Perl,1,8,44,33
+sarge,2005,shadow,Shell,4,616,571,4881
+sarge,2005,sed,Alex,1,4,0,309
+sarge,2005,sed,Autoconf,10,473,271,3114
+sarge,2005,sed,Automake,5,39,16,150
+sarge,2005,sed,C,55,2997,3898,19184
+sarge,2005,sed,C Header,17,531,903,2462
+sarge,2005,sed,Happy,1,56,0,357
+sarge,2005,sed,Shell,5,98,237,709
+sarge,2005,sed,TeX,1,574,2262,3843
+sarge,2005,pam,Autoconf,3,88,139,421
+sarge,2005,pam,BASH,2,10,7,75
+sarge,2005,pam,C,81,3986,3712,15915
+sarge,2005,pam,C Header,21,432,756,1032
+sarge,2005,pam,HTML,1,3,0,18
+sarge,2005,pam,Happy,2,81,0,416
+sarge,2005,pam,Makefile,45,465,405,1200
+sarge,2005,pam,Perl,2,68,41,222
+sarge,2005,pam,Shell,7,52,71,231
+sarge,2005,ncurses,Ada,139,1861,6466,12869
+sarge,2005,ncurses,Autoconf,25,1087,1409,4761
+sarge,2005,ncurses,Batch,4,33,0,326
+sarge,2005,ncurses,C,301,7992,19347,52444
+sarge,2005,ncurses,C Header,30,1160,1856,4878
+sarge,2005,ncurses,C++,9,331,364,1798
+sarge,2005,ncurses,HTML,225,3926,3871,34119
+sarge,2005,ncurses,Makefile,1,20,27,91
+sarge,2005,ncurses,Module-Definition,4,0,0,649
+sarge,2005,ncurses,Perl,2,27,62,152
+sarge,2005,ncurses,Prolog,1,1,16,18
+sarge,2005,ncurses,Shell,21,126,735,1481
+sarge,2005,mawk,Autoconf,2,28,37,108
+sarge,2005,mawk,Batch,2,25,0,165
+sarge,2005,mawk,C,39,2335,2452,11959
+sarge,2005,mawk,C Header,28,413,843,1049
+sarge,2005,mawk,Happy,1,229,0,1144
+sarge,2005,mawk,Makefile,1,7,6,11
+sarge,2005,mawk,Module-Definition,1,0,0,2
+sarge,2005,mawk,Shell,2,48,27,90
+sarge,2005,hostname,C,3,44,85,427
+sarge,2005,hostname,C Header,4,7,16,34
+sarge,2005,hostname,Makefile,2,22,5,86
+sarge,2005,hostname,Objective-C,4,136,0,276
+sarge,2005,gzip,Assembly,1,22,39,179
+sarge,2005,gzip,Autoconf,10,212,176,1338
+sarge,2005,gzip,Automake,1,19,14,77
+sarge,2005,gzip,Batch,1,0,0,18
+sarge,2005,gzip,C,26,1114,2185,5971
+sarge,2005,gzip,C Header,12,158,229,683
+sarge,2005,gzip,Module-Definition,2,0,0,5
+sarge,2005,gzip,Shell,3,61,81,234
+sarge,2005,gzip,TeX,1,601,1999,3742
+sarge,2005,grep,Autoconf,14,568,217,2933
+sarge,2005,grep,Automake,9,30,15,135
+sarge,2005,grep,C,55,3321,5222,19001
+sarge,2005,grep,C Header,28,572,1205,1839
+sarge,2005,grep,Happy,1,56,0,353
+sarge,2005,grep,Makefile,1,43,34,260
+sarge,2005,grep,RPM Specfile,1,40,0,128
+sarge,2005,grep,Shell,14,127,153,411
+sarge,2005,grep,TeX,1,612,1928,3660
+sarge,2005,glibc,Alex,17,389,0,2909
+sarge,2005,glibc,Autoconf,35,778,497,6144
+sarge,2005,glibc,C,5609,62906,130619,508590
+sarge,2005,glibc,C Header,1797,24867,52401,161544
+sarge,2005,glibc,GNU Style Assembly,1158,18301,46113,101146
+sarge,2005,glibc,HTML,1,110,0,929
+sarge,2005,glibc,Happy,1,55,0,354
+sarge,2005,glibc,Makefile,179,1798,2293,5614
+sarge,2005,glibc,Module-Definition,18,158,0,1598
+sarge,2005,glibc,Perl,7,341,335,2130
+sarge,2005,glibc,Shell,46,450,836,3719
+sarge,2005,glibc,TeX,1,597,2170,3921
+sarge,2005,findutils,Autoconf,20,1061,549,5733
+sarge,2005,findutils,Automake,13,80,18,259
+sarge,2005,findutils,C,75,4070,5869,22563
+sarge,2005,findutils,C Header,31,505,1090,1624
+sarge,2005,findutils,Happy,1,56,0,361
+sarge,2005,findutils,Shell,4,108,162,422
+sarge,2005,findutils,TeX,1,610,1835,3547
+sarge,2005,dpkg,Autoconf,28,524,467,1772
+sarge,2005,dpkg,C,55,2104,2721,15083
+sarge,2005,dpkg,C Header,20,395,684,1488
+sarge,2005,dpkg,C++,19,534,460,3999
+sarge,2005,dpkg,Makefile,10,145,2,417
+sarge,2005,dpkg,Perl,21,540,346,5341
+sarge,2005,dpkg,Shell,3,91,55,553
+sarge,2005,debianutils,Autoconf,2,101,35,962
+sarge,2005,debianutils,Automake,2,7,0,17
+sarge,2005,debianutils,BASH,2,0,2,14
+sarge,2005,debianutils,C,4,95,95,719
+sarge,2005,debianutils,Perl,1,3,5,32
+sarge,2005,debianutils,Shell,3,62,134,546
+sarge,2005,debconf,Makefile,3,17,18,110
+sarge,2005,debconf,Perl,115,3308,795,10390
+sarge,2005,debconf,Python,1,17,21,70
+sarge,2005,debconf,Shell,5,34,74,182
+sarge,2005,coreutils,Alex,822,66,0,1223
+sarge,2005,coreutils,Autoconf,55,2125,790,25357
+sarge,2005,coreutils,Automake,50,270,176,1683
+sarge,2005,coreutils,C,257,12723,17285,68295
+sarge,2005,coreutils,C Header,106,1048,2507,3783
+sarge,2005,coreutils,Happy,1,121,0,997
+sarge,2005,coreutils,Perl,18,450,587,2389
+sarge,2005,coreutils,SWIG,388,54,0,703
+sarge,2005,coreutils,Shell,190,1973,1240,7394
+sarge,2005,coreutils,TeX,1,587,2283,3865
+sarge,2005,bash,Autoconf,16,1109,821,3903
+sarge,2005,bash,BASH,42,450,1219,2161
+sarge,2005,bash,C,197,12773,13682,75277
+sarge,2005,bash,C Header,103,1805,3193,5541
+sarge,2005,bash,Emacs Lisp,1,23,66,88
+sarge,2005,bash,GNU Style Assembly,2,11,0,68
+sarge,2005,bash,Happy,1,559,0,4013
+sarge,2005,bash,Makefile,4,50,34,117
+sarge,2005,bash,Module-Definition,42,1966,11,11091
+sarge,2005,bash,Shell,22,348,692,2785
+sarge,2005,bash,TeX,2,1196,3145,6073
+sarge,2005,base-passwd,ASP.NET,2,0,0,57
+sarge,2005,base-passwd,Autoconf,3,18,9,44
+sarge,2005,base-passwd,C,1,219,124,887
+sarge,2005,base-passwd,C Header,1,0,0,1
+sarge,2005,base-passwd,Makefile,1,4,0,8
+sarge,2005,base-passwd,Shell,1,51,47,153
+sarge,2005,perl,Autoconf,2,16,23,69
+sarge,2005,perl,Batch,12,93,13,419
+sarge,2005,perl,C,114,11983,16138,117694
+sarge,2005,perl,C Header,130,6427,16384,40977
+sarge,2005,perl,C++,3,87,228,444
+sarge,2005,perl,Emacs Lisp,1,583,1772,6121
+sarge,2005,perl,HTML,1,19,2,98
+sarge,2005,perl,Happy,2,124,0,1083
+sarge,2005,perl,Java,2,6,1,23
+sarge,2005,perl,Makefile,10,713,720,3416
+sarge,2005,perl,Mint,1,53,0,176
+sarge,2005,perl,Module-Definition,2,0,0,1305
+sarge,2005,perl,Perl,1033,34740,26153,224563
+sarge,2005,perl,Shell,110,1980,4389,15232
+sarge,2005,perl,YAML,4,5,5,249
+sarge,2005,e2fsprogs,Autoconf,70,832,761,8969
+sarge,2005,e2fsprogs,Batch,1,0,0,5
+sarge,2005,e2fsprogs,C,254,9054,9958,56085
+sarge,2005,e2fsprogs,C Header,85,1746,2789,6304
+sarge,2005,e2fsprogs,Happy,1,56,0,325
+sarge,2005,e2fsprogs,Perl,1,0,4,25
+sarge,2005,e2fsprogs,RPM Specfile,1,26,0,174
+sarge,2005,e2fsprogs,Shell,5,20,25,217
+sarge,2005,e2fsprogs,TeX,2,1008,1882,3948
+sarge,2005,diffutils,Autoconf,10,410,152,2193
+sarge,2005,diffutils,Automake,7,43,74,99
+sarge,2005,diffutils,Batch,1,30,0,231
+sarge,2005,diffutils,C,51,3256,4627,16897
+sarge,2005,diffutils,C Header,21,370,793,1004
+sarge,2005,diffutils,Shell,2,58,80,210
+sarge,2005,diffutils,TeX,1,605,1995,3764
+sarge,2005,attr,Autoconf,4,41,53,180
+sarge,2005,attr,C,12,247,348,1842
+sarge,2005,attr,C Header,6,48,146,151
+sarge,2005,attr,Makefile,21,135,661,337
+sarge,2005,attr,Perl,2,47,16,329
+sarge,2005,acl,Autoconf,4,42,54,143
+sarge,2005,acl,C,60,839,1316,4862
+sarge,2005,acl,C Header,13,144,143,450
+sarge,2005,acl,Makefile,19,128,598,342
+sarge,2005,acl,Perl,1,25,15,233
+sarge,2005,acl,Shell,1,6,3,36
+etch,2007,util-linux,Alex,2,76,0,596
+etch,2007,util-linux,Autoconf,1,0,0,128
+etch,2007,util-linux,BASH,2,6,23,24
+etch,2007,util-linux,C,132,6203,8009,44804
+etch,2007,util-linux,C Header,63,387,609,2074
+etch,2007,util-linux,HTML,2,107,0,2715
+etch,2007,util-linux,Makefile,13,270,110,810
+etch,2007,util-linux,Perl,2,40,47,116
+etch,2007,util-linux,Shell,7,50,214,580
+etch,2007,util-linux,SystemVerilog,1,11,15,45
+etch,2007,tar,Autoconf,13,613,477,4659
+etch,2007,tar,Automake,6,194,252,435
+etch,2007,tar,C,141,6904,8756,39220
+etch,2007,tar,C Header,99,1600,3833,6581
+etch,2007,tar,Happy,1,156,0,1362
+etch,2007,tar,Shell,3,78,184,362
+etch,2007,tar,TeX,1,590,2464,4032
+etch,2007,sysvinit,C,18,958,1589,5634
+etch,2007,sysvinit,C Header,6,38,80,193
+etch,2007,sysvinit,Makefile,1,28,15,105
+etch,2007,shadow,Autoconf,31,1430,561,13487
+etch,2007,shadow,Automake,26,155,29,877
+etch,2007,shadow,C,97,3727,7822,19901
+etch,2007,shadow,C Header,18,161,366,566
+etch,2007,shadow,Happy,1,81,0,896
+etch,2007,shadow,Perl,1,8,44,33
+etch,2007,shadow,Shell,4,730,915,6422
+etch,2007,shadow,XML,41,227,60,6220
+etch,2007,sed,Alex,1,4,0,309
+etch,2007,sed,Autoconf,10,482,277,3311
+etch,2007,sed,Automake,5,40,16,169
+etch,2007,sed,C,60,3140,4049,20060
+etch,2007,sed,C Header,19,541,959,2538
+etch,2007,sed,Happy,1,56,0,353
+etch,2007,sed,Shell,5,98,246,727
+etch,2007,sed,TeX,1,588,2414,3994
+etch,2007,pam,Autoconf,3,94,137,445
+etch,2007,pam,BASH,2,10,7,75
+etch,2007,pam,C,92,4446,4081,18818
+etch,2007,pam,C Header,22,447,763,1079
+etch,2007,pam,HTML,1,3,0,18
+etch,2007,pam,Happy,2,81,0,416
+etch,2007,pam,Makefile,48,483,431,1293
+etch,2007,pam,Perl,2,68,41,222
+etch,2007,pam,Shell,8,95,159,422
+etch,2007,ncurses,Ada,139,1862,6516,12886
+etch,2007,ncurses,Autoconf,25,1168,1446,4939
+etch,2007,ncurses,Batch,4,33,0,326
+etch,2007,ncurses,C,306,8585,19884,57186
+etch,2007,ncurses,C Header,30,1235,1872,5495
+etch,2007,ncurses,C++,9,335,364,1930
+etch,2007,ncurses,HTML,227,4236,3887,40831
+etch,2007,ncurses,Makefile,1,18,36,76
+etch,2007,ncurses,Module-Definition,4,0,0,649
+etch,2007,ncurses,Perl,2,28,61,162
+etch,2007,ncurses,Shell,24,131,789,1733
+etch,2007,mawk,Autoconf,2,28,37,108
+etch,2007,mawk,Batch,2,25,0,165
+etch,2007,mawk,C,39,2335,2452,11959
+etch,2007,mawk,C Header,28,413,843,1049
+etch,2007,mawk,Happy,1,229,0,1144
+etch,2007,mawk,Makefile,1,7,6,11
+etch,2007,mawk,Module-Definition,1,0,0,2
+etch,2007,mawk,Shell,2,48,27,90
+etch,2007,hostname,C,1,48,58,276
+etch,2007,hostname,Forth,1,0,0,85
+etch,2007,hostname,Makefile,1,7,2,15
+etch,2007,gzip,Assembly,1,22,39,179
+etch,2007,gzip,Autoconf,10,212,176,1338
+etch,2007,gzip,Automake,1,19,14,77
+etch,2007,gzip,Batch,1,0,0,18
+etch,2007,gzip,C,26,1114,2185,5971
+etch,2007,gzip,C Header,12,158,229,683
+etch,2007,gzip,Module-Definition,2,0,0,5
+etch,2007,gzip,Shell,3,61,81,234
+etch,2007,gzip,TeX,1,601,1999,3742
+etch,2007,grep,Autoconf,14,568,217,2933
+etch,2007,grep,Automake,9,30,15,135
+etch,2007,grep,C,55,3321,5222,19001
+etch,2007,grep,C Header,28,572,1205,1839
+etch,2007,grep,Happy,1,56,0,353
+etch,2007,grep,Makefile,1,43,34,260
+etch,2007,grep,RPM Specfile,1,40,0,128
+etch,2007,grep,Shell,14,127,153,411
+etch,2007,grep,TeX,1,612,1928,3660
+etch,2007,glibc,Alex,17,389,0,2909
+etch,2007,glibc,Autoconf,47,809,563,6628
+etch,2007,glibc,Batch,1,4,0,22
+etch,2007,glibc,C,6047,70626,141568,559312
+etch,2007,glibc,C Header,1944,26629,57437,184341
+etch,2007,glibc,GNU Style Assembly,1323,23042,56907,152881
+etch,2007,glibc,HTML,1,110,0,929
+etch,2007,glibc,Happy,1,55,0,355
+etch,2007,glibc,Makefile,190,1882,2394,6341
+etch,2007,glibc,Module-Definition,18,158,0,1910
+etch,2007,glibc,Perl,6,305,293,1970
+etch,2007,glibc,Shell,52,486,918,4087
+etch,2007,findutils,Autoconf,17,878,561,7359
+etch,2007,findutils,Automake,12,135,112,593
+etch,2007,findutils,C,87,3962,5862,26822
+etch,2007,findutils,C Header,56,776,1852,2379
+etch,2007,findutils,Shell,3,111,234,496
+etch,2007,findutils,TeX,1,606,2502,4102
+etch,2007,dpkg,Autoconf,32,1429,1006,12630
+etch,2007,dpkg,Automake,23,122,26,379
+etch,2007,dpkg,C,79,3086,4352,21773
+etch,2007,dpkg,C Header,37,655,1319,2625
+etch,2007,dpkg,C++,19,546,476,4015
+etch,2007,dpkg,Happy,1,56,0,325
+etch,2007,dpkg,Makefile,1,8,28,21
+etch,2007,dpkg,Perl,21,653,366,5806
+etch,2007,dpkg,Shell,9,175,129,1539
+etch,2007,debianutils,Autoconf,3,143,62,1367
+etch,2007,debianutils,Automake,3,10,8,18
+etch,2007,debianutils,C,3,69,58,563
+etch,2007,debianutils,Perl,1,3,5,32
+etch,2007,debianutils,Shell,7,84,145,685
+etch,2007,debconf,Forth,2,2,0,9
+etch,2007,debconf,Makefile,3,18,18,116
+etch,2007,debconf,Perl,138,3806,943,12648
+etch,2007,debconf,Python,1,10,24,130
+etch,2007,debconf,Shell,5,34,74,219
+etch,2007,coreutils,Alex,810,65,0,3745
+etch,2007,coreutils,Autoconf,54,2142,816,27188
+etch,2007,coreutils,Automake,50,276,203,1546
+etch,2007,coreutils,C,287,12978,18006,74041
+etch,2007,coreutils,C Header,147,1527,4082,5469
+etch,2007,coreutils,Happy,1,157,0,1373
+etch,2007,coreutils,Perl,17,412,579,2426
+etch,2007,coreutils,SWIG,417,54,0,3298
+etch,2007,coreutils,Shell,221,2482,1537,9068
+etch,2007,coreutils,TeX,1,621,2554,4216
+etch,2007,bash,Autoconf,21,1341,1056,5227
+etch,2007,bash,BASH,42,447,1219,2161
+etch,2007,bash,C,225,14676,15782,87777
+etch,2007,bash,C Header,112,2069,3657,6544
+etch,2007,bash,Emacs Lisp,1,23,66,88
+etch,2007,bash,GNU Style Assembly,2,11,0,68
+etch,2007,bash,Happy,2,667,0,4659
+etch,2007,bash,Makefile,3,49,34,110
+etch,2007,bash,Module-Definition,43,2055,12,11719
+etch,2007,bash,Shell,23,350,698,2766
+etch,2007,bash,TeX,2,1183,3480,6447
+etch,2007,base-passwd,ASP.NET,2,0,0,57
+etch,2007,base-passwd,Autoconf,3,18,9,44
+etch,2007,base-passwd,C,1,219,124,887
+etch,2007,base-passwd,C Header,1,0,0,1
+etch,2007,base-passwd,Makefile,2,8,0,16
+etch,2007,base-passwd,Shell,1,51,47,153
+etch,2007,perl,Autoconf,2,16,23,69
+etch,2007,perl,Batch,12,93,13,419
+etch,2007,perl,C,115,12593,17035,122934
+etch,2007,perl,C Header,132,7577,22231,45084
+etch,2007,perl,C++,3,87,228,444
+etch,2007,perl,Emacs Lisp,1,583,1772,6121
+etch,2007,perl,HTML,1,19,2,98
+etch,2007,perl,Happy,2,125,0,1119
+etch,2007,perl,Java,2,6,1,23
+etch,2007,perl,Makefile,10,737,789,3552
+etch,2007,perl,Mint,1,53,0,176
+etch,2007,perl,Module-Definition,2,0,0,1345
+etch,2007,perl,Perl,752,36154,26036,193389
+etch,2007,perl,Shell,114,2033,4618,15615
+etch,2007,perl,YAML,4,5,6,276
+etch,2007,e2fsprogs,Autoconf,73,885,880,9779
+etch,2007,e2fsprogs,Batch,1,0,0,5
+etch,2007,e2fsprogs,C,261,9502,10289,60029
+etch,2007,e2fsprogs,C Header,88,1793,2930,6574
+etch,2007,e2fsprogs,Happy,1,56,0,325
+etch,2007,e2fsprogs,Perl,2,5,5,164
+etch,2007,e2fsprogs,RPM Specfile,1,26,0,170
+etch,2007,e2fsprogs,Shell,6,33,58,290
+etch,2007,e2fsprogs,TeX,2,1008,1882,3948
+etch,2007,diffutils,Autoconf,10,410,152,2193
+etch,2007,diffutils,Automake,7,43,74,99
+etch,2007,diffutils,Batch,1,30,0,231
+etch,2007,diffutils,C,51,3256,4627,16897
+etch,2007,diffutils,C Header,21,370,793,1004
+etch,2007,diffutils,Shell,2,58,80,210
+etch,2007,diffutils,TeX,1,605,1995,3764
+etch,2007,attr,Autoconf,4,41,25,168
+etch,2007,attr,C,13,273,316,2069
+etch,2007,attr,C Header,6,49,123,156
+etch,2007,attr,Makefile,21,136,72,342
+etch,2007,attr,Perl,2,47,16,329
+etch,2007,acl,Autoconf,4,45,26,166
+etch,2007,acl,C,61,840,1348,4874
+etch,2007,acl,C Header,13,143,143,446
+etch,2007,acl,Makefile,19,128,65,346
+etch,2007,acl,Perl,1,25,15,233
+etch,2007,acl,Shell,1,6,3,36
+lenny,2009,util-linux,Autoconf,19,1111,397,9327
+lenny,2009,util-linux,Automake,16,144,5,503
+lenny,2009,util-linux,BASH,37,447,637,893
+lenny,2009,util-linux,C,121,6079,7327,43352
+lenny,2009,util-linux,C Header,53,332,522,1556
+lenny,2009,util-linux,Perl,2,40,47,116
+lenny,2009,util-linux,Shell,7,140,186,723
+lenny,2009,util-linux,TeX,1,606,2502,4102
+lenny,2009,tar,Autoconf,13,549,416,6393
+lenny,2009,tar,Automake,6,62,86,197
+lenny,2009,tar,C,163,7449,9884,44514
+lenny,2009,tar,C Header,101,1897,4593,8275
+lenny,2009,tar,Happy,1,161,0,1398
+lenny,2009,tar,Makefile,1,649,358,740
+lenny,2009,tar,Shell,3,103,203,525
+lenny,2009,tar,TeX,1,702,2839,5444
+lenny,2009,sysvinit,C,18,958,1589,5634
+lenny,2009,sysvinit,C Header,6,38,80,193
+lenny,2009,sysvinit,Makefile,1,28,15,105
+lenny,2009,shadow,Autoconf,33,1572,628,13827
+lenny,2009,shadow,Automake,26,117,29,849
+lenny,2009,shadow,C,109,3988,8717,21949
+lenny,2009,shadow,C Header,18,174,382,583
+lenny,2009,shadow,Happy,1,81,0,895
+lenny,2009,shadow,Makefile,2,12,0,31
+lenny,2009,shadow,Perl,1,8,44,33
+lenny,2009,shadow,Shell,4,754,933,6629
+lenny,2009,shadow,XML,98,253,71,8099
+lenny,2009,sed,Alex,1,4,0,309
+lenny,2009,sed,Autoconf,10,482,277,3311
+lenny,2009,sed,Automake,5,40,16,169
+lenny,2009,sed,C,60,3140,4049,20060
+lenny,2009,sed,C Header,19,541,959,2538
+lenny,2009,sed,Happy,1,56,0,353
+lenny,2009,sed,Shell,5,98,246,727
+lenny,2009,sed,TeX,1,588,2414,3994
+lenny,2009,pam,Autoconf,63,3644,1198,35104
+lenny,2009,pam,Automake,59,531,176,1352
+lenny,2009,pam,BASH,1,3,6,34
+lenny,2009,pam,C,138,6431,7276,29333
+lenny,2009,pam,C Header,28,510,1025,1451
+lenny,2009,pam,HTML,1,0,0,21
+lenny,2009,pam,Happy,2,81,0,426
+lenny,2009,pam,Makefile,2,5,0,11
+lenny,2009,pam,Perl,2,68,41,222
+lenny,2009,pam,Shell,61,633,934,5998
+lenny,2009,pam,XML,208,1436,189,19764
+lenny,2009,ncurses,Ada,138,1576,6446,10611
+lenny,2009,ncurses,Autoconf,26,1165,1594,5371
+lenny,2009,ncurses,Batch,4,37,0,434
+lenny,2009,ncurses,C,315,9043,20433,56897
+lenny,2009,ncurses,C Header,31,1259,1994,6036
+lenny,2009,ncurses,C++,9,354,410,1935
+lenny,2009,ncurses,HTML,231,4433,4142,42587
+lenny,2009,ncurses,Makefile,1,18,70,77
+lenny,2009,ncurses,Module-Definition,4,0,0,649
+lenny,2009,ncurses,Perl,2,29,89,162
+lenny,2009,ncurses,Shell,27,155,1096,1900
+lenny,2009,mawk,Autoconf,2,28,37,108
+lenny,2009,mawk,Batch,2,25,0,165
+lenny,2009,mawk,C,39,2335,2452,11959
+lenny,2009,mawk,C Header,28,413,843,1049
+lenny,2009,mawk,Happy,1,229,0,1144
+lenny,2009,mawk,Makefile,1,7,6,11
+lenny,2009,mawk,Module-Definition,1,0,0,2
+lenny,2009,mawk,Shell,2,48,27,90
+lenny,2009,hostname,C,1,48,58,276
+lenny,2009,hostname,Forth,1,0,0,85
+lenny,2009,hostname,Makefile,1,7,2,16
+lenny,2009,gzip,Assembly,1,22,39,179
+lenny,2009,gzip,Autoconf,15,340,253,2687
+lenny,2009,gzip,Automake,3,32,41,94
+lenny,2009,gzip,Batch,1,0,0,18
+lenny,2009,gzip,C,35,1333,2485,7009
+lenny,2009,gzip,C Header,31,437,1035,1788
+lenny,2009,gzip,Makefile,1,96,66,154
+lenny,2009,gzip,Module-Definition,2,0,0,5
+lenny,2009,gzip,Shell,3,92,185,475
+lenny,2009,gzip,TeX,1,691,2698,4981
+lenny,2009,grep,Autoconf,13,544,248,4332
+lenny,2009,grep,Automake,9,27,15,128
+lenny,2009,grep,C,58,3387,5367,19424
+lenny,2009,grep,C Header,29,577,1242,1876
+lenny,2009,grep,Happy,1,56,0,353
+lenny,2009,grep,RPM Specfile,1,13,1,62
+lenny,2009,grep,Shell,18,215,329,936
+lenny,2009,grep,TeX,1,624,2601,4257
+lenny,2009,glibc,Alex,17,389,0,2909
+lenny,2009,glibc,Autoconf,57,823,580,6949
+lenny,2009,glibc,Batch,1,4,0,22
+lenny,2009,glibc,C,7133,79120,156418,606120
+lenny,2009,glibc,C Header,2150,29208,62333,275668
+lenny,2009,glibc,C++,8,27,5,115
+lenny,2009,glibc,GNU Style Assembly,1453,24499,60941,169455
+lenny,2009,glibc,HTML,1,110,0,929
+lenny,2009,glibc,Happy,1,55,0,355
+lenny,2009,glibc,Makefile,207,1949,2491,6934
+lenny,2009,glibc,Module-Definition,18,158,0,1952
+lenny,2009,glibc,Perl,7,313,295,2010
+lenny,2009,glibc,Shell,56,530,1005,4230
+lenny,2009,findutils,Autoconf,18,1177,773,14198
+lenny,2009,findutils,Automake,14,911,535,1594
+lenny,2009,findutils,C,206,6641,10868,42174
+lenny,2009,findutils,C Header,108,1535,3942,6421
+lenny,2009,findutils,Happy,1,161,0,1399
+lenny,2009,findutils,Shell,24,296,457,1331
+lenny,2009,findutils,TeX,2,1306,5329,9537
+lenny,2009,dpkg,Autoconf,19,884,408,6887
+lenny,2009,dpkg,Automake,12,109,19,532
+lenny,2009,dpkg,C,55,2652,3223,16403
+lenny,2009,dpkg,C Header,22,544,848,2202
+lenny,2009,dpkg,C++,19,550,478,4038
+lenny,2009,dpkg,LiveScript,1,9,0,269
+lenny,2009,dpkg,Perl,56,1917,1483,12102
+lenny,2009,dpkg,Shell,8,172,143,1450
+lenny,2009,debianutils,Autoconf,3,157,62,1395
+lenny,2009,debianutils,Automake,3,10,8,18
+lenny,2009,debianutils,C,3,70,58,583
+lenny,2009,debianutils,Shell,8,114,178,897
+lenny,2009,debconf,Forth,2,2,0,9
+lenny,2009,debconf,Makefile,3,18,15,120
+lenny,2009,debconf,Perl,138,3802,975,12920
+lenny,2009,debconf,Python,1,15,25,128
+lenny,2009,debconf,Shell,5,34,74,222
+lenny,2009,coreutils,Alex,909,65,0,3980
+lenny,2009,coreutils,Autoconf,39,2730,2259,37970
+lenny,2009,coreutils,Automake,35,345,465,1581
+lenny,2009,coreutils,C,430,15716,23209,93127
+lenny,2009,coreutils,C Header,214,2356,6174,11183
+lenny,2009,coreutils,Happy,1,161,0,1398
+lenny,2009,coreutils,Makefile,4,1511,869,1549
+lenny,2009,coreutils,Perl,18,534,803,2620
+lenny,2009,coreutils,SWIG,505,54,0,3387
+lenny,2009,coreutils,Shell,334,4389,5827,10627
+lenny,2009,coreutils,TeX,1,700,2827,5435
+lenny,2009,bash,Autoconf,21,1362,1071,5284
+lenny,2009,bash,BASH,42,447,1219,2161
+lenny,2009,bash,C,228,14628,15741,89165
+lenny,2009,bash,C Header,110,2015,3660,6369
+lenny,2009,bash,Emacs Lisp,1,23,66,88
+lenny,2009,bash,GNU Style Assembly,2,11,0,68
+lenny,2009,bash,HTML,1,0,0,822
+lenny,2009,bash,Happy,2,672,0,4684
+lenny,2009,bash,Makefile,3,49,34,110
+lenny,2009,bash,Module-Definition,43,2059,12,11772
+lenny,2009,bash,Shell,23,350,698,2766
+lenny,2009,bash,TeX,2,1183,3480,6447
+lenny,2009,base-passwd,ASP.NET,2,0,0,57
+lenny,2009,base-passwd,Autoconf,2,19,10,42
+lenny,2009,base-passwd,C,1,219,124,887
+lenny,2009,base-passwd,C Header,1,0,0,1
+lenny,2009,base-passwd,Makefile,2,8,0,16
+lenny,2009,base-passwd,Shell,1,51,47,153
+lenny,2009,perl,Autoconf,1,4,18,5
+lenny,2009,perl,Batch,12,93,13,419
+lenny,2009,perl,C,135,15810,22695,143558
+lenny,2009,perl,C Header,147,7026,12719,44040
+lenny,2009,perl,C++,10,287,291,2011
+lenny,2009,perl,Emacs Lisp,1,684,2242,7515
+lenny,2009,perl,HTML,1,19,2,98
+lenny,2009,perl,Happy,2,128,0,1646
+lenny,2009,perl,Makefile,9,778,837,3654
+lenny,2009,perl,Mint,1,53,0,176
+lenny,2009,perl,Perl,1018,60078,38179,281338
+lenny,2009,perl,Shell,122,2161,4709,17865
+lenny,2009,perl,XML,27,243,0,2012
+lenny,2009,perl,YAML,2,2,0,489
+lenny,2009,e2fsprogs,Autoconf,75,967,899,10947
+lenny,2009,e2fsprogs,C,273,11488,12131,72399
+lenny,2009,e2fsprogs,C Header,92,1868,3084,7017
+lenny,2009,e2fsprogs,Happy,1,56,0,325
+lenny,2009,e2fsprogs,Perl,2,5,5,165
+lenny,2009,e2fsprogs,Python,2,4,2,23
+lenny,2009,e2fsprogs,RPM Specfile,1,32,3,204
+lenny,2009,e2fsprogs,Shell,7,43,67,322
+lenny,2009,e2fsprogs,TeX,2,1011,2951,5341
+lenny,2009,diffutils,Autoconf,10,410,152,2193
+lenny,2009,diffutils,Automake,7,43,74,99
+lenny,2009,diffutils,Batch,1,30,0,231
+lenny,2009,diffutils,C,51,3256,4627,16897
+lenny,2009,diffutils,C Header,21,370,793,1004
+lenny,2009,diffutils,Shell,2,58,80,210
+lenny,2009,diffutils,TeX,1,605,1995,3764
+lenny,2009,attr,Autoconf,4,44,25,189
+lenny,2009,attr,C,15,308,355,2334
+lenny,2009,attr,C Header,7,57,142,173
+lenny,2009,attr,Makefile,21,137,72,363
+lenny,2009,attr,Perl,1,25,15,233
+lenny,2009,acl,Autoconf,4,45,30,167
+lenny,2009,acl,C,61,831,1388,4908
+lenny,2009,acl,C Header,14,149,162,460
+lenny,2009,acl,Makefile,20,135,68,373
+lenny,2009,acl,Perl,1,25,15,233
+lenny,2009,acl,Shell,1,6,3,36
+squeeze,2011,util-linux,Autoconf,36,2597,1043,21436
+squeeze,2011,util-linux,Automake,29,255,77,886
+squeeze,2011,util-linux,BASH,57,668,1002,1283
+squeeze,2011,util-linux,C,234,9482,11253,61718
+squeeze,2011,util-linux,C Header,71,569,794,2399
+squeeze,2011,util-linux,Perl,2,21,43,80
+squeeze,2011,util-linux,Shell,10,899,1310,7452
+squeeze,2011,util-linux,TeX,1,606,2502,4102
+squeeze,2011,util-linux,XML,3,8,0,119
+squeeze,2011,tar,Autoconf,16,1260,1133,10806
+squeeze,2011,tar,Automake,7,883,538,1415
+squeeze,2011,tar,C,198,8214,12049,49870
+squeeze,2011,tar,C Header,119,2372,5906,12115
+squeeze,2011,tar,Happy,1,168,0,1404
+squeeze,2011,tar,Makefile,1,3,0,5
+squeeze,2011,tar,Shell,4,109,230,723
+squeeze,2011,tar,TeX,1,732,2946,5629
+squeeze,2011,sysvinit,C,19,1128,1967,6849
+squeeze,2011,sysvinit,C Header,6,39,163,200
+squeeze,2011,sysvinit,Makefile,2,32,20,133
+squeeze,2011,shadow,Autoconf,34,1898,754,15227
+squeeze,2011,shadow,Automake,26,126,41,896
+squeeze,2011,shadow,C,125,4600,11146,27920
+squeeze,2011,shadow,C Header,19,224,793,796
+squeeze,2011,shadow,Happy,1,81,0,896
+squeeze,2011,shadow,Makefile,2,11,0,49
+squeeze,2011,shadow,Perl,1,8,44,33
+squeeze,2011,shadow,Shell,4,894,1233,7639
+squeeze,2011,shadow,XML,102,263,3080,9432
+squeeze,2011,sed,Alex,1,4,0,326
+squeeze,2011,sed,Autoconf,9,614,493,5955
+squeeze,2011,sed,Automake,5,36,24,159
+squeeze,2011,sed,C,72,3123,4224,19806
+squeeze,2011,sed,C Header,44,1210,2652,5885
+squeeze,2011,sed,Makefile,1,301,192,663
+squeeze,2011,sed,Shell,5,136,299,935
+squeeze,2011,sed,TeX,1,731,2938,5618
+squeeze,2011,pam,Autoconf,66,4344,1350,41114
+squeeze,2011,pam,Automake,62,541,189,1484
+squeeze,2011,pam,BASH,1,3,6,34
+squeeze,2011,pam,C,153,7097,7964,33227
+squeeze,2011,pam,C Header,32,527,1132,1530
+squeeze,2011,pam,HTML,1,0,0,21
+squeeze,2011,pam,Happy,2,81,0,426
+squeeze,2011,pam,Makefile,2,5,0,11
+squeeze,2011,pam,Perl,2,68,41,222
+squeeze,2011,pam,Shell,66,777,1241,7027
+squeeze,2011,pam,XML,221,1514,199,21768
+squeeze,2011,ncurses,Ada,138,1575,6446,10610
+squeeze,2011,ncurses,Autoconf,32,1349,1887,6508
+squeeze,2011,ncurses,Batch,4,37,0,434
+squeeze,2011,ncurses,C,329,10098,21570,65349
+squeeze,2011,ncurses,C Header,33,1330,2086,6876
+squeeze,2011,ncurses,C++,9,355,410,1939
+squeeze,2011,ncurses,HTML,233,4447,4204,42850
+squeeze,2011,ncurses,Makefile,1,18,69,77
+squeeze,2011,ncurses,Module-Definition,4,0,0,649
+squeeze,2011,ncurses,Perl,2,29,89,162
+squeeze,2011,ncurses,Shell,31,206,1260,2134
+squeeze,2011,mawk,Autoconf,2,28,37,108
+squeeze,2011,mawk,Batch,2,25,0,165
+squeeze,2011,mawk,C,39,2335,2452,11959
+squeeze,2011,mawk,C Header,28,413,843,1049
+squeeze,2011,mawk,Happy,1,229,0,1144
+squeeze,2011,mawk,Makefile,1,7,6,11
+squeeze,2011,mawk,Module-Definition,1,0,0,2
+squeeze,2011,mawk,Shell,2,48,27,90
+squeeze,2011,hostname,C,1,69,79,402
+squeeze,2011,hostname,Forth,1,0,0,85
+squeeze,2011,hostname,Makefile,1,7,2,25
+squeeze,2011,gzip,Assembly,1,22,39,179
+squeeze,2011,gzip,Autoconf,15,340,253,2687
+squeeze,2011,gzip,Automake,3,32,41,94
+squeeze,2011,gzip,Batch,1,0,0,18
+squeeze,2011,gzip,C,35,1333,2485,7009
+squeeze,2011,gzip,C Header,31,437,1035,1788
+squeeze,2011,gzip,Makefile,1,96,66,154
+squeeze,2011,gzip,Module-Definition,2,0,0,5
+squeeze,2011,gzip,Shell,3,92,185,475
+squeeze,2011,gzip,TeX,1,691,2698,4981
+squeeze,2011,grep,Autoconf,9,538,444,9836
+squeeze,2011,grep,Automake,7,29,103,156
+squeeze,2011,grep,BASH,1,20,7,73
+squeeze,2011,grep,C,156,4142,7121,27234
+squeeze,2011,grep,C Header,83,1876,4667,12270
+squeeze,2011,grep,Makefile,3,889,673,1873
+squeeze,2011,grep,Shell,72,625,1143,3614
+squeeze,2011,grep,TeX,1,732,2946,5629
+squeeze,2011,glibc,Alex,17,379,0,2902
+squeeze,2011,glibc,Autoconf,60,855,674,7204
+squeeze,2011,glibc,Batch,1,4,0,22
+squeeze,2011,glibc,C,7537,83574,163306,632512
+squeeze,2011,glibc,C Header,2227,30510,64925,282649
+squeeze,2011,glibc,C++,8,27,5,115
+squeeze,2011,glibc,GNU Style Assembly,1554,26195,63786,181235
+squeeze,2011,glibc,HTML,1,110,0,929
+squeeze,2011,glibc,Happy,1,55,0,355
+squeeze,2011,glibc,Makefile,216,2134,2618,7801
+squeeze,2011,glibc,Module-Definition,19,277,0,2669
+squeeze,2011,glibc,Perl,7,313,295,2011
+squeeze,2011,glibc,Shell,60,572,1083,4483
+squeeze,2011,findutils,Autoconf,18,1179,775,14209
+squeeze,2011,findutils,Automake,14,913,537,1607
+squeeze,2011,findutils,C,206,6654,10909,42290
+squeeze,2011,findutils,C Header,108,1535,3942,6421
+squeeze,2011,findutils,Happy,1,161,0,1399
+squeeze,2011,findutils,Shell,24,296,458,1334
+squeeze,2011,findutils,TeX,2,1400,5654,10870
+squeeze,2011,dpkg,Autoconf,22,1551,1412,10074
+squeeze,2011,dpkg,Automake,14,176,35,915
+squeeze,2011,dpkg,C,97,4434,4406,22487
+squeeze,2011,dpkg,C Header,47,765,1327,2561
+squeeze,2011,dpkg,C++,20,619,464,4115
+squeeze,2011,dpkg,LiveScript,1,9,0,269
+squeeze,2011,dpkg,Perl,73,2713,1900,16531
+squeeze,2011,dpkg,Shell,12,254,294,2512
+squeeze,2011,debianutils,Autoconf,3,180,65,1621
+squeeze,2011,debianutils,Automake,3,10,8,17
+squeeze,2011,debianutils,C,2,82,52,579
+squeeze,2011,debianutils,Shell,4,93,136,450
+squeeze,2011,debconf,Forth,2,3,0,16
+squeeze,2011,debconf,Makefile,3,17,17,121
+squeeze,2011,debconf,Perl,138,3816,993,12979
+squeeze,2011,debconf,Python,1,15,25,144
+squeeze,2011,debconf,Shell,6,37,76,224
+squeeze,2011,coreutils,Alex,103,0,0,725
+squeeze,2011,coreutils,Autoconf,10,689,604,18805
+squeeze,2011,coreutils,Automake,7,170,221,1536
+squeeze,2011,coreutils,C,644,20026,30802,117281
+squeeze,2011,coreutils,C Header,291,4100,10441,24371
+squeeze,2011,coreutils,Happy,1,168,0,1404
+squeeze,2011,coreutils,Makefile,6,2484,1651,3763
+squeeze,2011,coreutils,Perl,64,1332,1808,5540
+squeeze,2011,coreutils,Shell,423,5353,7514,12648
+squeeze,2011,coreutils,TeX,1,731,2945,5654
+squeeze,2011,bash,Autoconf,19,1374,1062,5425
+squeeze,2011,bash,BASH,43,464,1242,2214
+squeeze,2011,bash,C,242,16164,17235,97330
+squeeze,2011,bash,C Header,113,2148,3824,6799
+squeeze,2011,bash,Emacs Lisp,1,23,66,88
+squeeze,2011,bash,GNU Style Assembly,2,11,0,68
+squeeze,2011,bash,HTML,2,1509,0,11886
+squeeze,2011,bash,Happy,2,757,0,5570
+squeeze,2011,bash,Makefile,3,48,36,110
+squeeze,2011,bash,Module-Definition,44,2428,11,13210
+squeeze,2011,bash,Shell,24,354,707,2785
+squeeze,2011,bash,TeX,1,731,2923,5596
+squeeze,2011,base-passwd,ASP.NET,2,0,0,57
+squeeze,2011,base-passwd,Autoconf,2,19,10,42
+squeeze,2011,base-passwd,C,1,219,124,887
+squeeze,2011,base-passwd,C Header,1,0,0,1
+squeeze,2011,base-passwd,Makefile,2,8,0,16
+squeeze,2011,base-passwd,Shell,1,51,47,153
+squeeze,2011,perl,Autoconf,2,13,102,9
+squeeze,2011,perl,Batch,12,93,13,419
+squeeze,2011,perl,C,150,18100,24130,151934
+squeeze,2011,perl,C Header,153,7296,13511,47102
+squeeze,2011,perl,C++,10,288,291,2042
+squeeze,2011,perl,D,1,1,4,4
+squeeze,2011,perl,Emacs Lisp,1,684,2242,7515
+squeeze,2011,perl,HTML,1,19,2,98
+squeeze,2011,perl,Happy,2,129,0,1650
+squeeze,2011,perl,Makefile,9,781,855,3678
+squeeze,2011,perl,Mint,1,53,0,176
+squeeze,2011,perl,Pascal,1,16,5,24
+squeeze,2011,perl,Perl,1154,65384,40717,307549
+squeeze,2011,perl,Shell,124,2206,4867,18140
+squeeze,2011,perl,XML,27,243,0,2012
+squeeze,2011,perl,YAML,11,14,10,914
+squeeze,2011,e2fsprogs,Autoconf,79,1044,949,11624
+squeeze,2011,e2fsprogs,C,274,11753,12419,74594
+squeeze,2011,e2fsprogs,C Header,94,1875,3067,7111
+squeeze,2011,e2fsprogs,Happy,1,56,0,325
+squeeze,2011,e2fsprogs,Perl,2,5,5,165
+squeeze,2011,e2fsprogs,Python,2,4,2,23
+squeeze,2011,e2fsprogs,RPM Specfile,1,32,3,206
+squeeze,2011,e2fsprogs,Shell,8,48,87,344
+squeeze,2011,e2fsprogs,TeX,2,1011,2951,5341
+squeeze,2011,diffutils,Autoconf,9,546,424,10714
+squeeze,2011,diffutils,Automake,7,47,67,119
+squeeze,2011,diffutils,Batch,1,30,0,229
+squeeze,2011,diffutils,C,196,5481,8889,34087
+squeeze,2011,diffutils,C Header,104,2141,5475,15256
+squeeze,2011,diffutils,Makefile,5,1100,892,2417
+squeeze,2011,diffutils,Shell,53,516,1010,3325
+squeeze,2011,diffutils,TeX,1,731,2948,5654
+squeeze,2011,attr,Autoconf,4,45,53,192
+squeeze,2011,attr,C,15,311,386,2343
+squeeze,2011,attr,C Header,7,58,191,170
+squeeze,2011,attr,Makefile,21,159,371,409
+squeeze,2011,attr,Perl,1,28,55,260
+squeeze,2011,attr,Shell,1,701,1084,6621
+squeeze,2011,acl,Autoconf,4,47,45,189
+squeeze,2011,acl,C,62,854,1476,5017
+squeeze,2011,acl,C Header,15,157,288,469
+squeeze,2011,acl,Makefile,20,158,353,415
+squeeze,2011,acl,Perl,1,28,41,260
+squeeze,2011,acl,Shell,2,707,1087,6657
+wheezy,2013,util-linux,Autoconf,44,3379,1497,26438
+wheezy,2013,util-linux,Automake,34,337,134,1121
+wheezy,2013,util-linux,BASH,79,1025,1282,2123
+wheezy,2013,util-linux,C,260,12468,14648,76436
+wheezy,2013,util-linux,C Header,77,811,883,3296
+wheezy,2013,util-linux,Perl,2,21,43,80
+wheezy,2013,util-linux,Shell,11,1064,1700,8336
+wheezy,2013,util-linux,TeX,1,606,2502,4102
+wheezy,2013,util-linux,XML,5,10,0,183
+wheezy,2013,tar,Autoconf,16,1406,1216,13436
+wheezy,2013,tar,Automake,8,975,578,1741
+wheezy,2013,tar,C,213,8501,12782,51914
+wheezy,2013,tar,C Header,119,2506,6218,13327
+wheezy,2013,tar,Emacs Lisp,2,22,26,56
+wheezy,2013,tar,Happy,1,168,0,1412
+wheezy,2013,tar,Shell,3,106,208,546
+wheezy,2013,tar,TeX,1,735,3036,5803
+wheezy,2013,sysvinit,C,19,1128,1967,6849
+wheezy,2013,sysvinit,C Header,6,39,163,200
+wheezy,2013,sysvinit,Makefile,2,32,20,133
+wheezy,2013,shadow,Autoconf,34,1987,775,17015
+wheezy,2013,shadow,Automake,27,152,43,1001
+wheezy,2013,shadow,C,128,4759,11448,29139
+wheezy,2013,shadow,C Header,19,227,796,802
+wheezy,2013,shadow,Happy,1,81,0,896
+wheezy,2013,shadow,Makefile,2,13,0,58
+wheezy,2013,shadow,Perl,1,8,44,33
+wheezy,2013,shadow,Shell,4,1037,1549,8435
+wheezy,2013,shadow,XML,102,271,3123,10809
+wheezy,2013,sed,Alex,1,4,0,326
+wheezy,2013,sed,Autoconf,9,614,493,5955
+wheezy,2013,sed,Automake,5,36,24,159
+wheezy,2013,sed,C,72,3123,4224,19806
+wheezy,2013,sed,C Header,44,1210,2652,5885
+wheezy,2013,sed,Makefile,1,301,192,663
+wheezy,2013,sed,Shell,5,136,299,935
+wheezy,2013,sed,TeX,1,731,2938,5618
+wheezy,2013,pam,Autoconf,66,3862,1291,37973
+wheezy,2013,pam,Automake,62,542,189,1497
+wheezy,2013,pam,BASH,1,3,6,34
+wheezy,2013,pam,C,154,7132,7988,33483
+wheezy,2013,pam,C Header,32,533,1132,1552
+wheezy,2013,pam,HTML,1,0,0,21
+wheezy,2013,pam,Happy,2,81,0,426
+wheezy,2013,pam,Makefile,2,5,0,11
+wheezy,2013,pam,Perl,2,68,41,222
+wheezy,2013,pam,Shell,67,777,1242,7028
+wheezy,2013,pam,XML,221,1515,199,21822
+wheezy,2013,ncurses,Ada,138,1576,6437,10614
+wheezy,2013,ncurses,Autoconf,34,1362,1963,6450
+wheezy,2013,ncurses,Batch,4,37,0,434
+wheezy,2013,ncurses,C,332,10200,21697,66098
+wheezy,2013,ncurses,C Header,36,1401,2268,7304
+wheezy,2013,ncurses,C++,9,355,410,1939
+wheezy,2013,ncurses,HTML,239,4685,4384,43471
+wheezy,2013,ncurses,Makefile,1,18,69,77
+wheezy,2013,ncurses,Module-Definition,4,0,0,649
+wheezy,2013,ncurses,Perl,2,29,89,162
+wheezy,2013,ncurses,RPM Specfile,3,38,6,137
+wheezy,2013,ncurses,Shell,26,220,1126,1936
+wheezy,2013,mawk,Autoconf,2,28,37,108
+wheezy,2013,mawk,Batch,2,25,0,165
+wheezy,2013,mawk,C,39,2335,2452,11959
+wheezy,2013,mawk,C Header,28,413,843,1049
+wheezy,2013,mawk,Happy,1,229,0,1144
+wheezy,2013,mawk,Makefile,1,7,6,11
+wheezy,2013,mawk,Module-Definition,1,0,0,2
+wheezy,2013,mawk,Shell,2,48,27,90
+wheezy,2013,hostname,C,1,71,82,406
+wheezy,2013,hostname,Forth,1,0,0,85
+wheezy,2013,hostname,Makefile,1,7,3,24
+wheezy,2013,gzip,Autoconf,16,494,432,9299
+wheezy,2013,gzip,Automake,4,45,60,207
+wheezy,2013,gzip,C,118,3021,6422,19222
+wheezy,2013,gzip,C Header,92,1954,4774,12831
+wheezy,2013,gzip,Makefile,4,880,821,2749
+wheezy,2013,gzip,Shell,21,410,834,2034
+wheezy,2013,gzip,TeX,1,749,3208,6056
+wheezy,2013,grep,Autoconf,8,505,473,13722
+wheezy,2013,grep,Automake,6,37,95,214
+wheezy,2013,grep,C,287,6879,12890,47940
+wheezy,2013,grep,C Header,143,2822,7221,19485
+wheezy,2013,grep,Makefile,4,1466,1203,3072
+wheezy,2013,grep,Shell,98,829,1467,4309
+wheezy,2013,grep,TeX,2,1478,6158,11708
+wheezy,2013,glibc,Alex,17,378,0,2954
+wheezy,2013,glibc,Autoconf,60,852,676,7196
+wheezy,2013,glibc,Batch,1,4,0,22
+wheezy,2013,glibc,C,7642,84357,164588,636849
+wheezy,2013,glibc,C Header,2253,30934,65662,284664
+wheezy,2013,glibc,C++,8,27,5,115
+wheezy,2013,glibc,GNU Style Assembly,1678,29537,66884,205997
+wheezy,2013,glibc,HTML,1,110,0,929
+wheezy,2013,glibc,Happy,1,55,0,355
+wheezy,2013,glibc,Makefile,220,2158,2644,7945
+wheezy,2013,glibc,Module-Definition,19,283,0,2720
+wheezy,2013,glibc,Perl,7,314,295,2042
+wheezy,2013,glibc,Shell,61,580,1089,4522
+wheezy,2013,findutils,Autoconf,18,1179,775,14209
+wheezy,2013,findutils,Automake,14,913,537,1607
+wheezy,2013,findutils,C,206,6654,10909,42290
+wheezy,2013,findutils,C Header,108,1535,3942,6421
+wheezy,2013,findutils,Happy,1,161,0,1399
+wheezy,2013,findutils,Shell,24,296,458,1334
+wheezy,2013,findutils,TeX,2,1400,5654,10870
+wheezy,2013,dpkg,Autoconf,23,1682,1624,10755
+wheezy,2013,dpkg,Automake,15,177,36,988
+wheezy,2013,dpkg,C,124,5622,5863,27195
+wheezy,2013,dpkg,C Header,61,998,1955,2925
+wheezy,2013,dpkg,C++,20,619,466,4094
+wheezy,2013,dpkg,LiveScript,1,9,0,268
+wheezy,2013,dpkg,Makefile,5,16,37,38
+wheezy,2013,dpkg,Perl,77,2968,2080,17872
+wheezy,2013,dpkg,Shell,13,254,299,2506
+wheezy,2013,debianutils,Autoconf,6,334,109,2827
+wheezy,2013,debianutils,Automake,6,16,10,34
+wheezy,2013,debianutils,C,3,126,92,796
+wheezy,2013,debianutils,Shell,4,93,137,460
+wheezy,2013,debconf,Forth,2,3,0,16
+wheezy,2013,debconf,Makefile,3,18,18,123
+wheezy,2013,debconf,Perl,139,3872,1027,13145
+wheezy,2013,debconf,Python,1,16,25,131
+wheezy,2013,debconf,Shell,6,37,76,227
+wheezy,2013,coreutils,Alex,103,0,0,732
+wheezy,2013,coreutils,Autoconf,11,714,636,21904
+wheezy,2013,coreutils,Automake,7,174,223,1546
+wheezy,2013,coreutils,C,714,21336,34100,129685
+wheezy,2013,coreutils,C Header,318,4739,12171,27665
+wheezy,2013,coreutils,Happy,1,174,0,1441
+wheezy,2013,coreutils,Makefile,6,2709,1908,4611
+wheezy,2013,coreutils,Perl,66,1355,1836,5693
+wheezy,2013,coreutils,Shell,485,5677,8706,13426
+wheezy,2013,coreutils,TeX,1,737,3049,5844
+wheezy,2013,bash,Autoconf,19,1387,1071,5455
+wheezy,2013,bash,BASH,43,465,1235,2221
+wheezy,2013,bash,C,248,16200,17280,100067
+wheezy,2013,bash,C Header,114,2193,4002,7112
+wheezy,2013,bash,Emacs Lisp,1,23,66,88
+wheezy,2013,bash,GNU Style Assembly,2,11,0,68
+wheezy,2013,bash,HTML,2,1697,0,11929
+wheezy,2013,bash,Happy,2,764,0,5658
+wheezy,2013,bash,Makefile,2,11,16,22
+wheezy,2013,bash,Module-Definition,44,2443,11,13430
+wheezy,2013,bash,Shell,25,359,722,2832
+wheezy,2013,bash,TeX,1,731,2923,5596
+wheezy,2013,base-passwd,ASP.NET,2,0,0,57
+wheezy,2013,base-passwd,Autoconf,2,19,10,42
+wheezy,2013,base-passwd,C,1,219,124,887
+wheezy,2013,base-passwd,C Header,1,0,0,1
+wheezy,2013,base-passwd,Makefile,2,8,0,16
+wheezy,2013,base-passwd,Shell,1,51,47,153
+wheezy,2013,perl,Autoconf,2,13,102,9
+wheezy,2013,perl,Batch,14,95,14,439
+wheezy,2013,perl,C,145,18827,27841,155795
+wheezy,2013,perl,C Header,152,7547,14845,45070
+wheezy,2013,perl,C++,10,288,291,2042
+wheezy,2013,perl,D,1,2,12,4
+wheezy,2013,perl,HTML,1,19,2,98
+wheezy,2013,perl,Happy,2,112,0,1696
+wheezy,2013,perl,JSON,6,1,0,448
+wheezy,2013,perl,Makefile,8,757,829,3784
+wheezy,2013,perl,Pascal,1,16,5,24
+wheezy,2013,perl,Perl,1290,72059,51982,387776
+wheezy,2013,perl,Shell,123,2097,4702,18684
+wheezy,2013,perl,XML,27,243,0,2012
+wheezy,2013,perl,YAML,47,28,23,1753
+wheezy,2013,e2fsprogs,Autoconf,99,1352,1199,13820
+wheezy,2013,e2fsprogs,C,300,13867,13929,88351
+wheezy,2013,e2fsprogs,C Header,102,2079,3414,8242
+wheezy,2013,e2fsprogs,Happy,1,56,0,325
+wheezy,2013,e2fsprogs,Perl,2,5,5,166
+wheezy,2013,e2fsprogs,Python,2,4,2,23
+wheezy,2013,e2fsprogs,RPM Specfile,1,32,3,207
+wheezy,2013,e2fsprogs,Shell,10,59,90,396
+wheezy,2013,e2fsprogs,TeX,2,1011,2951,5341
+wheezy,2013,diffutils,Alex,4,0,0,8
+wheezy,2013,diffutils,Autoconf,10,619,467,13884
+wheezy,2013,diffutils,Automake,8,58,80,145
+wheezy,2013,diffutils,Batch,1,30,0,229
+wheezy,2013,diffutils,C,235,6367,11003,43305
+wheezy,2013,diffutils,C Header,124,2561,6643,18008
+wheezy,2013,diffutils,Makefile,5,1267,1071,3021
+wheezy,2013,diffutils,Perl,1,70,83,514
+wheezy,2013,diffutils,Shell,68,585,1186,3656
+wheezy,2013,diffutils,TeX,1,737,3049,5844
+wheezy,2013,attr,Autoconf,4,45,53,192
+wheezy,2013,attr,C,15,312,386,2350
+wheezy,2013,attr,C Header,7,58,191,171
+wheezy,2013,attr,Makefile,21,160,372,414
+wheezy,2013,attr,Perl,1,28,55,260
+wheezy,2013,attr,Shell,1,846,1395,7395
+wheezy,2013,acl,Autoconf,4,47,45,189
+wheezy,2013,acl,C,64,863,1518,5050
+wheezy,2013,acl,C Header,16,157,288,473
+wheezy,2013,acl,Makefile,20,158,353,417
+wheezy,2013,acl,Perl,1,28,41,260
+wheezy,2013,acl,Shell,2,852,1398,7431
+jessie,2015,util-linux,Autoconf,25,1670,952,14776
+jessie,2015,util-linux,Automake,29,481,195,2260
+jessie,2015,util-linux,BASH,145,2105,2125,4984
+jessie,2015,util-linux,C,308,17768,19134,99404
+jessie,2015,util-linux,C Header,91,1518,1609,5989
+jessie,2015,util-linux,Python,4,72,10,316
+jessie,2015,util-linux,Shell,15,1139,1755,8893
+jessie,2015,util-linux,XML,7,12,0,235
+jessie,2015,tar,Autoconf,16,1544,1484,13988
+jessie,2015,tar,Automake,7,72,81,337
+jessie,2015,tar,C,259,9581,14268,57908
+jessie,2015,tar,C Header,149,3070,7898,16325
+jessie,2015,tar,Happy,1,176,0,1447
+jessie,2015,tar,Makefile,2,1045,577,1724
+jessie,2015,tar,Shell,4,116,228,740
+jessie,2015,tar,TeX,1,750,3243,6106
+jessie,2015,sysvinit,C,19,1128,1967,6849
+jessie,2015,sysvinit,C Header,6,39,163,200
+jessie,2015,sysvinit,Makefile,2,32,20,133
+jessie,2015,shadow,Autoconf,5,123,73,945
+jessie,2015,shadow,Automake,27,158,43,1040
+jessie,2015,shadow,C,133,4610,11509,28746
+jessie,2015,shadow,C Header,21,243,829,854
+jessie,2015,shadow,Happy,1,81,0,896
+jessie,2015,shadow,Makefile,2,14,0,63
+jessie,2015,shadow,Perl,1,8,44,33
+jessie,2015,shadow,Shell,4,128,46,691
+jessie,2015,shadow,XML,108,291,3295,11451
+jessie,2015,sed,Alex,1,4,0,329
+jessie,2015,sed,Autoconf,8,871,761,8847
+jessie,2015,sed,Automake,5,36,24,157
+jessie,2015,sed,C,89,3388,4815,21919
+jessie,2015,sed,C Header,68,1852,4410,11208
+jessie,2015,sed,Makefile,1,419,272,1238
+jessie,2015,sed,Shell,4,117,276,856
+jessie,2015,sed,TeX,1,749,3208,6056
+jessie,2015,pam,Autoconf,66,4363,1363,41812
+jessie,2015,pam,Automake,62,540,189,1509
+jessie,2015,pam,BASH,1,3,6,34
+jessie,2015,pam,C,155,7291,8016,34489
+jessie,2015,pam,C Header,33,536,1136,1570
+jessie,2015,pam,HTML,1,0,0,21
+jessie,2015,pam,Happy,2,81,0,426
+jessie,2015,pam,Makefile,2,5,0,11
+jessie,2015,pam,Perl,2,65,41,222
+jessie,2015,pam,Shell,67,801,1259,7184
+jessie,2015,pam,XML,221,1525,199,22082
+jessie,2015,ncurses,Ada,138,1566,6437,10330
+jessie,2015,ncurses,Autoconf,33,1394,1970,6498
+jessie,2015,ncurses,Batch,4,37,0,434
+jessie,2015,ncurses,C,339,10756,22198,71002
+jessie,2015,ncurses,C Header,40,1468,2437,7680
+jessie,2015,ncurses,C++,9,357,410,1976
+jessie,2015,ncurses,HTML,240,4639,4390,47512
+jessie,2015,ncurses,Makefile,1,18,70,89
+jessie,2015,ncurses,Module-Definition,4,0,0,649
+jessie,2015,ncurses,Perl,2,29,89,162
+jessie,2015,ncurses,RPM Specfile,6,107,12,391
+jessie,2015,ncurses,Shell,26,225,1137,2029
+jessie,2015,mawk,Autoconf,2,28,37,108
+jessie,2015,mawk,Batch,2,25,0,165
+jessie,2015,mawk,C,39,2335,2452,11959
+jessie,2015,mawk,C Header,28,413,843,1049
+jessie,2015,mawk,Happy,1,229,0,1144
+jessie,2015,mawk,Makefile,1,7,6,11
+jessie,2015,mawk,Module-Definition,1,0,0,2
+jessie,2015,mawk,Shell,2,48,27,90
+jessie,2015,hostname,C,1,71,81,403
+jessie,2015,hostname,Makefile,1,8,2,26
+jessie,2015,gzip,Autoconf,16,491,444,9353
+jessie,2015,gzip,Automake,4,45,60,209
+jessie,2015,gzip,C,124,3031,6438,19226
+jessie,2015,gzip,C Header,92,1984,4805,12952
+jessie,2015,gzip,Makefile,4,897,845,2824
+jessie,2015,gzip,Shell,24,455,917,2193
+jessie,2015,gzip,TeX,1,751,3231,6097
+jessie,2015,grep,Autoconf,8,634,504,14302
+jessie,2015,grep,Automake,6,36,94,255
+jessie,2015,grep,C,294,6813,12796,49490
+jessie,2015,grep,C Header,142,2879,7280,19824
+jessie,2015,grep,Makefile,4,1503,1245,3179
+jessie,2015,grep,Shell,116,1008,1752,4917
+jessie,2015,grep,TeX,1,756,3286,6132
+jessie,2015,glibc,Alex,17,378,0,2954
+jessie,2015,glibc,Autoconf,17,131,156,2668
+jessie,2015,glibc,C,7743,82628,159600,638625
+jessie,2015,glibc,C Header,2251,29151,61325,279711
+jessie,2015,glibc,C++,14,41,7,192
+jessie,2015,glibc,GNU Style Assembly,2061,34326,73554,242280
+jessie,2015,glibc,Happy,1,55,0,354
+jessie,2015,glibc,Makefile,206,1898,2082,7347
+jessie,2015,glibc,Module-Definition,19,185,0,2129
+jessie,2015,glibc,Perl,7,268,251,1922
+jessie,2015,glibc,Shell,56,642,1137,4712
+jessie,2015,findutils,Autoconf,18,1179,775,14209
+jessie,2015,findutils,Automake,14,913,537,1607
+jessie,2015,findutils,C,206,6654,10909,42290
+jessie,2015,findutils,C Header,108,1535,3942,6421
+jessie,2015,findutils,Happy,1,161,0,1399
+jessie,2015,findutils,Shell,24,296,458,1334
+jessie,2015,findutils,TeX,2,1400,5654,10870
+jessie,2015,dpkg,Autoconf,23,1840,1759,11886
+jessie,2015,dpkg,Automake,15,178,36,1062
+jessie,2015,dpkg,C,131,5959,6154,28379
+jessie,2015,dpkg,C Header,61,1042,1997,3088
+jessie,2015,dpkg,C++,20,616,469,4155
+jessie,2015,dpkg,LiveScript,1,9,0,268
+jessie,2015,dpkg,Makefile,5,16,41,39
+jessie,2015,dpkg,Perl,83,3371,2249,18861
+jessie,2015,dpkg,Shell,14,1097,1774,10196
+jessie,2015,debianutils,Autoconf,9,507,146,4232
+jessie,2015,debianutils,Automake,9,22,11,49
+jessie,2015,debianutils,C,3,126,101,797
+jessie,2015,debianutils,Shell,4,93,137,460
+jessie,2015,debconf,Forth,2,3,0,16
+jessie,2015,debconf,Makefile,3,18,16,119
+jessie,2015,debconf,Perl,139,3867,1029,13116
+jessie,2015,debconf,Python,1,16,25,131
+jessie,2015,debconf,Shell,6,35,79,231
+jessie,2015,coreutils,Alex,105,0,0,753
+jessie,2015,coreutils,Autoconf,6,1218,723,21701
+jessie,2015,coreutils,Automake,2,31,46,161
+jessie,2015,coreutils,C,800,23176,35779,141204
+jessie,2015,coreutils,C Header,335,5365,13019,37113
+jessie,2015,coreutils,Happy,1,178,0,1448
+jessie,2015,coreutils,Makefile,12,3196,2510,7093
+jessie,2015,coreutils,Perl,66,1479,2064,6690
+jessie,2015,coreutils,Shell,568,6984,10733,17153
+jessie,2015,coreutils,TeX,1,756,3286,6132
+jessie,2015,bash,Autoconf,18,1253,943,4676
+jessie,2015,bash,BASH,4,38,55,146
+jessie,2015,bash,C,252,16998,18254,102975
+jessie,2015,bash,C Header,116,2271,4132,7343
+jessie,2015,bash,GNU Style Assembly,2,11,0,68
+jessie,2015,bash,HTML,3,1940,56,29588
+jessie,2015,bash,Happy,2,782,0,5856
+jessie,2015,bash,Makefile,3,48,36,110
+jessie,2015,bash,Module-Definition,44,2519,11,14082
+jessie,2015,bash,Shell,19,199,277,841
+jessie,2015,bash,TeX,1,754,3263,6128
+jessie,2015,base-passwd,ASP.NET,2,0,0,57
+jessie,2015,base-passwd,Automake,3,11,0,32
+jessie,2015,base-passwd,C,1,247,144,1102
+jessie,2015,perl,Autoconf,2,13,102,9
+jessie,2015,perl,Batch,14,92,14,416
+jessie,2015,perl,C,136,19858,31302,162092
+jessie,2015,perl,C Header,153,8187,16455,58331
+jessie,2015,perl,C++,10,288,291,2044
+jessie,2015,perl,D,1,5,12,8
+jessie,2015,perl,Happy,2,117,0,1841
+jessie,2015,perl,JSON,15,1,0,1082
+jessie,2015,perl,Makefile,6,702,840,3677
+jessie,2015,perl,Perl,1306,70302,49871,489824
+jessie,2015,perl,Shell,113,1983,4612,16688
+jessie,2015,perl,XML,31,142,0,2325
+jessie,2015,perl,YAML,51,20,15,2106
+jessie,2015,e2fsprogs,Autoconf,99,1442,1372,15435
+jessie,2015,e2fsprogs,BASH,1,7,5,20
+jessie,2015,e2fsprogs,C,307,14425,14391,92666
+jessie,2015,e2fsprogs,C Header,102,2108,3466,8410
+jessie,2015,e2fsprogs,Happy,1,56,0,325
+jessie,2015,e2fsprogs,Perl,2,5,5,170
+jessie,2015,e2fsprogs,Python,2,4,2,23
+jessie,2015,e2fsprogs,RPM Specfile,1,32,3,207
+jessie,2015,e2fsprogs,Shell,14,121,125,646
+jessie,2015,e2fsprogs,TeX,2,1204,5052,8196
+jessie,2015,diffutils,Alex,4,0,0,8
+jessie,2015,diffutils,Autoconf,9,575,486,14435
+jessie,2015,diffutils,Automake,7,55,68,142
+jessie,2015,diffutils,C,282,6901,11626,45897
+jessie,2015,diffutils,C Header,138,2811,7167,19471
+jessie,2015,diffutils,Makefile,5,1434,1217,3272
+jessie,2015,diffutils,Perl,1,23,20,627
+jessie,2015,diffutils,Shell,72,705,1369,4247
+jessie,2015,diffutils,TeX,1,751,3231,6097
+jessie,2015,attr,Autoconf,3,38,38,167
+jessie,2015,attr,C,15,312,386,2192
+jessie,2015,attr,C Header,7,58,191,171
+jessie,2015,attr,Makefile,21,160,372,415
+jessie,2015,attr,Perl,1,28,55,260
+jessie,2015,attr,Shell,1,845,1399,7411
+jessie,2015,acl,Autoconf,3,40,30,163
+jessie,2015,acl,C,64,863,1518,5051
+jessie,2015,acl,C Header,16,157,288,473
+jessie,2015,acl,Makefile,20,158,353,417
+jessie,2015,acl,Perl,1,28,41,260
+jessie,2015,acl,Shell,2,851,1402,7447
+stretch,2017,util-linux,Autoconf,29,2026,1110,17928
+stretch,2017,util-linux,Automake,32,536,245,2534
+stretch,2017,util-linux,BASH,187,2784,2832,7331
+stretch,2017,util-linux,C,329,20370,22264,111635
+stretch,2017,util-linux,C Header,94,1672,1829,6783
+stretch,2017,util-linux,Perl,1,5,4,15
+stretch,2017,util-linux,Python,4,72,10,316
+stretch,2017,util-linux,Shell,20,1551,2337,9912
+stretch,2017,util-linux,XML,9,15,0,320
+stretch,2017,tar,Autoconf,16,1574,1506,14378
+stretch,2017,tar,Automake,7,1191,695,2119
+stretch,2017,tar,C,284,10329,14745,63541
+stretch,2017,tar,C Header,154,3158,7832,16862
+stretch,2017,tar,Happy,1,178,0,1448
+stretch,2017,tar,Makefile,2,1116,610,1759
+stretch,2017,tar,Shell,4,119,228,747
+stretch,2017,tar,TeX,1,776,3337,6329
+stretch,2017,sysvinit,C,19,1128,1967,6849
+stretch,2017,sysvinit,C Header,6,39,163,200
+stretch,2017,sysvinit,Makefile,2,32,20,133
+stretch,2017,shadow,Autoconf,4,53,45,358
+stretch,2017,shadow,Automake,27,158,43,1044
+stretch,2017,shadow,C,143,4730,11586,29308
+stretch,2017,shadow,C Header,21,243,832,857
+stretch,2017,shadow,Happy,1,81,0,896
+stretch,2017,shadow,Makefile,3,15,0,76
+stretch,2017,shadow,Perl,2,25,49,127
+stretch,2017,shadow,Shell,22,346,188,2806
+stretch,2017,shadow,XML,108,302,3295,11476
+stretch,2017,sed,Alex,1,4,0,332
+stretch,2017,sed,Autoconf,6,1046,1121,10960
+stretch,2017,sed,Automake,2,22,36,83
+stretch,2017,sed,C,241,5663,9732,39868
+stretch,2017,sed,C Header,110,2641,6353,18952
+stretch,2017,sed,Makefile,7,1294,1142,3358
+stretch,2017,sed,Perl,1,4,4,8
+stretch,2017,sed,Shell,106,1522,2659,5723
+stretch,2017,sed,TeX,1,811,3690,7170
+stretch,2017,pam,Autoconf,66,4363,1363,41812
+stretch,2017,pam,Automake,62,540,189,1509
+stretch,2017,pam,BASH,1,3,6,34
+stretch,2017,pam,C,155,7291,8016,34489
+stretch,2017,pam,C Header,33,536,1136,1570
+stretch,2017,pam,HTML,1,0,0,21
+stretch,2017,pam,Happy,2,81,0,426
+stretch,2017,pam,Makefile,2,5,0,11
+stretch,2017,pam,Perl,2,65,41,222
+stretch,2017,pam,Shell,67,801,1259,7184
+stretch,2017,pam,XML,221,1525,199,22082
+stretch,2017,ncurses,Ada,138,1566,6437,10330
+stretch,2017,ncurses,Autoconf,33,1814,1998,8419
+stretch,2017,ncurses,Batch,4,37,0,434
+stretch,2017,ncurses,C,344,11145,22560,74881
+stretch,2017,ncurses,C Header,42,1500,2513,7821
+stretch,2017,ncurses,C++,9,357,410,1976
+stretch,2017,ncurses,HTML,240,5247,4275,50403
+stretch,2017,ncurses,Makefile,1,18,70,88
+stretch,2017,ncurses,Module-Definition,4,0,0,649
+stretch,2017,ncurses,Perl,2,29,89,162
+stretch,2017,ncurses,RPM Specfile,6,116,15,418
+stretch,2017,ncurses,Shell,27,227,1178,2062
+stretch,2017,mawk,Autoconf,2,28,37,108
+stretch,2017,mawk,Batch,2,25,0,165
+stretch,2017,mawk,C,39,2335,2452,11959
+stretch,2017,mawk,C Header,28,413,843,1049
+stretch,2017,mawk,Happy,1,229,0,1144
+stretch,2017,mawk,Makefile,1,7,6,11
+stretch,2017,mawk,Module-Definition,1,0,0,2
+stretch,2017,mawk,Shell,2,48,27,90
+stretch,2017,hostname,C,1,70,81,401
+stretch,2017,hostname,Makefile,1,8,2,26
+stretch,2017,gzip,Autoconf,16,491,444,9353
+stretch,2017,gzip,Automake,4,45,60,209
+stretch,2017,gzip,C,124,3031,6438,19226
+stretch,2017,gzip,C Header,92,1984,4805,12952
+stretch,2017,gzip,Makefile,4,897,845,2824
+stretch,2017,gzip,Shell,24,455,917,2193
+stretch,2017,gzip,TeX,1,751,3231,6097
+stretch,2017,grep,Autoconf,9,657,535,15724
+stretch,2017,grep,Automake,6,44,112,339
+stretch,2017,grep,C,301,7111,13120,49626
+stretch,2017,grep,C Header,151,3005,7833,20716
+stretch,2017,grep,Makefile,5,1573,1320,3442
+stretch,2017,grep,Perl,5,126,176,564
+stretch,2017,grep,Shell,123,1183,1928,4977
+stretch,2017,grep,TeX,1,811,3695,7170
+stretch,2017,glibc,Alex,17,378,0,2942
+stretch,2017,glibc,Autoconf,19,133,154,2737
+stretch,2017,glibc,C,8107,84919,168871,645234
+stretch,2017,glibc,C Header,2439,29830,65670,294513
+stretch,2017,glibc,C++,23,103,128,530
+stretch,2017,glibc,GNU Style Assembly,2085,36345,78668,264460
+stretch,2017,glibc,Happy,1,56,0,327
+stretch,2017,glibc,JSON,1,0,0,42
+stretch,2017,glibc,LD Script,1,0,0,5
+stretch,2017,glibc,Makefile,207,2178,2279,8581
+stretch,2017,glibc,Module-Definition,18,192,0,2020
+stretch,2017,glibc,Perl,9,265,347,2119
+stretch,2017,glibc,Python,17,248,634,4288
+stretch,2017,glibc,Shell,70,817,1405,5581
+stretch,2017,findutils,Autoconf,18,2200,1793,35916
+stretch,2017,findutils,Automake,14,2057,1324,3825
+stretch,2017,findutils,C,487,10996,19885,73997
+stretch,2017,findutils,C Header,214,3956,9427,24536
+stretch,2017,findutils,Happy,1,178,0,1448
+stretch,2017,findutils,Makefile,1,193,401,1069
+stretch,2017,findutils,Python,1,21,15,71
+stretch,2017,findutils,Shell,85,611,1218,3924
+stretch,2017,findutils,TeX,1,803,3681,7140
+stretch,2017,dpkg,Autoconf,25,2009,2259,13251
+stretch,2017,dpkg,Automake,16,215,42,1393
+stretch,2017,dpkg,C,144,6213,6431,29825
+stretch,2017,dpkg,C Header,64,1122,2124,3426
+stretch,2017,dpkg,C++,21,665,491,4301
+stretch,2017,dpkg,LiveScript,1,9,0,268
+stretch,2017,dpkg,Makefile,9,23,44,101
+stretch,2017,dpkg,Perl,91,4249,2566,21811
+stretch,2017,dpkg,Shell,14,1434,2285,10900
+stretch,2017,debianutils,Autoconf,9,516,146,4347
+stretch,2017,debianutils,Automake,10,24,11,54
+stretch,2017,debianutils,C,3,139,118,841
+stretch,2017,debianutils,Shell,4,91,145,449
+stretch,2017,debconf,Forth,2,3,0,16
+stretch,2017,debconf,Makefile,3,18,16,131
+stretch,2017,debconf,Perl,140,3870,1033,13136
+stretch,2017,debconf,Python,1,16,25,131
+stretch,2017,debconf,Shell,6,35,79,231
+stretch,2017,coreutils,Alex,107,0,0,772
+stretch,2017,coreutils,Autoconf,6,1259,735,22362
+stretch,2017,coreutils,Automake,2,31,55,164
+stretch,2017,coreutils,C,820,23956,36529,145758
+stretch,2017,coreutils,C Header,348,5575,13484,38213
+stretch,2017,coreutils,Happy,1,268,0,2055
+stretch,2017,coreutils,Makefile,12,3288,2603,7463
+stretch,2017,coreutils,Perl,66,1558,2183,7117
+stretch,2017,coreutils,Shell,600,7577,11534,18751
+stretch,2017,coreutils,TeX,1,811,3695,7170
+stretch,2017,bash,Autoconf,20,1326,997,4927
+stretch,2017,bash,BASH,5,64,80,255
+stretch,2017,bash,C,253,17625,18952,107133
+stretch,2017,bash,C Header,117,2334,4050,7577
+stretch,2017,bash,GNU Style Assembly,2,11,0,68
+stretch,2017,bash,HTML,3,2065,16,27724
+stretch,2017,bash,Happy,2,803,0,6121
+stretch,2017,bash,Makefile,3,48,36,110
+stretch,2017,bash,Module-Definition,44,2573,11,14751
+stretch,2017,bash,Shell,19,200,280,844
+stretch,2017,bash,TeX,1,821,3462,6762
+stretch,2017,base-passwd,ASP.NET,2,0,0,57
+stretch,2017,base-passwd,Automake,3,11,0,32
+stretch,2017,base-passwd,C,1,247,144,1102
+stretch,2017,base-files,Shell,1,0,1,1
+stretch,2017,perl,Autoconf,2,13,102,9
+stretch,2017,perl,Batch,14,92,14,416
+stretch,2017,perl,C,128,21359,35507,163988
+stretch,2017,perl,C Header,154,7830,17806,137127
+stretch,2017,perl,C++,10,288,291,2044
+stretch,2017,perl,D,1,5,7,8
+stretch,2017,perl,Happy,1,84,0,1065
+stretch,2017,perl,JSON,14,1,0,1037
+stretch,2017,perl,Makefile,6,690,918,3711
+stretch,2017,perl,Perl,1303,66751,54302,481064
+stretch,2017,perl,Shell,110,1966,4610,17786
+stretch,2017,perl,XML,33,142,0,2410
+stretch,2017,perl,YAML,50,20,17,2070
+stretch,2017,e2fsprogs,Autoconf,101,1510,1154,15461
+stretch,2017,e2fsprogs,BASH,10,69,52,271
+stretch,2017,e2fsprogs,C,329,17168,15843,112151
+stretch,2017,e2fsprogs,C Header,107,2152,3457,9073
+stretch,2017,e2fsprogs,Happy,1,56,0,325
+stretch,2017,e2fsprogs,Makefile,15,292,79,921
+stretch,2017,e2fsprogs,Perl,2,5,5,170
+stretch,2017,e2fsprogs,Python,2,4,2,23
+stretch,2017,e2fsprogs,RPM Specfile,1,32,3,207
+stretch,2017,e2fsprogs,Shell,19,192,144,1084
+stretch,2017,e2fsprogs,TeX,2,1204,5052,8196
+stretch,2017,diffutils,Alex,4,0,0,8
+stretch,2017,diffutils,Autoconf,9,739,515,16960
+stretch,2017,diffutils,Automake,7,57,75,191
+stretch,2017,diffutils,C,330,7782,12909,49804
+stretch,2017,diffutils,C Header,153,3205,7889,21491
+stretch,2017,diffutils,Makefile,5,1654,1355,3618
+stretch,2017,diffutils,Perl,1,23,21,627
+stretch,2017,diffutils,Shell,83,794,1460,4757
+stretch,2017,diffutils,TeX,1,805,3711,7208
+stretch,2017,attr,Autoconf,3,38,38,167
+stretch,2017,attr,C,15,312,386,2192
+stretch,2017,attr,C Header,7,58,191,171
+stretch,2017,attr,Makefile,21,160,372,415
+stretch,2017,attr,Perl,1,28,55,260
+stretch,2017,attr,Shell,1,845,1399,7411
+stretch,2017,acl,Autoconf,3,40,30,163
+stretch,2017,acl,C,64,863,1518,5051
+stretch,2017,acl,C Header,16,157,288,473
+stretch,2017,acl,Makefile,20,158,353,417
+stretch,2017,acl,Perl,1,28,41,260
+stretch,2017,acl,Shell,2,851,1402,7447
+buster,2019,util-linux,Autoconf,29,2163,1169,19019
+buster,2019,util-linux,Automake,33,549,247,2674
+buster,2019,util-linux,BASH,201,3016,3076,8308
+buster,2019,util-linux,C,358,22957,24528,123887
+buster,2019,util-linux,C Header,95,1468,1425,6073
+buster,2019,util-linux,Happy,1,167,0,1459
+buster,2019,util-linux,Perl,1,5,4,15
+buster,2019,util-linux,Python,4,72,10,316
+buster,2019,util-linux,Shell,27,1783,2751,11624
+buster,2019,util-linux,XML,9,16,0,352
+buster,2019,tar,Autoconf,16,1601,1629,14848
+buster,2019,tar,Automake,7,1232,709,2200
+buster,2019,tar,C,278,10184,14792,63417
+buster,2019,tar,C Header,164,3294,8010,17489
+buster,2019,tar,Happy,1,278,0,2150
+buster,2019,tar,Makefile,1,3,0,5
+buster,2019,tar,Shell,4,121,228,757
+buster,2019,tar,TeX,1,812,3701,7176
+buster,2019,sysvinit,C,20,1214,2214,7675
+buster,2019,sysvinit,C Header,9,50,205,250
+buster,2019,sysvinit,Makefile,2,51,25,197
+buster,2019,sysvinit,Shell,1,3,4,27
+buster,2019,shadow,Autoconf,4,53,45,358
+buster,2019,shadow,Automake,27,157,43,1043
+buster,2019,shadow,C,144,4791,11997,29632
+buster,2019,shadow,C Header,21,244,833,858
+buster,2019,shadow,Happy,1,81,0,896
+buster,2019,shadow,Makefile,3,15,0,74
+buster,2019,shadow,Perl,2,25,49,127
+buster,2019,shadow,Shell,22,346,188,2806
+buster,2019,shadow,XML,108,302,3295,11476
+buster,2019,sed,Alex,1,4,0,334
+buster,2019,sed,Autoconf,6,959,1079,11036
+buster,2019,sed,Automake,2,23,37,87
+buster,2019,sed,C,284,6410,11462,44022
+buster,2019,sed,C Header,141,3218,7839,22302
+buster,2019,sed,Makefile,7,1513,1311,3426
+buster,2019,sed,Perl,6,217,253,1725
+buster,2019,sed,Shell,136,1889,3282,6463
+buster,2019,sed,TeX,1,814,3711,7206
+buster,2019,pam,Autoconf,65,4757,2887,57344
+buster,2019,pam,Automake,62,538,189,1552
+buster,2019,pam,BASH,1,3,6,34
+buster,2019,pam,C,154,7138,8044,34322
+buster,2019,pam,C Header,31,519,1089,1479
+buster,2019,pam,HTML,1,0,0,21
+buster,2019,pam,Happy,2,81,0,426
+buster,2019,pam,Makefile,2,5,0,11
+buster,2019,pam,Perl,2,65,41,222
+buster,2019,pam,Shell,67,944,1575,7981
+buster,2019,pam,XML,221,1518,199,22316
+buster,2019,ncurses,Ada,138,1558,6435,10312
+buster,2019,ncurses,Autoconf,33,1915,2035,9237
+buster,2019,ncurses,Batch,4,37,0,434
+buster,2019,ncurses,C,355,11696,23178,82269
+buster,2019,ncurses,C Header,47,1608,2721,8369
+buster,2019,ncurses,C++,9,357,410,1976
+buster,2019,ncurses,HTML,243,6577,4373,49956
+buster,2019,ncurses,Makefile,1,18,64,88
+buster,2019,ncurses,Module-Definition,4,0,0,649
+buster,2019,ncurses,Perl,1,16,49,54
+buster,2019,ncurses,RPM Specfile,7,172,25,646
+buster,2019,ncurses,Shell,29,255,1249,2302
+buster,2019,mawk,Autoconf,2,28,37,108
+buster,2019,mawk,Batch,2,25,0,165
+buster,2019,mawk,C,39,2335,2452,11959
+buster,2019,mawk,C Header,28,413,843,1049
+buster,2019,mawk,Happy,1,229,0,1144
+buster,2019,mawk,Makefile,1,7,6,11
+buster,2019,mawk,Module-Definition,1,0,0,2
+buster,2019,mawk,Shell,2,48,27,90
+buster,2019,hostname,C,1,70,81,401
+buster,2019,hostname,Makefile,1,8,2,26
+buster,2019,gzip,Autoconf,16,497,442,9986
+buster,2019,gzip,Automake,4,46,61,224
+buster,2019,gzip,C,128,3053,6634,19127
+buster,2019,gzip,C Header,92,1958,4709,13071
+buster,2019,gzip,Makefile,4,909,845,2813
+buster,2019,gzip,Shell,30,515,1043,2342
+buster,2019,gzip,TeX,1,812,3700,7177
+buster,2019,grep,Autoconf,9,702,611,17540
+buster,2019,grep,Automake,6,44,113,341
+buster,2019,grep,C,358,7986,15074,54890
+buster,2019,grep,C Header,183,3624,9345,24175
+buster,2019,grep,Makefile,5,1791,1522,3721
+buster,2019,grep,Perl,5,126,176,567
+buster,2019,grep,Shell,130,1238,2001,5177
+buster,2019,grep,TeX,1,814,3711,7206
+buster,2019,glibc,Alex,18,378,0,2943
+buster,2019,glibc,Autoconf,88,132,148,111883
+buster,2019,glibc,C,8980,90887,190810,677086
+buster,2019,glibc,C Header,2742,30696,70139,283027
+buster,2019,glibc,C++,32,210,345,1229
+buster,2019,glibc,GNU Style Assembly,2038,35668,77993,261504
+buster,2019,glibc,Happy,1,56,0,326
+buster,2019,glibc,JSON,2,0,0,87
+buster,2019,glibc,LD Script,3,1,17,7
+buster,2019,glibc,Makefile,207,2422,2420,10526
+buster,2019,glibc,Module-Definition,18,192,0,2031
+buster,2019,glibc,Perl,8,259,354,2123
+buster,2019,glibc,Python,31,684,1084,7724
+buster,2019,glibc,Shell,75,860,1537,5755
+buster,2019,findutils,Autoconf,18,1986,1706,38322
+buster,2019,findutils,Automake,14,2130,1528,3827
+buster,2019,findutils,C,506,11322,21029,77168
+buster,2019,findutils,C Header,239,4251,10591,26427
+buster,2019,findutils,Happy,1,279,0,2149
+buster,2019,findutils,Makefile,2,216,445,1177
+buster,2019,findutils,Python,1,21,15,71
+buster,2019,findutils,Shell,92,813,1629,4603
+buster,2019,findutils,TeX,1,814,3698,7161
+buster,2019,dpkg,Autoconf,27,2093,2301,14436
+buster,2019,dpkg,Automake,17,231,43,1503
+buster,2019,dpkg,C,161,6609,6861,31563
+buster,2019,dpkg,C Header,69,1197,2294,3678
+buster,2019,dpkg,C++,22,673,510,4368
+buster,2019,dpkg,LiveScript,1,9,0,527
+buster,2019,dpkg,Makefile,13,34,95,181
+buster,2019,dpkg,Perl,100,4639,2753,23069
+buster,2019,dpkg,Shell,12,1416,2268,10802
+buster,2019,debianutils,Autoconf,9,516,146,4347
+buster,2019,debianutils,Automake,10,24,11,54
+buster,2019,debianutils,C,3,145,129,851
+buster,2019,debianutils,Shell,4,91,145,449
+buster,2019,debconf,Forth,2,3,0,16
+buster,2019,debconf,Makefile,3,21,16,133
+buster,2019,debconf,Perl,129,3592,1026,12530
+buster,2019,debconf,Python,1,16,25,158
+buster,2019,debconf,Shell,5,34,74,226
+buster,2019,coreutils,Alex,107,0,0,835
+buster,2019,coreutils,Autoconf,6,1292,714,23001
+buster,2019,coreutils,Automake,2,30,56,149
+buster,2019,coreutils,C,858,24695,38189,149928
+buster,2019,coreutils,C Header,373,5826,14490,39708
+buster,2019,coreutils,Happy,1,279,0,2154
+buster,2019,coreutils,Makefile,12,3387,2653,7563
+buster,2019,coreutils,Perl,68,1650,2323,7474
+buster,2019,coreutils,Shell,617,7837,11968,19584
+buster,2019,coreutils,TeX,1,814,3711,7205
+buster,2019,bash,Autoconf,22,1390,1038,5177
+buster,2019,bash,BASH,6,79,171,295
+buster,2019,bash,C,259,17906,19402,111922
+buster,2019,bash,C Header,117,2423,4108,7853
+buster,2019,bash,GNU Style Assembly,2,11,0,68
+buster,2019,bash,HTML,3,2244,16,27945
+buster,2019,bash,Happy,2,824,0,6366
+buster,2019,bash,Makefile,3,48,36,110
+buster,2019,bash,Module-Definition,44,2581,11,15096
+buster,2019,bash,Shell,18,151,231,717
+buster,2019,bash,TeX,1,821,3462,6762
+buster,2019,base-passwd,ASP.NET,2,0,0,57
+buster,2019,base-passwd,Automake,3,11,0,32
+buster,2019,base-passwd,C,1,247,144,1102
+buster,2019,base-files,Shell,1,0,1,1
+buster,2019,perl,Autoconf,2,12,102,9
+buster,2019,perl,Batch,14,92,14,416
+buster,2019,perl,C,128,23490,39812,171305
+buster,2019,perl,C Header,161,11979,20920,429890
+buster,2019,perl,C++,10,288,291,2044
+buster,2019,perl,D,1,5,7,8
+buster,2019,perl,Happy,1,116,0,1234
+buster,2019,perl,JSON,22,1,0,1829
+buster,2019,perl,Makefile,6,713,931,3899
+buster,2019,perl,Perl,1379,71398,65037,511004
+buster,2019,perl,Shell,109,2020,4643,17669
+buster,2019,perl,XML,33,142,0,2410
+buster,2019,perl,YAML,54,20,17,2268
+buster,2019,e2fsprogs,Autoconf,89,1471,1158,15329
+buster,2019,e2fsprogs,BASH,12,78,56,302
+buster,2019,e2fsprogs,C,340,17748,16121,116561
+buster,2019,e2fsprogs,C Header,122,2266,3556,9542
+buster,2019,e2fsprogs,Happy,1,56,0,325
+buster,2019,e2fsprogs,Makefile,1,4,46,2
+buster,2019,e2fsprogs,Perl,2,5,5,170
+buster,2019,e2fsprogs,Python,2,4,2,23
+buster,2019,e2fsprogs,RPM Specfile,1,32,3,209
+buster,2019,e2fsprogs,Shell,20,224,149,1174
+buster,2019,e2fsprogs,TeX,2,1204,5052,8196
+buster,2019,diffutils,Alex,4,0,0,8
+buster,2019,diffutils,Autoconf,9,755,567,17520
+buster,2019,diffutils,Automake,7,58,75,200
+buster,2019,diffutils,C,343,7924,13624,51368
+buster,2019,diffutils,C Header,175,3478,8966,23154
+buster,2019,diffutils,Makefile,5,1692,1440,3573
+buster,2019,diffutils,Perl,1,23,21,627
+buster,2019,diffutils,Shell,87,836,1524,5007
+buster,2019,diffutils,TeX,1,814,3711,7206
+buster,2019,attr,Autoconf,5,206,173,2117
+buster,2019,attr,Automake,11,19,5,142
+buster,2019,attr,C,15,324,386,2236
+buster,2019,attr,C Header,7,50,172,161
+buster,2019,attr,LD Script,1,0,0,12
+buster,2019,attr,Makefile,1,3,0,6
+buster,2019,attr,Perl,1,32,60,286
+buster,2019,attr,Shell,2,1201,1938,8562
+buster,2019,acl,Autoconf,5,259,181,2768
+buster,2019,acl,Automake,12,23,4,245
+buster,2019,acl,BASH,1,2,1,4
+buster,2019,acl,C,66,907,1519,5379
+buster,2019,acl,C Header,16,162,286,491
+buster,2019,acl,Makefile,1,3,0,6
+buster,2019,acl,Perl,1,32,50,293
+buster,2019,acl,Shell,3,1207,1941,8598
+bullseye,2021,util-linux,Autoconf,30,2282,1203,22061
+bullseye,2021,util-linux,Automake,33,557,258,2855
+bullseye,2021,util-linux,BASH,208,3156,3208,8842
+bullseye,2021,util-linux,C,379,24752,25853,132330
+bullseye,2021,util-linux,C Header,103,1696,1610,6901
+bullseye,2021,util-linux,Happy,1,167,0,1462
+bullseye,2021,util-linux,Perl,1,5,4,15
+bullseye,2021,util-linux,Python,4,72,10,316
+bullseye,2021,util-linux,Shell,22,1654,2393,10403
+bullseye,2021,util-linux,XML,9,15,0,393
+bullseye,2021,tar,Autoconf,16,1479,1686,16128
+bullseye,2021,tar,Automake,7,1340,864,2394
+bullseye,2021,tar,C,298,10587,15505,66646
+bullseye,2021,tar,C Header,185,3796,9715,21068
+bullseye,2021,tar,Happy,1,278,0,2134
+bullseye,2021,tar,Makefile,1,3,0,5
+bullseye,2021,tar,Shell,5,160,312,1180
+bullseye,2021,tar,TeX,1,833,3678,7261
+bullseye,2021,sysvinit,C,21,1244,2230,8043
+bullseye,2021,sysvinit,C Header,9,51,205,258
+bullseye,2021,sysvinit,Makefile,2,55,25,201
+bullseye,2021,sysvinit,Shell,1,3,4,27
+bullseye,2021,shadow,Autoconf,33,2134,737,18599
+bullseye,2021,shadow,Automake,27,161,43,1079
+bullseye,2021,shadow,C,138,5218,12501,32610
+bullseye,2021,shadow,C Header,22,251,838,897
+bullseye,2021,shadow,Happy,1,81,0,896
+bullseye,2021,shadow,Makefile,2,16,0,70
+bullseye,2021,shadow,Perl,1,8,44,33
+bullseye,2021,shadow,Shell,4,1381,2081,9138
+bullseye,2021,shadow,XML,109,318,3331,11727
+bullseye,2021,sed,Alex,1,4,0,334
+bullseye,2021,sed,Autoconf,6,959,1079,11036
+bullseye,2021,sed,Automake,2,23,37,87
+bullseye,2021,sed,C,284,6410,11462,44022
+bullseye,2021,sed,C Header,141,3218,7839,22302
+bullseye,2021,sed,Makefile,7,1513,1311,3426
+bullseye,2021,sed,Perl,6,217,253,1725
+bullseye,2021,sed,Shell,136,1889,3282,6463
+bullseye,2021,sed,TeX,1,814,3711,7206
+bullseye,2021,pam,Autoconf,71,5310,3055,62945
+bullseye,2021,pam,Automake,65,531,199,1819
+bullseye,2021,pam,BASH,1,3,6,34
+bullseye,2021,pam,C,172,7486,8312,36946
+bullseye,2021,pam,C Header,35,564,1181,1611
+bullseye,2021,pam,HTML,1,0,0,21
+bullseye,2021,pam,Happy,2,80,0,423
+bullseye,2021,pam,Makefile,2,5,0,11
+bullseye,2021,pam,Perl,2,65,41,222
+bullseye,2021,pam,Shell,75,1311,2135,8954
+bullseye,2021,pam,XML,232,1632,208,24047
+bullseye,2021,pam,XSL,2,3,0,24
+bullseye,2021,ncurses,Ada,137,1521,6522,9968
+bullseye,2021,ncurses,Autoconf,34,1855,2129,9007
+bullseye,2021,ncurses,Batch,4,37,0,438
+bullseye,2021,ncurses,C,366,12383,24094,87541
+bullseye,2021,ncurses,C Header,50,1707,2907,8800
+bullseye,2021,ncurses,C++,9,367,420,1993
+bullseye,2021,ncurses,HTML,243,7035,4556,50366
+bullseye,2021,ncurses,Makefile,1,19,65,93
+bullseye,2021,ncurses,Module-Definition,4,0,0,649
+bullseye,2021,ncurses,RPM Specfile,7,185,27,731
+bullseye,2021,ncurses,Shell,30,282,1323,2451
+bullseye,2021,mawk,Autoconf,4,88,108,271
+bullseye,2021,mawk,Batch,2,44,0,274
+bullseye,2021,mawk,C,39,2262,1970,15013
+bullseye,2021,mawk,C Header,25,316,590,1154
+bullseye,2021,mawk,Happy,1,222,0,1224
+bullseye,2021,mawk,Makefile,2,39,55,143
+bullseye,2021,mawk,RPM Specfile,1,15,2,45
+bullseye,2021,mawk,SVG,1,1,1,118
+bullseye,2021,mawk,Shell,4,67,88,333
+bullseye,2021,hostname,C,1,70,82,401
+bullseye,2021,hostname,Makefile,1,8,2,26
+bullseye,2021,gzip,Autoconf,16,498,504,10132
+bullseye,2021,gzip,Automake,4,46,61,225
+bullseye,2021,gzip,C,132,3126,6832,19729
+bullseye,2021,gzip,C Header,94,2036,4875,13514
+bullseye,2021,gzip,Makefile,4,929,915,2857
+bullseye,2021,gzip,Shell,31,527,1070,2376
+bullseye,2021,gzip,TeX,1,814,3711,7206
+bullseye,2021,grep,Autoconf,9,722,619,19372
+bullseye,2021,grep,Automake,6,44,113,355
+bullseye,2021,grep,C,395,8988,16713,58146
+bullseye,2021,grep,C Header,203,4140,10502,28520
+bullseye,2021,grep,Makefile,5,1922,1615,4120
+bullseye,2021,grep,Perl,5,131,179,606
+bullseye,2021,grep,Shell,142,1503,2548,6437
+bullseye,2021,grep,TeX,1,833,3678,7261
+bullseye,2021,glibc,Alex,18,378,0,2943
+bullseye,2021,glibc,Autoconf,89,134,172,112183
+bullseye,2021,glibc,C,9267,92647,196420,686645
+bullseye,2021,glibc,C Header,2938,30645,73006,290767
+bullseye,2021,glibc,C++,41,258,525,1387
+bullseye,2021,glibc,GNU Style Assembly,1849,34790,74662,258121
+bullseye,2021,glibc,Happy,1,56,0,326
+bullseye,2021,glibc,JSON,2,0,0,91
+bullseye,2021,glibc,LD Script,3,1,17,7
+bullseye,2021,glibc,Makefile,205,2565,2565,11416
+bullseye,2021,glibc,Module-Definition,18,192,0,2032
+bullseye,2021,glibc,Perl,2,44,55,359
+bullseye,2021,glibc,Python,49,1076,1751,10793
+bullseye,2021,glibc,Shell,76,868,1532,5679
+bullseye,2021,findutils,Autoconf,18,2073,1918,42905
+bullseye,2021,findutils,Automake,14,2274,1612,4267
+bullseye,2021,findutils,C,550,12015,22396,81665
+bullseye,2021,findutils,C Header,263,4771,12248,31397
+bullseye,2021,findutils,Happy,1,278,0,2134
+bullseye,2021,findutils,Makefile,2,217,456,1207
+bullseye,2021,findutils,Python,1,21,15,71
+bullseye,2021,findutils,Shell,105,1007,2116,5587
+bullseye,2021,findutils,TeX,1,833,3678,7261
+bullseye,2021,dpkg,Autoconf,28,2133,2399,14691
+bullseye,2021,dpkg,Automake,17,237,42,1557
+bullseye,2021,dpkg,C,162,6804,6937,32430
+bullseye,2021,dpkg,C Header,69,1209,2319,3751
+bullseye,2021,dpkg,C++,22,677,512,4365
+bullseye,2021,dpkg,LiveScript,1,9,0,527
+bullseye,2021,dpkg,Makefile,101,756,576,3614
+bullseye,2021,dpkg,Perl,102,4841,2884,24009
+bullseye,2021,dpkg,Shell,85,1520,2405,11033
+bullseye,2021,debianutils,Autoconf,9,528,146,4381
+bullseye,2021,debianutils,Automake,10,24,11,54
+bullseye,2021,debianutils,C,3,161,132,928
+bullseye,2021,debianutils,Shell,4,93,147,472
+bullseye,2021,debconf,Forth,2,3,0,16
+bullseye,2021,debconf,Makefile,3,19,14,126
+bullseye,2021,debconf,Perl,129,3592,1026,12568
+bullseye,2021,debconf,Python,1,16,25,158
+bullseye,2021,debconf,Shell,5,34,74,226
+bullseye,2021,coreutils,Alex,108,10,0,891
+bullseye,2021,coreutils,Autoconf,6,1324,1013,26909
+bullseye,2021,coreutils,Automake,2,30,56,149
+bullseye,2021,coreutils,C,905,25985,40186,158337
+bullseye,2021,coreutils,C Header,398,6151,15349,44057
+bullseye,2021,coreutils,Happy,1,280,0,2151
+bullseye,2021,coreutils,Makefile,12,3569,3061,7977
+bullseye,2021,coreutils,Perl,69,1709,2336,7723
+bullseye,2021,coreutils,Shell,642,8278,12859,21401
+bullseye,2021,coreutils,TeX,1,814,3642,7158
+bullseye,2021,bash,Autoconf,22,1409,1051,5303
+bullseye,2021,bash,BASH,6,79,171,295
+bullseye,2021,bash,C,267,18618,20022,116863
+bullseye,2021,bash,C Header,117,2456,4134,8039
+bullseye,2021,bash,GNU Style Assembly,2,11,0,68
+bullseye,2021,bash,HTML,3,2339,16,28296
+bullseye,2021,bash,Happy,2,837,0,6493
+bullseye,2021,bash,Makefile,3,48,36,110
+bullseye,2021,bash,Module-Definition,44,2616,9,15352
+bullseye,2021,bash,Shell,18,151,231,719
+bullseye,2021,bash,TeX,1,821,3462,6762
+bullseye,2021,base-passwd,ASP.NET,2,0,0,57
+bullseye,2021,base-passwd,Automake,3,11,0,32
+bullseye,2021,base-passwd,C,1,247,144,1102
+bullseye,2021,base-files,Shell,1,0,1,1
+bullseye,2021,perl,Autoconf,2,12,102,9
+bullseye,2021,perl,Batch,10,65,4,318
+bullseye,2021,perl,C,124,23465,41070,173007
+bullseye,2021,perl,C Header,157,12631,22505,477430
+bullseye,2021,perl,C++,10,288,291,2044
+bullseye,2021,perl,D,1,5,7,8
+bullseye,2021,perl,Happy,1,121,0,1294
+bullseye,2021,perl,JSON,21,1,0,1377
+bullseye,2021,perl,Makefile,6,711,940,3960
+bullseye,2021,perl,Perl,1340,70657,66292,384346
+bullseye,2021,perl,Shell,109,2026,4694,17884
+bullseye,2021,perl,XML,34,144,0,2429
+bullseye,2021,perl,YAML,55,20,22,2277
+bullseye,2021,e2fsprogs,Autoconf,102,1458,1026,15842
+bullseye,2021,e2fsprogs,BASH,14,88,63,328
+bullseye,2021,e2fsprogs,C,320,17503,15782,116279
+bullseye,2021,e2fsprogs,C Header,110,2225,3234,13430
+bullseye,2021,e2fsprogs,Makefile,1,4,46,2
+bullseye,2021,e2fsprogs,Perl,2,5,5,177
+bullseye,2021,e2fsprogs,Python,2,4,2,23
+bullseye,2021,e2fsprogs,RPM Specfile,1,32,3,209
+bullseye,2021,e2fsprogs,Shell,25,1473,2103,9497
+bullseye,2021,e2fsprogs,TeX,2,1204,5052,8196
+bullseye,2021,diffutils,Alex,4,0,0,8
+bullseye,2021,diffutils,Autoconf,9,755,567,17520
+bullseye,2021,diffutils,Automake,7,58,75,200
+bullseye,2021,diffutils,C,343,7924,13624,51368
+bullseye,2021,diffutils,C Header,175,3478,8966,23154
+bullseye,2021,diffutils,Makefile,5,1692,1440,3573
+bullseye,2021,diffutils,Perl,1,23,21,627
+bullseye,2021,diffutils,Shell,87,836,1524,5007
+bullseye,2021,diffutils,TeX,1,814,3711,7206
+bullseye,2021,attr,Autoconf,5,206,173,2117
+bullseye,2021,attr,Automake,11,19,5,142
+bullseye,2021,attr,C,15,324,386,2236
+bullseye,2021,attr,C Header,7,50,172,161
+bullseye,2021,attr,LD Script,1,0,0,12
+bullseye,2021,attr,Makefile,1,3,0,6
+bullseye,2021,attr,Perl,1,32,60,286
+bullseye,2021,attr,Shell,2,1201,1938,8562
+bullseye,2021,acl,Autoconf,5,259,181,2768
+bullseye,2021,acl,Automake,12,23,4,245
+bullseye,2021,acl,BASH,1,2,1,4
+bullseye,2021,acl,C,66,907,1519,5379
+bullseye,2021,acl,C Header,16,162,286,491
+bullseye,2021,acl,Makefile,1,3,0,6
+bullseye,2021,acl,Perl,1,32,50,293
+bullseye,2021,acl,Shell,3,1207,1941,8598
+bookworm,2023,util-linux,AsciiDoc,140,5413,1642,10435
+bookworm,2023,util-linux,Autoconf,27,2458,1281,22300
+bookworm,2023,util-linux,Automake,35,612,267,3310
+bookworm,2023,util-linux,BASH,229,3404,3571,9750
+bookworm,2023,util-linux,C,398,26968,27150,143106
+bookworm,2023,util-linux,C Header,111,1887,1716,7662
+bookworm,2023,util-linux,Happy,1,167,0,1462
+bookworm,2023,util-linux,Meson,17,493,40,4110
+bookworm,2023,util-linux,Perl,1,5,4,15
+bookworm,2023,util-linux,Python,4,72,10,316
+bookworm,2023,util-linux,Shell,32,1754,2503,11002
+bookworm,2023,util-linux,XML,9,15,0,393
+bookworm,2023,tar,Autoconf,16,1479,1686,16128
+bookworm,2023,tar,Automake,7,1340,864,2394
+bookworm,2023,tar,C,298,10587,15505,66646
+bookworm,2023,tar,C Header,185,3796,9715,21068
+bookworm,2023,tar,Happy,1,278,0,2134
+bookworm,2023,tar,Makefile,1,3,0,5
+bookworm,2023,tar,Shell,5,160,312,1180
+bookworm,2023,tar,TeX,1,833,3678,7261
+bookworm,2023,sysvinit,C,21,1254,2183,8143
+bookworm,2023,sysvinit,C Header,9,52,205,262
+bookworm,2023,sysvinit,Makefile,3,64,26,220
+bookworm,2023,sysvinit,Shell,2,89,69,427
+bookworm,2023,shadow,Autoconf,36,2282,817,20818
+bookworm,2023,shadow,Automake,29,189,43,1243
+bookworm,2023,shadow,C,147,5412,9608,34091
+bookworm,2023,shadow,C Header,26,282,621,925
+bookworm,2023,shadow,Happy,1,78,0,876
+bookworm,2023,shadow,Makefile,2,16,0,70
+bookworm,2023,shadow,Shell,4,1383,2086,9156
+bookworm,2023,shadow,XML,113,325,737,12208
+bookworm,2023,sed,Alex,1,4,0,334
+bookworm,2023,sed,Autoconf,6,1347,1439,14828
+bookworm,2023,sed,Automake,2,21,24,87
+bookworm,2023,sed,C,342,7582,13733,49309
+bookworm,2023,sed,C Header,156,3713,9438,24189
+bookworm,2023,sed,Makefile,7,1583,1446,4152
+bookworm,2023,sed,Perl,7,293,373,2333
+bookworm,2023,sed,Shell,148,2149,3793,7875
+bookworm,2023,sed,TeX,1,826,3514,7418
+bookworm,2023,pam,Autoconf,71,5086,2902,60276
+bookworm,2023,pam,Automake,62,508,193,1759
+bookworm,2023,pam,BASH,1,3,6,34
+bookworm,2023,pam,C,168,7151,8001,35250
+bookworm,2023,pam,C Header,34,570,1155,1696
+bookworm,2023,pam,HTML,1,0,0,21
+bookworm,2023,pam,Happy,2,81,0,425
+bookworm,2023,pam,Makefile,2,5,0,11
+bookworm,2023,pam,Perl,2,65,41,222
+bookworm,2023,pam,Shell,72,1313,2135,8969
+bookworm,2023,pam,XML,226,1592,203,22831
+bookworm,2023,pam,XSL,2,3,0,24
+bookworm,2023,ncurses,Ada,137,1521,6522,9968
+bookworm,2023,ncurses,Autoconf,35,1808,2206,9079
+bookworm,2023,ncurses,Batch,4,37,0,438
+bookworm,2023,ncurses,C,371,12829,24648,90865
+bookworm,2023,ncurses,C Header,52,1799,3004,8949
+bookworm,2023,ncurses,C++,9,367,420,1995
+bookworm,2023,ncurses,HTML,243,6579,4560,50774
+bookworm,2023,ncurses,Makefile,1,19,65,92
+bookworm,2023,ncurses,Module-Definition,4,0,0,649
+bookworm,2023,ncurses,RPM Specfile,7,191,30,758
+bookworm,2023,ncurses,Shell,31,360,1457,2850
+bookworm,2023,mawk,Autoconf,4,88,108,271
+bookworm,2023,mawk,Batch,2,44,0,274
+bookworm,2023,mawk,C,39,2262,1970,15013
+bookworm,2023,mawk,C Header,25,316,590,1154
+bookworm,2023,mawk,Happy,1,222,0,1224
+bookworm,2023,mawk,Makefile,2,39,55,143
+bookworm,2023,mawk,RPM Specfile,1,15,2,45
+bookworm,2023,mawk,SVG,1,1,1,118
+bookworm,2023,mawk,Shell,4,67,88,333
+bookworm,2023,hostname,C,1,70,82,401
+bookworm,2023,hostname,Makefile,1,8,2,26
+bookworm,2023,gzip,Autoconf,16,747,518,12796
+bookworm,2023,gzip,Automake,4,49,65,274
+bookworm,2023,gzip,C,139,3316,7270,20866
+bookworm,2023,gzip,C Header,104,2283,5819,17074
+bookworm,2023,gzip,Makefile,4,895,960,3215
+bookworm,2023,gzip,Shell,40,805,1580,3793
+bookworm,2023,gzip,TeX,1,818,3573,7201
+bookworm,2023,grep,Autoconf,9,1086,625,23045
+bookworm,2023,grep,Automake,6,44,113,356
+bookworm,2023,grep,C,415,9639,18135,61998
+bookworm,2023,grep,C Header,210,4335,11479,31284
+bookworm,2023,grep,Makefile,5,1850,1649,4443
+bookworm,2023,grep,Perl,5,131,179,606
+bookworm,2023,grep,Shell,147,1558,2627,7097
+bookworm,2023,grep,TeX,1,817,3575,7200
+bookworm,2023,glibc,Autoconf,94,145,182,112642
+bookworm,2023,glibc,C,10031,95998,206268,704217
+bookworm,2023,glibc,C Header,3283,32309,78474,302994
+bookworm,2023,glibc,C++,35,258,523,1376
+bookworm,2023,glibc,GNU Style Assembly,2324,40709,92988,326844
+bookworm,2023,glibc,Happy,1,57,0,330
+bookworm,2023,glibc,JSON,2,0,0,100
+bookworm,2023,glibc,LD Script,3,1,17,7
+bookworm,2023,glibc,Makefile,201,2819,2821,14478
+bookworm,2023,glibc,Module-Definition,21,198,0,2753
+bookworm,2023,glibc,Perl,2,44,55,363
+bookworm,2023,glibc,Python,64,1503,2260,14283
+bookworm,2023,glibc,Shell,81,901,1616,5994
+bookworm,2023,findutils,Autoconf,18,2641,2014,47552
+bookworm,2023,findutils,Automake,14,2168,1667,4552
+bookworm,2023,findutils,C,570,12307,23137,82159
+bookworm,2023,findutils,C Header,271,4949,12900,33458
+bookworm,2023,findutils,Happy,1,281,0,2161
+bookworm,2023,findutils,Makefile,2,220,456,1228
+bookworm,2023,findutils,Python,1,21,15,71
+bookworm,2023,findutils,Shell,107,1047,2190,6032
+bookworm,2023,findutils,TeX,1,818,3573,7201
+bookworm,2023,dpkg,Autoconf,24,1937,2613,12807
+bookworm,2023,dpkg,Automake,15,243,144,1605
+bookworm,2023,dpkg,C,163,7022,7018,33385
+bookworm,2023,dpkg,C Header,72,1247,2395,3886
+bookworm,2023,dpkg,C++,22,668,505,4354
+bookworm,2023,dpkg,LiveScript,1,9,0,527
+bookworm,2023,dpkg,Makefile,102,767,580,3689
+bookworm,2023,dpkg,Perl,111,5253,3085,25753
+bookworm,2023,dpkg,Shell,85,1512,2441,11211
+bookworm,2023,debianutils,Autoconf,10,587,148,4891
+bookworm,2023,debianutils,Automake,10,61,0,121
+bookworm,2023,debianutils,C,3,162,132,944
+bookworm,2023,debianutils,Shell,5,110,159,606
+bookworm,2023,debconf,Forth,2,3,0,16
+bookworm,2023,debconf,Makefile,3,19,14,126
+bookworm,2023,debconf,Perl,128,3583,998,12526
+bookworm,2023,debconf,Python,1,16,25,158
+bookworm,2023,debconf,Shell,5,34,74,226
+bookworm,2023,coreutils,Alex,108,10,0,929
+bookworm,2023,coreutils,Autoconf,6,2311,1050,35012
+bookworm,2023,coreutils,Automake,2,30,56,149
+bookworm,2023,coreutils,C,964,27837,42913,167721
+bookworm,2023,coreutils,C Header,418,6689,17465,48233
+bookworm,2023,coreutils,Happy,1,281,0,2161
+bookworm,2023,coreutils,Makefile,12,3510,3200,8773
+bookworm,2023,coreutils,Perl,70,1735,2374,7846
+bookworm,2023,coreutils,Shell,656,8408,13002,22095
+bookworm,2023,coreutils,TeX,1,818,3573,7201
+bookworm,2023,bash,Autoconf,24,1450,1120,5462
+bookworm,2023,bash,BASH,6,79,171,295
+bookworm,2023,bash,C,272,19272,20674,122337
+bookworm,2023,bash,C Header,120,2539,4222,8429
+bookworm,2023,bash,GNU Style Assembly,2,11,0,68
+bookworm,2023,bash,HTML,3,2292,16,29033
+bookworm,2023,bash,Happy,2,855,0,6391
+bookworm,2023,bash,Makefile,3,50,36,122
+bookworm,2023,bash,Module-Definition,43,2657,9,15596
+bookworm,2023,bash,Shell,22,341,473,1679
+bookworm,2023,bash,TeX,1,821,3462,6762
+bookworm,2023,base-passwd,ASP.NET,2,0,0,56
+bookworm,2023,base-passwd,Automake,3,11,0,33
+bookworm,2023,base-passwd,C,1,284,152,1207
+bookworm,2023,base-files,Shell,1,0,1,1
+bookworm,2023,perl,Autoconf,2,12,102,9
+bookworm,2023,perl,Batch,4,13,1,113
+bookworm,2023,perl,C,106,23078,42241,170441
+bookworm,2023,perl,C Header,130,12143,23749,496046
+bookworm,2023,perl,D,1,5,7,8
+bookworm,2023,perl,Happy,1,126,0,1355
+bookworm,2023,perl,JSON,22,1,0,1400
+bookworm,2023,perl,Makefile,4,224,297,1666
+bookworm,2023,perl,Perl,1339,72714,69949,392807
+bookworm,2023,perl,Shell,109,2082,4622,17170
+bookworm,2023,perl,XML,34,144,0,2429
+bookworm,2023,perl,YAML,54,20,17,2259
+bookworm,2023,e2fsprogs,Autoconf,103,1497,1093,16079
+bookworm,2023,e2fsprogs,BASH,15,92,67,366
+bookworm,2023,e2fsprogs,C,324,17698,15941,118809
+bookworm,2023,e2fsprogs,C Header,113,2233,3291,13482
+bookworm,2023,e2fsprogs,C++,3,33,48,205
+bookworm,2023,e2fsprogs,Makefile,1,4,46,2
+bookworm,2023,e2fsprogs,Perl,2,5,5,177
+bookworm,2023,e2fsprogs,Python,2,4,2,23
+bookworm,2023,e2fsprogs,RPM Specfile,1,32,3,209
+bookworm,2023,e2fsprogs,Shell,27,1543,2218,9872
+bookworm,2023,e2fsprogs,TeX,2,1204,5052,8196
+bookworm,2023,diffutils,Alex,4,0,0,8
+bookworm,2023,diffutils,Autoconf,9,782,570,20765
+bookworm,2023,diffutils,Automake,7,58,75,201
+bookworm,2023,diffutils,C,403,9460,16386,58500
+bookworm,2023,diffutils,C Header,202,4291,10998,29515
+bookworm,2023,diffutils,Makefile,5,1916,1566,4173
+bookworm,2023,diffutils,Perl,1,23,21,627
+bookworm,2023,diffutils,Shell,96,1055,1997,6215
+bookworm,2023,diffutils,TeX,1,819,3578,7215
+bookworm,2023,attr,Autoconf,5,213,178,2164
+bookworm,2023,attr,Automake,11,20,5,143
+bookworm,2023,attr,C,15,329,386,2271
+bookworm,2023,attr,C Header,7,50,172,162
+bookworm,2023,attr,LD Script,1,0,0,12
+bookworm,2023,attr,Makefile,1,3,0,6
+bookworm,2023,attr,Perl,1,32,60,286
+bookworm,2023,attr,Shell,2,1244,2012,8411
+bookworm,2023,acl,Autoconf,5,263,181,2940
+bookworm,2023,acl,Automake,12,24,4,247
+bookworm,2023,acl,BASH,1,2,1,4
+bookworm,2023,acl,C,66,910,1518,5409
+bookworm,2023,acl,C Header,16,162,286,492
+bookworm,2023,acl,Makefile,1,3,0,6
+bookworm,2023,acl,Perl,1,32,50,293
+bookworm,2023,acl,Shell,3,1250,2015,8447
+trixie,2025,util-linux,AsciiDoc,161,6232,1719,12732
+trixie,2025,util-linux,Autoconf,31,2703,1373,24639
+trixie,2025,util-linux,Automake,44,708,279,3763
+trixie,2025,util-linux,BASH,341,4794,5127,14413
+trixie,2025,util-linux,C,451,32663,31310,172670
+trixie,2025,util-linux,C Header,128,2907,4619,12683
+trixie,2025,util-linux,Happy,2,195,0,1593
+trixie,2025,util-linux,Meson,26,629,41,5497
+trixie,2025,util-linux,Perl,1,5,4,15
+trixie,2025,util-linux,Python,4,72,10,316
+trixie,2025,util-linux,Ruby,2,16,4,75
+trixie,2025,util-linux,SQL,1,0,0,9
+trixie,2025,util-linux,Shell,34,1815,2525,11378
+trixie,2025,util-linux,XML,9,15,0,426
+trixie,2025,tar,Autoconf,16,2205,1959,24249
+trixie,2025,tar,Automake,7,1346,953,2984
+trixie,2025,tar,C,336,11058,17028,68834
+trixie,2025,tar,C Header,211,4346,11318,32813
+trixie,2025,tar,Happy,1,280,0,2158
+trixie,2025,tar,Makefile,1,3,0,5
+trixie,2025,tar,Shell,5,160,312,1181
+trixie,2025,tar,TeX,1,856,3493,7506
+trixie,2025,sysvinit,C,21,1260,2209,8266
+trixie,2025,sysvinit,C Header,9,54,206,267
+trixie,2025,sysvinit,Makefile,3,62,26,238
+trixie,2025,sysvinit,Shell,2,89,69,427
+trixie,2025,shadow,Autoconf,36,2467,803,24063
+trixie,2025,shadow,Automake,30,220,43,1510
+trixie,2025,shadow,C,219,6175,9386,33665
+trixie,2025,shadow,C Header,89,1152,1049,2411
+trixie,2025,shadow,Happy,1,67,0,678
+trixie,2025,shadow,INI,1,0,0,5
+trixie,2025,shadow,Makefile,4,24,0,120
+trixie,2025,shadow,Perl,1,17,5,94
+trixie,2025,shadow,Python,22,328,17,1327
+trixie,2025,shadow,Shell,60,2076,2302,12294
+trixie,2025,shadow,TOML,1,2,0,9
+trixie,2025,shadow,XML,114,301,734,12358
+trixie,2025,shadow,XSL,1,1,0,8
+trixie,2025,shadow,YAML,1,0,0,12
+trixie,2025,sed,Alex,1,4,0,334
+trixie,2025,sed,Autoconf,6,1347,1439,14828
+trixie,2025,sed,Automake,2,21,24,87
+trixie,2025,sed,C,342,7582,13733,49309
+trixie,2025,sed,C Header,156,3713,9438,24189
+trixie,2025,sed,Makefile,7,1583,1446,4152
+trixie,2025,sed,Perl,7,293,373,2333
+trixie,2025,sed,Shell,148,2149,3793,7875
+trixie,2025,sed,TeX,1,826,3514,7418
+trixie,2025,pam,Autoconf,7,8,3,152
+trixie,2025,pam,BASH,1,3,6,34
+trixie,2025,pam,C,183,6483,7156,33970
+trixie,2025,pam,C Header,38,609,1171,1834
+trixie,2025,pam,HTML,1,0,0,21
+trixie,2025,pam,Happy,2,80,0,430
+trixie,2025,pam,Meson,20,127,10,1147
+trixie,2025,pam,Perl,2,65,41,222
+trixie,2025,pam,Shell,77,99,102,469
+trixie,2025,pam,XML,232,1512,50,22241
+trixie,2025,ncurses,Ada,137,1521,6522,9968
+trixie,2025,ncurses,Autoconf,35,1833,2236,9492
+trixie,2025,ncurses,Batch,4,37,0,438
+trixie,2025,ncurses,C,372,12934,24804,92293
+trixie,2025,ncurses,C Header,52,1789,3124,9381
+trixie,2025,ncurses,C++,9,366,420,2016
+trixie,2025,ncurses,HTML,243,6401,4440,52566
+trixie,2025,ncurses,Makefile,1,19,65,94
+trixie,2025,ncurses,Module-Definition,4,0,0,649
+trixie,2025,ncurses,RPM Specfile,7,191,27,754
+trixie,2025,ncurses,Shell,31,361,1458,2914
+trixie,2025,mawk,Autoconf,4,100,137,318
+trixie,2025,mawk,Batch,2,50,0,283
+trixie,2025,mawk,C,40,2494,2083,18519
+trixie,2025,mawk,C Header,25,339,476,1398
+trixie,2025,mawk,Happy,1,233,0,1278
+trixie,2025,mawk,Makefile,3,45,57,156
+trixie,2025,mawk,RPM Specfile,1,17,2,51
+trixie,2025,mawk,SVG,1,1,1,118
+trixie,2025,mawk,Shell,8,192,288,1008
+trixie,2025,hostname,C,1,70,82,404
+trixie,2025,hostname,Makefile,1,8,0,32
+trixie,2025,gzip,Autoconf,16,742,522,13037
+trixie,2025,gzip,Automake,4,51,69,277
+trixie,2025,gzip,C,134,3197,7140,20794
+trixie,2025,gzip,C Header,97,2209,5832,17478
+trixie,2025,gzip,Makefile,4,882,939,3306
+trixie,2025,gzip,Shell,42,844,1615,3930
+trixie,2025,gzip,TeX,1,863,3505,7615
+trixie,2025,grep,Autoconf,9,1099,634,24197
+trixie,2025,grep,Automake,6,45,117,364
+trixie,2025,grep,C,428,9919,18683,65084
+trixie,2025,grep,C Header,214,4493,11883,32470
+trixie,2025,grep,Makefile,5,1893,1678,4576
+trixie,2025,grep,Perl,5,131,179,606
+trixie,2025,grep,Shell,171,1649,2730,7386
+trixie,2025,grep,TeX,1,852,3498,7502
+trixie,2025,glibc,Autoconf,95,138,170,112808
+trixie,2025,glibc,C,10449,99360,217723,730201
+trixie,2025,glibc,C Header,3461,33318,81818,310614
+trixie,2025,glibc,C++,35,262,525,1660
+trixie,2025,glibc,GNU Style Assembly,2199,31412,62453,240935
+trixie,2025,glibc,Happy,1,57,0,330
+trixie,2025,glibc,JSON,2,0,0,100
+trixie,2025,glibc,LD Script,3,1,17,7
+trixie,2025,glibc,Makefile,195,2970,3272,19610
+trixie,2025,glibc,Module-Definition,21,199,0,2768
+trixie,2025,glibc,Perl,2,45,56,373
+trixie,2025,glibc,Python,72,1664,2562,15344
+trixie,2025,glibc,Shell,88,960,1807,6096
+trixie,2025,findutils,Autoconf,18,2923,2320,55930
+trixie,2025,findutils,Automake,14,2586,1911,5480
+trixie,2025,findutils,C,695,13877,27103,102758
+trixie,2025,findutils,C Header,315,6095,15176,47384
+trixie,2025,findutils,Happy,1,280,0,2157
+trixie,2025,findutils,Makefile,2,230,460,1355
+trixie,2025,findutils,Python,1,21,15,71
+trixie,2025,findutils,Shell,172,1284,2491,6951
+trixie,2025,findutils,TeX,1,863,3496,7595
+trixie,2025,dpkg,Autoconf,24,1984,2737,13389
+trixie,2025,dpkg,Automake,15,262,158,1734
+trixie,2025,dpkg,C,172,7489,7224,35094
+trixie,2025,dpkg,C Header,76,1395,2541,4365
+trixie,2025,dpkg,C++,24,786,532,4831
+trixie,2025,dpkg,LiveScript,1,9,0,527
+trixie,2025,dpkg,Makefile,108,839,695,3951
+trixie,2025,dpkg,Perl,121,6265,3279,27399
+trixie,2025,dpkg,Shell,100,1585,2557,11312
+trixie,2025,debianutils,Automake,10,61,0,121
+trixie,2025,debianutils,C,3,173,148,1021
+trixie,2025,debianutils,Shell,4,42,45,255
+trixie,2025,debconf,Forth,2,3,0,16
+trixie,2025,debconf,Makefile,3,19,14,126
+trixie,2025,debconf,Perl,128,3585,1010,12707
+trixie,2025,debconf,Python,1,17,24,222
+trixie,2025,debconf,Shell,5,37,85,241
+trixie,2025,coreutils,Alex,108,9,0,926
+trixie,2025,coreutils,Autoconf,6,2605,1064,41574
+trixie,2025,coreutils,Automake,2,30,55,151
+trixie,2025,coreutils,C,1185,31119,49982,200949
+trixie,2025,coreutils,C Header,495,8665,21076,68748
+trixie,2025,coreutils,Happy,1,286,0,2166
+trixie,2025,coreutils,Makefile,13,4116,3579,10479
+trixie,2025,coreutils,Perl,71,1773,2423,8059
+trixie,2025,coreutils,Shell,764,9026,13843,24458
+trixie,2025,coreutils,TeX,1,881,3543,7808
+trixie,2025,bash,Autoconf,24,1450,1120,5462
+trixie,2025,bash,BASH,6,79,171,295
+trixie,2025,bash,C,272,19280,20699,122454
+trixie,2025,bash,C Header,120,2539,4222,8429
+trixie,2025,bash,GNU Style Assembly,2,11,0,68
+trixie,2025,bash,HTML,3,2292,16,29033
+trixie,2025,bash,Happy,2,856,0,6433
+trixie,2025,bash,Makefile,3,50,36,122
+trixie,2025,bash,Module-Definition,43,2659,9,15602
+trixie,2025,bash,Shell,22,341,473,1679
+trixie,2025,bash,TeX,1,821,3462,6762
+trixie,2025,base-passwd,ASP.NET,2,0,0,56
+trixie,2025,base-passwd,Automake,3,11,0,33
+trixie,2025,base-passwd,C,1,284,152,1216
+trixie,2025,base-files,Shell,1,0,1,1
+trixie,2025,perl,Autoconf,2,12,97,10
+trixie,2025,perl,Batch,4,13,1,113
+trixie,2025,perl,C,113,24468,45066,179771
+trixie,2025,perl,C Header,135,13727,21981,507504
+trixie,2025,perl,D,1,5,7,8
+trixie,2025,perl,Happy,1,139,0,1554
+trixie,2025,perl,JSON,22,1,0,1402
+trixie,2025,perl,Makefile,4,229,295,1721
+trixie,2025,perl,Perl,1506,80620,85261,437912
+trixie,2025,perl,Shell,108,2096,4640,15435
+trixie,2025,perl,XML,34,144,0,2429
+trixie,2025,perl,YAML,55,33,29,2379
+trixie,2025,e2fsprogs,Autoconf,104,1506,1106,16248
+trixie,2025,e2fsprogs,BASH,15,92,67,366
+trixie,2025,e2fsprogs,C,327,17814,16070,120076
+trixie,2025,e2fsprogs,C Header,114,2252,3324,13610
+trixie,2025,e2fsprogs,C++,3,33,48,207
+trixie,2025,e2fsprogs,Makefile,1,4,46,2
+trixie,2025,e2fsprogs,Perl,5,32,48,376
+trixie,2025,e2fsprogs,Python,2,4,2,23
+trixie,2025,e2fsprogs,RPM Specfile,1,32,3,209
+trixie,2025,e2fsprogs,Shell,28,1551,2220,9936
+trixie,2025,e2fsprogs,TeX,2,1204,5052,8196
+trixie,2025,e2fsprogs,YAML,1,1,0,6
+trixie,2025,diffutils,Alex,4,0,0,18
+trixie,2025,diffutils,Autoconf,9,1135,596,23975
+trixie,2025,diffutils,Automake,7,58,75,209
+trixie,2025,diffutils,C,410,9717,16842,60036
+trixie,2025,diffutils,C Header,206,4474,11571,32123
+trixie,2025,diffutils,Makefile,5,1828,1614,4407
+trixie,2025,diffutils,Perl,1,23,21,627
+trixie,2025,diffutils,Shell,106,1117,2040,6768
+trixie,2025,diffutils,TeX,1,852,3498,7502
+trixie,2025,attr,Autoconf,5,212,220,2192
+trixie,2025,attr,Automake,11,19,8,147
+trixie,2025,attr,C,15,329,395,2294
+trixie,2025,attr,C Header,7,50,172,162
+trixie,2025,attr,Makefile,1,3,0,6
+trixie,2025,attr,Perl,1,32,60,286
+trixie,2025,attr,Shell,2,1246,2067,8675
+trixie,2025,acl,Autoconf,5,270,244,3026
+trixie,2025,acl,Automake,12,24,7,248
+trixie,2025,acl,BASH,1,2,1,4
+trixie,2025,acl,C,67,908,1475,5418
+trixie,2025,acl,C Header,16,162,281,495
+trixie,2025,acl,Makefile,1,3,0,6
+trixie,2025,acl,Perl,1,32,50,293
+trixie,2025,acl,Shell,3,1252,2070,8711

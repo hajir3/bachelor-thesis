@@ -1,0 +1,116 @@
+% Language and Font
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[german,english]{babel}
+\usepackage{csquotes} % Required by biblatex for proper quotation marks
+\usepackage{lmodern}
+
+
+% Suppress overfull/underfull box warnings
+\hbadness=10000
+\vbadness=10000
+\hfuzz=10pt
+\vfuzz=10pt
+
+% Mathematical Symbols
+\usepackage{amssymb}
+
+% Images
+\usepackage{graphicx} % for including graphics
+\graphicspath{ {img/} } % root directory for graphics
+\usepackage{subcaption} % figures inside figures (e.g. for side by side figures)
+\usepackage{float} % required for positioning figures with [H] (and lots of other stuff)
+\usepackage[section]{placeins} % insert a \FloatBarrier at every \section so floats never drift into a later section
+\usepackage{wrapfig} % floating figures
+% Top-align float pages: a figure flushed onto a page of its own sits at the
+% top of the text block (like a normal [t] float) instead of being centered
+% vertically, which reads as if the figure were lost on an empty page.
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+
+% Import PDFs
+\usepackage{pdfpages}
+
+% CSV Tables
+\usepackage{csvsimple}
+\usepackage{longtable}
+
+\usepackage[headsepline, footsepline, plainfootsepline]{scrlayer-scrpage}
+\clearpairofpagestyles\automark{chapter}
+\ihead{\leftmark{}}
+\ofoot[\thepage]{\thepage}
+
+
+% Section Headers - Using KOMA-Script native formatting
+\setlength{\parindent}{0cm} % No indentation for new paragraphs
+
+% Configure section formatting using KOMA-Script commands
+\RedeclareSectionCommand[
+  beforeskip=-2.5ex plus -1ex minus -.25ex,
+  afterskip=1.25ex plus .25ex,
+  font=\normalsize\itshape\bfseries
+]{paragraph}
+
+% Optional: Configure other section levels if needed
+\RedeclareSectionCommand[
+  font=\Large\bfseries
+]{section}
+
+\RedeclareSectionCommand[
+  font=\large\bfseries
+]{subsection}
+
+% Package for inserting and highlighting todo notes
+\usepackage[linecolor=gray,bordercolor=gray,backgroundcolor=yellow]{todonotes}
+
+% Code Highlighting
+\usepackage{listings}
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+\lstset{ %
+  basicstyle=\ttfamily,        % size of fonts used for the code
+  breaklines=true,                 % automatic line breaking only at whitespace
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{mygreen},    % comment style
+  escapeinside={{*}{*}},          % if you want to add LaTeX within your code
+  keywordstyle=\color{blue},       % keyword style
+  stringstyle=\color{mymauve},     % string literal style
+  extendedchars=true,
+  frame=single,
+  frameround=tttt,
+  framexleftmargin=1pt,
+  framexrightmargin=1pt
+}
+
+% Hyperlinks
+\usepackage[hidelinks, pdftex]{hyperref}
+\hypersetup{%
+  pdftitle={The Evolution of Complexity in the Debian Base System: A Release-Wise Analysis of the Persistent Packages from Potato (2000) to Trixie (2025)},
+  pdfauthor={Hajir Ismaili},
+  pdfdisplaydoctitle=true, % For Accessibility
+  bookmarksnumbered,
+  pdfstartview={FitH}
+}
+
+% Improve bookmark handling and avoid "bookmark level gap" warnings from KOMA
+% Load `bookmark` after `hyperref` as recommended by the package documentation.
+\usepackage{bookmark}
+
+% Enumerated list modification
+\usepackage{enumitem}
+
+% Diagrams
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+\usepackage{pgfplotstable}
+\usepackage{sfmath}
+\usetikzlibrary{patterns, positioning, arrows.meta}
+
+% Removes justified text in bibliography and formats better than just \raggedright
+\usepackage{ragged2e}
+
+% Bibliography
+\usepackage[backend=biber, style=ieee, sorting=none]{biblatex}
+\addbibresource{doc.bib}

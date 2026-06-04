@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite it using the metadata from this file."
+type: software
+title: "Software Bloat in Debian: Analysis Pipeline and Debian Bloat Explorer"
+authors:
+  - family-names: Ismaili
+    given-names: Hajir
+    email: hajir3@gmail.com
+version: BA-Submission
+date-released: 2026-06-04
+doi: 10.5281/zenodo.20546461
+repository-code: "https://github.com/hajir3/bachelor-thesis"
+url: "https://debian-bloat-explorer.streamlit.app"
+license: MIT
+keywords:
+  - Debian
+  - software bloat
+  - cyclomatic complexity
+  - software evolution
+  - Linux
+preferred-citation:
+  type: thesis
+  thesis-type: "Bachelor's thesis"
+  title: "The Evolution of Complexity in the Debian Base System: A Release-Wise Analysis of the Persistent Packages from Potato (2000) to Trixie (2025)"
+  authors:
+    - family-names: Ismaili
+      given-names: Hajir
+  institution:
+    name: "Zurich University of Applied Sciences (ZHAW)"
+  year: 2026

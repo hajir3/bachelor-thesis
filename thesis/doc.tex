@@ -1,0 +1,91 @@
+% DIV=11 enlarges the type area slightly over the KOMA default (DIV=10):
+% the text block gains ~8mm height, reducing the large classical bottom margin.
+\documentclass[a4paper, 11pt, DIV=11, abstract=on, listof=leveldown]{scrreprt}
+
+% ========================== PREAMBLE ==============================
+\input{parts/00_preamble/preamble.tex}
+
+% Official German title (for the ZHAW title page and registration):
+%   Komplexitätsentwicklung im Debian-Basissystem:
+%   Eine releaseweise Analyse der persistenten Pakete von Potato (2000) bis Trixie (2025)
+\title{The Evolution of Complexity in the Debian Base System}
+\subtitle{A Release-Wise Analysis of the Persistent Packages from Potato (2000) to Trixie (2025)}
+\author{Hajir Ismaili}
+\date{\today}
+
+\begin{document}
+% ========================== FRONT MATTER ==========================
+% Title page (ZHAW template; contains both supervisors: Peter Heinrich (main), Peter Berlich (external))
+\includepdf[pages=-]{parts/01_front_matter/Title_page.pdf}
+\clearpage
+
+% English Abstract
+\begin{abstract}
+\input{parts/01_front_matter/abstract}
+\end{abstract}
+\clearpage
+
+% German Abstract (Zusammenfassung)
+\selectlanguage{german}
+\begin{abstract}
+\input{parts/01_front_matter/zusammenfassung}
+\end{abstract}
+\clearpage
+\selectlanguage{english}
+
+% Table of Contents
+\pagenumbering{roman}
+\renewcommand{\contentsname}{Table of Contents}
+\tableofcontents
+\clearpage
+
+% List of Figures and List of Tables (shared page)
+\markboth{List of Figures and List of Tables}{}
+\listoffigures
+\bigskip
+\listoftables
+\clearpage
+
+\pagenumbering{arabic}
+% ========================== MAIN MATTER ===========================
+
+\chapter{Introduction}\label{ch:introduction}
+\input{parts/02_main_matter/01_introduction}
+\clearpage
+
+\chapter{Related Work}\label{ch:relatedwork}
+\input{parts/02_main_matter/02_relatedwork}
+\clearpage
+
+\chapter{Method}\label{ch:method}
+\input{parts/02_main_matter/03_method}
+\clearpage
+
+\chapter{Results}\label{ch:results}
+\input{parts/02_main_matter/04_results}
+
+\chapter{Discussion}\label{ch:discussion}
+\input{parts/02_main_matter/05_discussion}
+
+\chapter{Conclusion}\label{ch:conclusion}
+\input{parts/02_main_matter/06_conclusion}
+
+\chapter*{References}
+\addcontentsline{toc}{chapter}{References}
+\markboth{References}{}
+\input{parts/03_back_matter/references}
+
+\chapter*{Declaration on the Use of AI Tools}
+\addcontentsline{toc}{chapter}{Declaration on the Use of AI Tools}
+\markboth{Declaration on the Use of AI Tools}{}
+\input{parts/03_back_matter/ai_declaration}
+
+\chapter*{Glossary}
+\addcontentsline{toc}{chapter}{Glossary}
+\markboth{Glossary}{}
+\input{parts/03_back_matter/glossary}
+
+\appendix
+\chapter{Appendix}\label{english:appendix}
+\input{parts/03_back_matter/appendix}
+\end{document}

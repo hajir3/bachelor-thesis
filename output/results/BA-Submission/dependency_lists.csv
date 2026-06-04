@@ -1,0 +1,899 @@
+codename,year,package,source,depends,pre_depends
+potato,2000,base-files,base-files,awk; base-passwd (>= 2.0.3.4),
+potato,2000,base-passwd,base-passwd,libc6 (>= 2.1.2),
+potato,2000,bash,bash,base-files (>= 2.1.12),libc6 (>= 2.1.2); libncurses5
+potato,2000,bsdutils,util-linux,,libc6 (>= 2.1.2)
+potato,2000,debconf-tiny,debconf,perl-5.005-base (>= 5.005.03-4.1),
+potato,2000,debianutils,debianutils,,libc6 (>= 2.1.2)
+potato,2000,diff,diff,,libc6 (>= 2.1.2)
+potato,2000,dpkg,dpkg,,libc6 (>= 2.1.2); libncurses5; libstdc++2.10
+potato,2000,e2fsprogs,e2fsprogs,,libc6 (>= 2.1.2)
+potato,2000,fileutils,fileutils,,libc6 (>= 2.1.2)
+potato,2000,findutils,findutils,,libc6 (>= 2.1.2)
+potato,2000,grep,grep,,libc6 (>= 2.1.2)
+potato,2000,gzip,gzip,debianutils (>= 1.6),libc6 (>= 2.1.2)
+potato,2000,hostname,hostname,,libc6 (>= 2.1)
+potato,2000,ldso,ld.so,,
+potato,2000,libc6,glibc,,ldso (>= 1.9.11-2.1)
+potato,2000,libdb2,db,libc6 (>= 2.1.2),
+potato,2000,libgdbmg1,gdbm,libc6 (>= 2.1),
+potato,2000,libncurses5,ncurses,libc6 (>= 2.1.2); ncurses-base,
+potato,2000,libnewt0,newt,libc6 (>= 2.1.2); slang1 (>> 1.3.0-0),
+potato,2000,libpam-modules,pam,libc6 (>= 2.1.2); libdb2 (>= 1:2.4.14-7); libpam0g (>= 0.72-1),
+potato,2000,libpam-runtime,pam,,
+potato,2000,libpam0g,pam,libc6 (>= 2.1.2); libpam-runtime,
+potato,2000,libpopt0,popt,libc6 (>= 2.1.2),
+potato,2000,libreadline4,readline4,libc6 (>= 2.1.2); libncurses5,
+potato,2000,libstdc++2.10,gcc,libc6 (>= 2.1.2),
+potato,2000,login,shadow,libpam-modules (>= 0.72-5),libc6 (>= 2.1.2); libpam0g
+potato,2000,makedev,makedev,base-passwd (>= 3.0.4),
+potato,2000,mawk,mawk,,libc6 (>= 2.1.2)
+potato,2000,modutils,modutils,libc6 (>= 2.1.2); sysvinit (>=2.71-2),
+potato,2000,mount,util-linux,,libc6 (>= 2.1.2)
+potato,2000,ncurses-base,ncurses,,
+potato,2000,ncurses-bin,ncurses,libc6 (>= 2.1.2); libncurses5,
+potato,2000,passwd,shadow,libc6 (>= 2.1.2); libpam0g; login (>= 970502-1); libpam-modules (>= 0.72-5),
+potato,2000,perl-5.005-base,perl-5.005,,libc6 (>= 2.1.2); libdb2 (>= 1:2.4.14-7); libgdbmg1
+potato,2000,perl-base,perl-base,,perl5-base
+potato,2000,procps,procps,libc6 (>= 2.1); libc6 (>= 2.1.2); libncurses5,
+potato,2000,sed,sed,,libc6 (>= 2.1.2)
+potato,2000,shellutils,shellutils,,libc6 (>= 2.1.2); login (>= 19990827-1)
+potato,2000,slang1,slang,libc6 (>= 2.1),
+potato,2000,sysklogd,sysklogd,libc6 (>= 2.1.2),
+potato,2000,sysvinit,sysvinit,dpkg (>= 1.4.0.21); mount (>= 2.7i-1); util-linux (>= 2.9t-2); e2fsprogs (>= 1.15-1),libc6 (>= 2.1.2)
+potato,2000,tar,tar,,libc6 (>= 2.1.2)
+potato,2000,textutils,textutils,,libc6 (>= 2.1)
+potato,2000,update,update,,libc6 (>= 2.1)
+potato,2000,util-linux,util-linux,,libc6 (>= 2.1.2); libncurses5; slang1 (>> 1.3.0-0)
+woody,2002,base-files,base-files,awk; base-passwd (>= 2.0.3.4),
+woody,2002,base-passwd,base-passwd,libc6 (>= 2.2.4-4),
+woody,2002,bash,bash,base-files (>= 2.1.12),libc6 (>= 2.2.4-4); libncurses5 (>= 5.2.20020112a-1)
+woody,2002,bsdutils,util-linux,,libc6 (>= 2.2.4-4)
+woody,2002,debconf,debconf,fileutils (>= 4.0-5),perl-base (>= 5.6.1-4)
+woody,2002,debianutils,debianutils,,libc6 (>= 2.2.4-4)
+woody,2002,diff,diff,,libc6 (>= 2.1.2)
+woody,2002,dpkg,dpkg,,libc6 (>= 2.2.4-4); libncurses5 (>= 5.2.20020112a-1); libstdc++2.10-glibc2.2 (>= 1:2.95.4-0.010810)
+woody,2002,e2fsprogs,e2fsprogs,,libc6 (>= 2.2.4-4)
+woody,2002,fileutils,fileutils,,libc6 (>= 2.2.4-4)
+woody,2002,findutils,findutils,,libc6 (>= 2.2.3-1)
+woody,2002,grep,grep,,libc6 (>= 2.2.4-4)
+woody,2002,gzip,gzip,debianutils (>= 1.6),libc6 (>= 2.2.4-4)
+woody,2002,hostname,hostname,,libc6 (>= 2.2.3-1)
+woody,2002,libc6,glibc,,
+woody,2002,libcap1,libcap,libc6 (>= 2.2.4-4),
+woody,2002,libdb2,db2,libc6 (>= 2.2.4-4),libc6 (>= 2.2.2-4) | libc6.1 (>= 2.2.2-4) | libc0.2 (>= 2.2.2-4) | libc0.3
+woody,2002,libdb3,db3,libc6 (>= 2.2.4-4),
+woody,2002,libncurses5,ncurses,libc6 (>= 2.2.4-4),
+woody,2002,libnewt0,newt,libc6 (>= 2.2.4-4); slang1 (>> 1.4.4-7.1),
+woody,2002,libpam-modules,pam,libc6 (>= 2.2.4-4); libcap1; libdb3 (>= 3.2.9-1); libpam0g (>= 0.72-1),
+woody,2002,libpam-runtime,pam,,
+woody,2002,libpam0g,pam,libc6 (>= 2.2.4-4); libpam-runtime,
+woody,2002,libpopt0,popt,libc6 (>= 2.2.4-4),
+woody,2002,libreadline4,readline4,libc6 (>= 2.2.4-4); libncurses5 (>= 5.2.20020112a-1),
+woody,2002,libstdc++2.10-glibc2.2,gcc-2.95,libc6 (>= 2.2.4-4),
+woody,2002,login,shadow,libpam-modules (>= 0.72-5),libc6 (>= 2.2.4-4); libpam0g (>= 0.72-1)
+woody,2002,makedev,makedev,base-passwd (>= 3.0.4),
+woody,2002,mawk,mawk,,libc6 (>= 2.2.3-1)
+woody,2002,mbr,mbr,libc6 (>= 2.2.3-7),
+woody,2002,modutils,modutils,libc6 (>= 2.2.4-4); sysvinit (>=2.71-2),
+woody,2002,mount,util-linux,,libc6 (>= 2.2.4-4)
+woody,2002,ncurses-base,ncurses,,
+woody,2002,ncurses-bin,ncurses,,libc6 (>= 2.2.4-4); libncurses5 (>= 5.2.20020112a-1)
+woody,2002,passwd,shadow,libc6 (>= 2.2.4-4); libpam0g (>= 0.72-1); login (>= 970502-1); libpam-modules (>= 0.72-5),
+woody,2002,perl-base,perl,,libc6 (>= 2.2.4-4)
+woody,2002,procps,procps,libc6 (>= 2.2.4-4); libncurses5 (>= 5.2.20020112a-1),
+woody,2002,sed,sed,,libc6 (>= 2.2.3-1)
+woody,2002,shellutils,shellutils,,libc6 (>= 2.2.3-7); login | hurd
+woody,2002,slang1,slang,libc6 (>= 2.2.4-4),
+woody,2002,sysvinit,sysvinit,dpkg (>= 1.4.0.21); mount (>= 2.7i-1); util-linux (>= 2.9t-2); e2fsprogs (>= 1.15-1),libc6 (>= 2.2.4-4)
+woody,2002,tar,tar,,libc6 (>= 2.2.4-4)
+woody,2002,textutils,textutils,,libc6 (>= 2.2.4-4)
+woody,2002,util-linux,util-linux,,libc6 (>= 2.2.4-4); libncurses5 (>= 5.2.20020112a-1); slang1 (>> 1.4.4-7.1)
+sarge,2005,base-files,base-files,awk; base-passwd (>= 2.0.3.4),
+sarge,2005,base-passwd,base-passwd,libc6 (>= 2.3.2.ds1-4),
+sarge,2005,bash,bash,base-files (>= 2.1.12); passwd (>= 1:4.0.3-10),libc6 (>= 2.3.2.ds1-4); libncurses5 (>= 5.4-1)
+sarge,2005,bsdutils,util-linux,,libc6 (>= 2.3.2.ds1-21)
+sarge,2005,coreutils,coreutils,,libacl1 (>= 2.2.11-1); libc6 (>= 2.3.2.ds1-4)
+sarge,2005,debconf,debconf,debconf-i18n | debconf-english,perl-base (>= 5.6.1-4)
+sarge,2005,debconf-i18n,debconf,debconf; liblocale-gettext-perl; libtext-iconv-perl; libtext-wrapi18n-perl; libtext-charwidth-perl,
+sarge,2005,debianutils,debianutils,,libc6 (>= 2.3.2.ds1-4); coreutils (>= 4.5.8-1)
+sarge,2005,diff,diffutils,,libc6 (>= 2.3.2.ds1-4)
+sarge,2005,dpkg,dpkg,,dselect; libc6 (>= 2.3.2.ds1-21)
+sarge,2005,dselect,dpkg,libc6 (>= 2.3.2.ds1-21); libgcc1 (>= 1:3.4.1-3); libncurses5 (>= 5.4-1); libstdc++5 (>= 1:3.3.4-1),
+sarge,2005,e2fslibs,e2fsprogs,libc6 (>= 2.3.2.ds1-21),
+sarge,2005,e2fsprogs,e2fsprogs,,e2fslibs (= 1.37-2sarge1); libblkid1 (>= 1.34-1); libc6 (>= 2.3.2.ds1-21); libcomerr2 (>= 1.34-1); libss2 (>= 1.34-1); libuuid1 (>= 1.34-1)
+sarge,2005,findutils,findutils,,libc6 (>= 2.3.2.ds1-4)
+sarge,2005,gcc-3.3-base,gcc-3.3,,
+sarge,2005,grep,grep,,libc6 (>= 2.3.2.ds1-4)
+sarge,2005,gzip,gzip,debianutils (>= 1.6),libc6 (>= 2.3.2.ds1-21)
+sarge,2005,hostname,hostname,,libc6 (>= 2.3.2.ds1-4)
+sarge,2005,initscripts,sysvinit,libc6 (>= 2.3.2.ds1-4); libc6 (>= 2.3.2.ds1-12); dpkg (>= 1.9.0); mount (>= 2.11l-1); util-linux (>= 2.9t-2); e2fsprogs (>= 1.19-1); coreutils (>= 5.0.91-2),
+sarge,2005,libacl1,acl,libattr1 (>= 2.4.4-1); libc6 (>= 2.3.2-1),
+sarge,2005,libattr1,attr,libc6 (>= 2.3.2.ds1-4),
+sarge,2005,libblkid1,e2fsprogs,libc6 (>= 2.3.2.ds1-21),
+sarge,2005,libc6,glibc,libdb1-compat,
+sarge,2005,libcap1,libcap,libc6 (>= 2.3.2.ds1-4),
+sarge,2005,libcomerr2,e2fsprogs,libc6 (>= 2.3.2.ds1-21),
+sarge,2005,libdb1-compat,db1-compat,libc6 (>= 2.2.5-13),
+sarge,2005,libdb3,db3,libc6 (>= 2.3.2.ds1-4),
+sarge,2005,libgcc1,gcc-3.4,libc6 (>= 2.3.2.ds1-21),
+sarge,2005,liblocale-gettext-perl,liblocale-gettext-perl,libc6 (>= 2.3.1-1); perlapi-5.8.0; perl-base (>= 5.8.0-17),perl-base (>= 5.8)
+sarge,2005,libncurses5,ncurses,libc6 (>= 2.3.2.ds1-4),
+sarge,2005,libnewt0.51,newt,libc6 (>= 2.3.2.ds1-4); slang1a-utf8 (>> 1.4.9dbs-4),
+sarge,2005,libpam-modules,pam,libc6 (>= 2.3.2.ds1-4); libcap1; libdb3 (>= 3.2.9-20); libpam0g (>= 0.76),
+sarge,2005,libpam-runtime,pam,,
+sarge,2005,libpam0g,pam,libc6 (>= 2.3.2.ds1-4); libpam-runtime,
+sarge,2005,libpopt0,popt,libc6 (>= 2.3.2.ds1-4),
+sarge,2005,libss2,e2fsprogs,libcomerr2,
+sarge,2005,libstdc++5,gcc-3.3,gcc-3.3-base (>= 1:3.3.5-13); libc6 (>= 2.3.2.ds1-21); libgcc1 (>= 1:3.3.4-3),
+sarge,2005,libtext-charwidth-perl,libtext-charwidth-perl,libc6 (>= 2.3.1-1); perlapi-5.8.0; perl-base (>= 5.8.0-18),
+sarge,2005,libtext-iconv-perl,libtext-iconv-perl,libc6 (>= 2.3.2.ds1-4); perl-base (>= 5.8.3-2); perlapi-5.8.3,
+sarge,2005,libtext-wrapi18n-perl,libtext-wrapi18n-perl,libtext-charwidth-perl,
+sarge,2005,libuuid1,e2fsprogs,libc6 (>= 2.3.2.ds1-21),
+sarge,2005,login,shadow,libpam-modules (>= 0.72-5),libc6 (>= 2.3.2.ds1-21); libpam0g (>= 0.76); libpam-runtime (>= 0.76-14)
+sarge,2005,makedev,makedev,base-passwd (>= 3.0.4),
+sarge,2005,mawk,mawk,,libc6 (>= 2.3.1-1)
+sarge,2005,modutils,modutils,libc6 (>= 2.3.2.ds1-4); sysvinit (>= 2.71-2),
+sarge,2005,mount,util-linux,,libblkid1 (>= 1.37-1); libc6 (>= 2.3.2.ds1-21); libuuid1
+sarge,2005,ncurses-base,ncurses,,
+sarge,2005,ncurses-bin,ncurses,,libc6 (>= 2.3.2.ds1-4); libncurses5 (>= 5.4-1)
+sarge,2005,passwd,shadow,libc6 (>= 2.3.2.ds1-21); libpam0g (>= 0.76); login (>= 970502-1); libpam-modules (>= 0.72-5),
+sarge,2005,perl-base,perl,,libc6 (>= 2.3.2.ds1-21)
+sarge,2005,procps,procps,libc6 (>= 2.3.2.ds1-4); libncurses5 (>= 5.4-1),
+sarge,2005,sed,sed,,libc6 (>= 2.3.2.ds1-4)
+sarge,2005,slang1a-utf8,slang,libc6 (>= 2.3.2.ds1-4),
+sarge,2005,sysv-rc,sysvinit,,
+sarge,2005,sysvinit,sysvinit,coreutils,libc6 (>= 2.3.2.ds1-4); initscripts; sysv-rc (>= 2.85-2) | file-rc (>> 0.7.0)
+sarge,2005,tar,tar,,libc6 (>= 2.3.2.ds1-21)
+sarge,2005,util-linux,util-linux,,libc6 (>= 2.3.2.ds1-21); libncurses5 (>= 5.4-1); libuuid1; slang1a-utf8 (>> 1.4.9dbs-4); zlib1g (>= 1:1.2.1)
+sarge,2005,whiptail,newt,libc6 (>= 2.3.2.ds1-4); libnewt0.51; libpopt0 (>= 1.7); slang1a-utf8 (>> 1.4.9dbs-4); libnewt0.51 (= 0.51.6-20),
+etch,2007,libacl1,acl,libattr1 (>= 2.4.4-1); libc6 (>= 2.3.6-6),
+etch,2007,libattr1,attr,libc6 (>= 2.3.5-1),
+etch,2007,base-files,base-files,awk; base-passwd (>= 2.0.3.4),
+etch,2007,base-passwd,base-passwd,libc6 (>= 2.3.5-1),
+etch,2007,bash,bash,base-files (>= 2.1.12); debianutils (>= 2.15),libc6 (>= 2.3.6-6); libncurses5 (>= 5.4-5)
+etch,2007,coreutils,coreutils,,libacl1 (>= 2.2.11-1); libc6 (>= 2.3.6-6); libselinux1 (>= 1.32)
+etch,2007,libdb4.3,db4.3,libc6 (>= 2.3.6-6),
+etch,2007,debconf-i18n,debconf,debconf; liblocale-gettext-perl; libtext-iconv-perl; libtext-wrapi18n-perl; libtext-charwidth-perl,
+etch,2007,debconf,debconf,debconf-i18n | debconf-english,perl-base (>= 5.6.1-4)
+etch,2007,debianutils,debianutils,,libc6 (>= 2.3.6-6); coreutils (>= 4.5.8-1); mktemp
+etch,2007,libdevmapper1.02,devmapper,libc6 (>= 2.3.6-6); libselinux1 (>= 1.30); libsepol1 (>= 1.12),
+etch,2007,diff,diffutils,,libc6 (>= 2.3.2.ds1-4)
+etch,2007,dpkg,dpkg,,libc6 (>= 2.3.6-6); coreutils (>= 5.93-1)
+etch,2007,dselect,dpkg,libc6 (>= 2.3.6-6); libgcc1 (>= 1:4.1.1-12); libncurses5 (>= 5.4-5); libstdc++6 (>= 4.1.1-12); dpkg (>= 1.13.1),
+etch,2007,e2fslibs,e2fsprogs,libc6 (>= 2.3.6-6),
+etch,2007,e2fsprogs,e2fsprogs,,e2fslibs (= 1.39+1.40-WIP-2006.11.14+dfsg-2etch1); libblkid1 (>= 1.34-1); libc6 (>= 2.3.6-6); libcomerr2 (>= 1.34-1); libss2 (>= 1.34-1); libuuid1 (>= 1.34-1)
+etch,2007,libblkid1,e2fsprogs,libc6 (>= 2.3.6-6); libdevmapper1.02 (>= 2:1.02.02-2); libselinux1 (>= 1.32); libsepol1 (>= 1.14),
+etch,2007,libcomerr2,e2fsprogs,libc6 (>= 2.3.6-6),
+etch,2007,libss2,e2fsprogs,libcomerr2,
+etch,2007,libuuid1,e2fsprogs,libc6 (>= 2.3.6-6),
+etch,2007,findutils,findutils,,libc6 (>= 2.3.6-6)
+etch,2007,gcc-4.1-base,gcc-4.1,,
+etch,2007,libgcc1,gcc-4.1,gcc-4.1-base (= 4.1.1-21); libc6 (>= 2.3.6-6),
+etch,2007,libstdc++6,gcc-4.1,gcc-4.1-base (= 4.1.1-21); libc6 (>= 2.3.6-6); libgcc1 (>= 1:4.1.1-12),
+etch,2007,libc6,glibc,tzdata,
+etch,2007,grep,grep,,libc6 (>= 2.3.6-6)
+etch,2007,gzip,gzip,debianutils (>= 1.6),libc6 (>= 2.3.6-6)
+etch,2007,hostname,hostname,,libc6 (>= 2.3.6-6)
+etch,2007,lsb-base,lsb,sed; ncurses-bin,
+etch,2007,libcap1,libcap,libc6 (>= 2.3.2.ds1-4),
+etch,2007,liblocale-gettext-perl,liblocale-gettext-perl,libc6 (>= 2.3.2.ds1-21),perlapi-5.8.7; perl-base (>= 5.8.7-3)
+etch,2007,libselinux1,libselinux,libc6 (>= 2.3.6-6); libsepol1 (>= 1.14),
+etch,2007,libsepol1,libsepol,libc6 (>= 2.3.6-6),
+etch,2007,libtext-charwidth-perl,libtext-charwidth-perl,libc6 (>= 2.3.6-6); perlapi-5.8.8; perl-base (>= 5.8.8-6),
+etch,2007,libtext-iconv-perl,libtext-iconv-perl,libc6 (>= 2.3.6-6); perlapi-5.8.8; perl-base (>= 5.8.8-6),
+etch,2007,libtext-wrapi18n-perl,libtext-wrapi18n-perl,libtext-charwidth-perl,
+etch,2007,makedev,makedev,base-passwd (>= 3.0.4),
+etch,2007,mawk,mawk,,libc6 (>= 2.3.1-1)
+etch,2007,mktemp,mktemp,libc6 (>= 2.3.6-6),
+etch,2007,libncurses5,ncurses,libc6 (>= 2.3.6-6),
+etch,2007,ncurses-base,ncurses,libncurses5 (>= 5.4-5),
+etch,2007,ncurses-bin,ncurses,,libc6 (>= 2.3.6-6); libncurses5 (>= 5.4-5)
+etch,2007,libpam-modules,pam,libc6 (>= 2.3.6-6); libcap1; libdb4.3 (>= 4.3.28-1); libpam0g (>= 0.76); libselinux1 (>= 1.32),
+etch,2007,libpam-runtime,pam,,
+etch,2007,libpam0g,pam,libc6 (>= 2.3.6-6); libpam-runtime,
+etch,2007,perl-base,perl,,libc6 (>= 2.3.6-6)
+etch,2007,procps,procps,libc6 (>= 2.3.6-6); libncurses5 (>= 5.4-5); lsb-base (>= 3.0-10),
+etch,2007,sed,sed,,libc6 (>= 2.3.6-6)
+etch,2007,login,shadow,libpam-modules (>= 0.72-5),libc6 (>= 2.3.6-6); libpam0g (>= 0.76); libpam-runtime (>= 0.76-14)
+etch,2007,passwd,shadow,libc6 (>= 2.3.6-6); libpam0g (>= 0.76); libselinux1 (>= 1.32); login (>= 970502-1); libpam-modules (>= 0.72-5); debianutils (>= 2.15.2),
+etch,2007,libslang2,slang2,libc6 (>= 2.3.6-6),
+etch,2007,initscripts,sysvinit,libc6 (>= 2.3.6-6); mount (>= 2.11x-1); e2fsprogs (>= 1.32+1.33-WIP-2003.04.14-1); debianutils (>= 2.13.1); lsb-base (>= 3.0-6); sysvinit-utils,
+etch,2007,sysv-rc,sysvinit,,
+etch,2007,sysvinit-utils,sysvinit,libc6 (>= 2.3.6-6); libselinux1 (>= 1.32); libsepol1 (>= 1.14),
+etch,2007,sysvinit,sysvinit,libc6 (>= 2.3.6-6); libselinux1 (>= 1.32); libsepol1 (>= 1.14),initscripts; sysv-rc (>= 2.86.ds1-1.2) | file-rc (>> 0.7.0); sysvinit-utils
+etch,2007,tar,tar,,libc6 (>= 2.3.6-6)
+etch,2007,tzdata,tzdata,,
+etch,2007,bsdutils,util-linux,,libc6 (>= 2.3.6-6)
+etch,2007,mount,util-linux,,libblkid1 (>= 1.37-1); libc6 (>= 2.3.6-6); libuuid1
+etch,2007,util-linux,util-linux,lsb-base (>= 3.0-6); tzdata (>= 2006c-2),libc6 (>= 2.3.6-6); libncurses5 (>= 5.4-5); libslang2 (>= 2.0.6-3); libuuid1; zlib1g (>= 1:1.2.1)
+lenny,2009,libacl1,acl,libattr1 (>= 2.4.41-1); libc6 (>= 2.7-1),
+lenny,2009,libattr1,attr,libc6 (>= 2.7-1),
+lenny,2009,base-files,base-files,base-passwd (>= 2.0.3.4),awk
+lenny,2009,base-passwd,base-passwd,libc6 (>= 2.7-1),
+lenny,2009,bash,bash,base-files (>= 2.1.12); debianutils (>= 2.15),libc6 (>= 2.7-1); libncurses5 (>= 5.6+20071006-3)
+lenny,2009,coreutils,coreutils,,libacl1 (>= 2.2.11-1); libc6 (>= 2.6.1-1); libselinux1 (>= 2.0.15)
+lenny,2009,libdb4.6,db4.6,libc6 (>= 2.7-1),
+lenny,2009,debconf-i18n,debconf,debconf; liblocale-gettext-perl; libtext-iconv-perl; libtext-wrapi18n-perl; libtext-charwidth-perl,
+lenny,2009,debconf,debconf,debconf-i18n | debconf-english,perl-base (>= 5.6.1-4)
+lenny,2009,debianutils,debianutils,,libc6 (>= 2.7-1)
+lenny,2009,libdevmapper1.02.1,devmapper,libc6 (>= 2.7-1); libselinux1 (>= 2.0.59),
+lenny,2009,diff,diffutils,,libc6 (>= 2.5)
+lenny,2009,dpkg,dpkg,,libc6 (>= 2.7-1); coreutils (>= 5.93-1); lzma
+lenny,2009,e2fslibs,e2fsprogs,libc6 (>= 2.7-1); libcomerr2 (>= 1.01),
+lenny,2009,e2fsprogs,e2fsprogs,,e2fslibs (>= 1.41.1); libblkid1 (>= 1.40); libc6 (>= 2.7-1); libcomerr2 (>= 1.34); libss2 (>= 1.34); libuuid1 (>= 1.15)
+lenny,2009,libblkid1,e2fsprogs,libc6 (>= 2.7-1); libuuid1 (>= 1.05),
+lenny,2009,libcomerr2,e2fsprogs,libc6 (>= 2.7-1),
+lenny,2009,libss2,e2fsprogs,libcomerr2 (>= 1.01); libc6 (>= 2.7-1),
+lenny,2009,libuuid1,e2fsprogs,passwd; libc6 (>= 2.7-1),
+lenny,2009,findutils,findutils,,libc6 (>= 2.7-1)
+lenny,2009,gcc-4.2-base,gcc-4.2,,
+lenny,2009,gcc-4.3-base,gcc-4.3,,
+lenny,2009,libgcc1,gcc-4.3,gcc-4.3-base (= 4.3.2-1.1); libc6 (>= 2.7-1),
+lenny,2009,libstdc++6,gcc-4.3,gcc-4.3-base (= 4.3.2-1.1); libc6 (>= 2.7-1); libgcc1 (>= 1:4.1.1),
+lenny,2009,libc6,glibc,libgcc1,
+lenny,2009,grep,grep,,libc6 (>= 2.7-1)
+lenny,2009,gzip,gzip,debianutils (>= 1.6),libc6 (>= 2.7-1)
+lenny,2009,hostname,hostname,,libc6 (>= 2.7-1)
+lenny,2009,lsb-base,lsb,sed; ncurses-bin,
+lenny,2009,lzma,lzma,libc6 (>= 2.7-1); libgcc1 (>= 1:4.1.1); libstdc++6 (>= 4.2.1),
+lenny,2009,liblocale-gettext-perl,liblocale-gettext-perl,libc6 (>= 2.7-1),perl-base (>= 5.10.0-9); perlapi-5.10.0
+lenny,2009,libselinux1,libselinux,libc6 (>= 2.7-1),
+lenny,2009,libsepol1,libsepol,libc6 (>= 2.7-1),
+lenny,2009,libtext-charwidth-perl,libtext-charwidth-perl,libc6 (>= 2.7-1); perl-base (>= 5.10.0-9); perlapi-5.10.0,
+lenny,2009,libtext-iconv-perl,libtext-iconv-perl,libc6 (>= 2.7-1); perl-base (>= 5.10.0-9); perlapi-5.10.0,
+lenny,2009,libtext-wrapi18n-perl,libtext-wrapi18n-perl,libtext-charwidth-perl,
+lenny,2009,makedev,makedev,base-passwd (>= 3.0.4),
+lenny,2009,mawk,mawk,,libc6 (>= 2.7-1)
+lenny,2009,mktemp,mktemp,,libc6 (>= 2.7-1)
+lenny,2009,libncurses5,ncurses,libc6 (>= 2.7-1),
+lenny,2009,ncurses-base,ncurses,libncurses5,
+lenny,2009,ncurses-bin,ncurses,,libc6 (>= 2.7-1); libncurses5 (>= 5.6+20071006-3)
+lenny,2009,libpam-modules,pam,,libc6 (>= 2.7-1); libdb4.6; libpam0g (>= 0.99.7.1); libselinux1 (>= 2.0.59); debconf (>= 0.5) | debconf-2.0
+lenny,2009,libpam-runtime,pam,,
+lenny,2009,libpam0g,pam,libc6 (>= 2.7-1); debconf (>= 0.5) | debconf-2.0; libpam-runtime,
+lenny,2009,perl-base,perl,,libc6 (>= 2.7-1); dpkg (>= 1.14.20)
+lenny,2009,procps,procps,libc6 (>= 2.7-1); libncurses5 (>= 5.7); lsb-base (>= 3.0-10),
+lenny,2009,sed,sed,,libc6 (>= 2.7-1)
+lenny,2009,login,shadow,,libc6 (>= 2.7-1); libpam0g (>= 0.99.7.1); libpam-runtime; libpam-modules
+lenny,2009,passwd,shadow,libc6 (>= 2.7-1); libpam0g (>= 0.99.7.1); libselinux1 (>= 2.0.59); libpam-modules; debianutils (>= 2.15.2),
+lenny,2009,libslang2,slang2,libc6 (>= 2.7-1),
+lenny,2009,initscripts,sysvinit,libc6 (>= 2.7-1); mount (>= 2.11x-1); e2fsprogs (>= 1.32+1.33-WIP-2003.04.14-1); debianutils (>= 2.13.1); lsb-base (>= 3.0-6); sysvinit-utils (>= 2.86.ds1-39),
+lenny,2009,sysv-rc,sysvinit,,
+lenny,2009,sysvinit-utils,sysvinit,libc6 (>= 2.7-1); libselinux1 (>= 2.0.59); libsepol1 (>= 2.0.25),
+lenny,2009,sysvinit,sysvinit,libc6 (>= 2.7-1); libselinux1 (>= 2.0.59); libsepol1 (>= 2.0.25),initscripts; sysv-rc (>= 2.86.ds1-1.2) | file-rc (>> 0.7.0); sysvinit-utils
+lenny,2009,tar,tar,,libc6 (>= 2.7-1)
+lenny,2009,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+lenny,2009,bsdutils,util-linux,libc6 (>= 2.7-1),
+lenny,2009,mount,util-linux,,libblkid1 (>= 1.37-1); libc6 (>= 2.7-1); libselinux1 (>= 2.0.59); libuuid1
+lenny,2009,util-linux,util-linux,lsb-base (>= 3.0-6); tzdata (>= 2006c-2),libc6 (>= 2.7-1); libncurses5 (>= 5.6+20071006-3); libselinux1 (>= 2.0.59); libslang2 (>= 2.0.7-1); libuuid1; zlib1g (>= 1:1.1.4)
+squeeze,2011,libacl1,acl,libattr1 (>= 2.4.41-1); libc6 (>= 2.2.5),
+squeeze,2011,libattr1,attr,libc6 (>= 2.2.5),
+squeeze,2011,base-files,base-files,,awk
+squeeze,2011,base-passwd,base-passwd,libc6 (>= 2.2.5),
+squeeze,2011,bash,bash,base-files (>= 2.1.12); debianutils (>= 2.15),dash (>= 0.5.5.1-2.2); libc6 (>= 2.4); libncurses5 (>= 5.7+20100313)
+squeeze,2011,libbz2-1.0,bzip2,libc6 (>= 2.3),
+squeeze,2011,coreutils,coreutils,,libacl1 (>= 2.2.11-1); libattr1 (>= 2.4.41-1); libc6 (>= 2.6); libselinux1 (>= 1.32)
+squeeze,2011,dash,dash,debianutils (>= 2.15); dpkg (>= 1.15.0),libc6 (>= 2.3)
+squeeze,2011,libdb4.8,db4.8,libc6 (>= 2.3.2),
+squeeze,2011,debconf-i18n,debconf,debconf; liblocale-gettext-perl; libtext-iconv-perl; libtext-wrapi18n-perl; libtext-charwidth-perl,
+squeeze,2011,debconf,debconf,debconf-i18n | debconf-english,perl-base (>= 5.6.1-4)
+squeeze,2011,debianutils,debianutils,sensible-utils,libc6 (>= 2.7)
+squeeze,2011,diffutils,diffutils,,libc6 (>= 2.3)
+squeeze,2011,dpkg,dpkg,,libbz2-1.0; libc6 (>= 2.6); libselinux1 (>= 1.32); zlib1g (>= 1:1.1.4); coreutils (>= 5.93-1); xz-utils
+squeeze,2011,e2fslibs,e2fsprogs,libc6 (>= 2.7),
+squeeze,2011,e2fsprogs,e2fsprogs,,e2fslibs (= 1.41.12-4stable1); libblkid1 (>= 2.17.2); libc6 (>= 2.7); libcomerr2 (>= 1.34-1); libss2 (>= 1.34-1); libuuid1 (>= 2.16); util-linux (>= 2.15~rc1-1)
+squeeze,2011,libcomerr2,e2fsprogs,libc6 (>= 2.3),
+squeeze,2011,libss2,e2fsprogs,libcomerr2; libc6 (>= 2.2.5),
+squeeze,2011,libc-bin,eglibc,,
+squeeze,2011,libc6,eglibc,libc-bin (= 2.11.3-4); libgcc1,
+squeeze,2011,findutils,findutils,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.4)
+squeeze,2011,gcc-4.4-base,gcc-4.4,,
+squeeze,2011,libgcc1,gcc-4.4,gcc-4.4-base (= 4.4.5-8); libc6 (>= 2.2.5),
+squeeze,2011,libstdc++6,gcc-4.4,gcc-4.4-base (= 4.4.5-8); libc6 (>= 2.3.2); libgcc1 (>= 1:4.1.1),
+squeeze,2011,grep,grep,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.3)
+squeeze,2011,gzip,gzip,,libc6 (>= 2.4)
+squeeze,2011,hostname,hostname,,libc6 (>= 2.3)
+squeeze,2011,insserv,insserv,libc6 (>= 2.4),
+squeeze,2011,lsb-base,lsb,sed; ncurses-bin,
+squeeze,2011,liblocale-gettext-perl,liblocale-gettext-perl,libc6 (>= 2.2.5),perl-base (>= 5.10.0-25); perlapi-5.10.0
+squeeze,2011,libselinux1,libselinux,libc6 (>= 2.3.4),
+squeeze,2011,libsepol1,libsepol,libc6 (>= 2.3),
+squeeze,2011,libtext-charwidth-perl,libtext-charwidth-perl,libc6 (>= 2.2.5); perl-base (>= 5.10.0-13); perlapi-5.10.0,
+squeeze,2011,libtext-iconv-perl,libtext-iconv-perl,libc6 (>= 2.2.5); perl-base (>= 5.10.0-13); perlapi-5.10.0,
+squeeze,2011,libtext-wrapi18n-perl,libtext-wrapi18n-perl,libtext-charwidth-perl,
+squeeze,2011,mawk,mawk,,libc6 (>= 2.2.5)
+squeeze,2011,libncurses5,ncurses,libc6 (>= 2.3.4),
+squeeze,2011,ncurses-base,ncurses,,
+squeeze,2011,ncurses-bin,ncurses,,libc6 (>= 2.3); libncurses5 (>= 5.7+20100313)
+squeeze,2011,libpam-modules,pam,,libc6 (>= 2.4); libdb4.8; libpam0g (>= 1.1.0); libselinux1 (>= 2.0.85); debconf (>= 0.5) | debconf-2.0
+squeeze,2011,libpam-runtime,pam,debconf (>= 1.5.19); libpam-modules (>= 1.0.1-6),
+squeeze,2011,libpam0g,pam,libc6 (>= 2.3); debconf (>= 0.5) | debconf-2.0,
+squeeze,2011,perl-base,perl,,libc6 (>= 2.4); dpkg (>= 1.14.20)
+squeeze,2011,sed,sed,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.3); libselinux1 (>= 1.32)
+squeeze,2011,sensible-utils,sensible-utils,,
+squeeze,2011,login,shadow,,libc6 (>= 2.3); libpam0g (>= 0.99.7.1); libpam-runtime; libpam-modules
+squeeze,2011,passwd,shadow,libc6 (>= 2.3); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32); libpam-modules; debianutils (>= 2.15.2),
+squeeze,2011,libslang2,slang2,libc6 (>= 2.3),
+squeeze,2011,initscripts,sysvinit,libc6 (>= 2.2.5); mount (>= 2.11x-1); debianutils (>= 2.13.1); lsb-base (>= 3.2-14); sysvinit-utils (>= 2.86.ds1-64); sysv-rc | file-rc; coreutils (>= 5.93),
+squeeze,2011,sysv-rc,sysvinit,debconf (>= 0.5) | debconf-2.0; sysvinit-utils (>= 2.86.ds1-62); insserv (>> 1.12.0-10),
+squeeze,2011,sysvinit-utils,sysvinit,libc6 (>= 2.3); libselinux1 (>= 1.32),
+squeeze,2011,sysvinit,sysvinit,libc6 (>= 2.3); libselinux1 (>= 1.32); libsepol1 (>= 1.14),initscripts; sysv-rc | file-rc; sysvinit-utils (>= 2.86.ds1-66)
+squeeze,2011,tar,tar,,libc6 (>= 2.6)
+squeeze,2011,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+squeeze,2011,bsdutils,util-linux,libc6 (>= 2.3),
+squeeze,2011,libblkid1,util-linux,libc6 (>= 2.4); libuuid1 (>= 2.16),
+squeeze,2011,libuuid1,util-linux,passwd; libc6 (>= 2.3),
+squeeze,2011,mount,util-linux,,libblkid1 (>= 2.17.2); libc6 (>= 2.6); libselinux1 (>= 2.0.15); libsepol1 (>= 1.14); libuuid1 (>= 2.16)
+squeeze,2011,util-linux,util-linux,lsb-base (>= 3.0-6); tzdata (>= 2006c-2); initscripts; dpkg (>= 1.15.4) | install-info; debconf (>= 0.5) | debconf-2.0,libblkid1 (>= 2.17.2); libc6 (>= 2.10); libncurses5 (>= 5.7+20100313); libselinux1 (>= 1.32); libslang2 (>= 2.0.7-1); libuuid1 (>= 2.16); zlib1g (>= 1:1.1.4)
+squeeze,2011,liblzma2,xz-utils,libc6 (>= 2.2.5),
+squeeze,2011,xz-utils,xz-utils,libc6 (>= 2.6); liblzma2 (>= 5.0.0),
+wheezy,2013,libacl1,acl,libattr1 (>= 1:2.4.46-8); libc6 (>= 2.4),multiarch-support
+wheezy,2013,libattr1,attr,libc6 (>= 2.4),multiarch-support
+wheezy,2013,base-files,base-files,,awk
+wheezy,2013,base-passwd,base-passwd,libc6 (>= 2.8),
+wheezy,2013,bash,bash,base-files (>= 2.1.12); debianutils (>= 2.15),dash (>= 0.5.5.1-2.2); libc6 (>= 2.11); libtinfo5
+wheezy,2013,libbz2-1.0,bzip2,libc6 (>= 2.4),multiarch-support
+wheezy,2013,coreutils,coreutils,dpkg (>= 1.15.4) | install-info,libacl1 (>= 2.2.51-8); libattr1 (>= 1:2.4.46-8); libc6 (>= 2.7); libselinux1 (>= 1.32)
+wheezy,2013,dash,dash,debianutils (>= 2.15); dpkg (>= 1.15.0),libc6 (>= 2.4)
+wheezy,2013,libdb5.1,db,libc6 (>= 2.4),multiarch-support
+wheezy,2013,debconf,debconf,,perl-base (>= 5.6.1-4)
+wheezy,2013,debconf-i18n,debconf,debconf; liblocale-gettext-perl; libtext-iconv-perl; libtext-wrapi18n-perl; libtext-charwidth-perl,
+wheezy,2013,debianutils,debianutils,sensible-utils,libc6 (>= 2.7)
+wheezy,2013,diffutils,diffutils,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.4)
+wheezy,2013,dpkg,dpkg,,libbz2-1.0; libc6 (>= 2.11); liblzma5 (>= 5.1.1alpha+20120614); libselinux1 (>= 1.32); zlib1g (>= 1:1.1.4); tar (>= 1.23)
+wheezy,2013,e2fslibs,e2fsprogs,libc6 (>= 2.10),multiarch-support
+wheezy,2013,e2fsprogs,e2fsprogs,,e2fslibs (= 1.42.5-1.1+deb7u1); libblkid1 (>= 2.17.2); libc6 (>= 2.11); libcomerr2 (>= 1.42~WIP-2011-10-05-1); libss2 (>= 1.34-1); libuuid1 (>= 2.16); util-linux (>= 2.15~rc1-1)
+wheezy,2013,libcomerr2,e2fsprogs,libc6 (>= 2.4),multiarch-support
+wheezy,2013,libss2,e2fsprogs,libcomerr2; libc6 (>= 2.11),multiarch-support
+wheezy,2013,libc-bin,eglibc,,
+wheezy,2013,libc6,eglibc,libc-bin (= 2.13-38+deb7u10); libgcc1,
+wheezy,2013,multiarch-support,eglibc,libc6 (>= 2.3.6-2),
+wheezy,2013,findutils,findutils,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.7)
+wheezy,2013,gcc-4.7-base,gcc-4.7,,
+wheezy,2013,libgcc1,gcc-4.7,gcc-4.7-base (= 4.7.2-5); libc6 (>= 2.2.5),multiarch-support
+wheezy,2013,grep,grep,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.4)
+wheezy,2013,gzip,gzip,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.6)
+wheezy,2013,hostname,hostname,,libc6 (>= 2.4)
+wheezy,2013,insserv,insserv,libc6 (>= 2.7),
+wheezy,2013,liblocale-gettext-perl,liblocale-gettext-perl,libc6 (>= 2.2.5),perl-base (>= 5.14.2-3); perlapi-5.14.2
+wheezy,2013,libselinux1,libselinux,libc6 (>= 2.8),multiarch-support
+wheezy,2013,libsemanage-common,libsemanage,,
+wheezy,2013,libsemanage1,libsemanage,libsemanage-common (= 2.1.6-6); libbz2-1.0; libc6 (>= 2.8); libselinux1 (>= 1.32); libsepol1 (>= 2.1.4); libustr-1.0-1 (>= 1.0.4),multiarch-support
+wheezy,2013,libsepol1,libsepol,libc6 (>= 2.4),multiarch-support
+wheezy,2013,libtext-charwidth-perl,libtext-charwidth-perl,libc6 (>= 2.2.5); perl-base (>= 5.14.2-3); perlapi-5.14.2,
+wheezy,2013,libtext-iconv-perl,libtext-iconv-perl,libc6 (>= 2.2.5); perl-base (>= 5.14.2-5); perlapi-5.14.2,
+wheezy,2013,libtext-wrapi18n-perl,libtext-wrapi18n-perl,libtext-charwidth-perl,
+wheezy,2013,lsb-base,lsb,,
+wheezy,2013,mawk,mawk,,libc6 (>= 2.11)
+wheezy,2013,libncurses5,ncurses,libtinfo5 (= 5.9-10); libc6 (>= 2.4),multiarch-support; libtinfo5 (>= 5.9-3)
+wheezy,2013,libtinfo5,ncurses,libc6 (>= 2.4),multiarch-support
+wheezy,2013,ncurses-base,ncurses,,
+wheezy,2013,ncurses-bin,ncurses,,libc6 (>= 2.4); libtinfo5 (>= 5.9-3~)
+wheezy,2013,libpam-modules,pam,,libc6 (>= 2.8); libdb5.1; libpam0g (>= 1.1.3-2); libselinux1 (>= 2.0.85); debconf (>= 0.5) | debconf-2.0; libpam-modules-bin (= 1.1.3-7.1)
+wheezy,2013,libpam-modules-bin,pam,libc6 (>= 2.4); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32),
+wheezy,2013,libpam-runtime,pam,debconf (>= 1.5.19); libpam-modules (>= 1.0.1-6),
+wheezy,2013,libpam0g,pam,libc6 (>= 2.8); debconf (>= 0.5) | debconf-2.0,multiarch-support
+wheezy,2013,perl-base,perl,,libc6 (>= 2.11); dpkg (>= 1.14.20)
+wheezy,2013,sed,sed,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.4); libselinux1 (>= 1.32)
+wheezy,2013,sensible-utils,sensible-utils,,
+wheezy,2013,login,shadow,,libc6 (>= 2.7); libpam0g (>= 0.99.7.1); libpam-runtime; libpam-modules
+wheezy,2013,passwd,shadow,libc6 (>= 2.8); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32); libsemanage1 (>= 2.0.3); libpam-modules; debianutils (>= 2.15.2),
+wheezy,2013,libslang2,slang2,libc6 (>= 2.4),multiarch-support
+wheezy,2013,initscripts,sysvinit,libc6 (>= 2.2.5); mount (>= 2.11x-1); debianutils (>= 4); lsb-base (>= 3.2-14); sysvinit-utils (>= 2.86.ds1-64); sysv-rc | file-rc; coreutils (>= 5.93),
+wheezy,2013,sysv-rc,sysvinit,debconf (>= 0.5) | debconf-2.0; sysvinit-utils (>= 2.86.ds1-62); insserv (>> 1.12.0-10),
+wheezy,2013,sysvinit,sysvinit,libc6 (>= 2.3); libselinux1 (>= 1.32); libsepol1 (>= 1.14); debianutils (>= 4),initscripts (>= 2.88dsf-13.3); sysv-rc | file-rc; sysvinit-utils (>= 2.86.ds1-66)
+wheezy,2013,sysvinit-utils,sysvinit,libc6 (>= 2.10); libselinux1 (>= 1.32),
+wheezy,2013,tar,tar,,libc6 (>= 2.8)
+wheezy,2013,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+wheezy,2013,libustr-1.0-1,ustr,libc6 (>= 2.4),multiarch-support
+wheezy,2013,bsdutils,util-linux,libc6 (>= 2.7),
+wheezy,2013,libblkid1,util-linux,libc6 (>= 2.7); libuuid1 (>= 2.16),multiarch-support
+wheezy,2013,libmount1,util-linux,libblkid1 (>= 2.17.2); libc6 (>= 2.8); libselinux1 (>= 1.32); libsepol1 (>= 1.14),multiarch-support
+wheezy,2013,libuuid1,util-linux,passwd; libc6 (>= 2.4),multiarch-support
+wheezy,2013,mount,util-linux,,libblkid1 (>= 2.20.1); libc6 (>= 2.8); libmount1 (>= 2.20.1); libselinux1 (>= 2.0.15); libsepol1 (>= 1.14)
+wheezy,2013,util-linux,util-linux,lsb-base (>= 3.0-6); tzdata (>= 2006c-2); initscripts; dpkg (>= 1.15.4) | install-info; debconf (>= 0.5) | debconf-2.0,libblkid1 (>= 2.20.1); libc6 (>= 2.11); libncurses5 (>= 5.5-5~); libselinux1 (>= 1.32); libslang2 (>= 2.2.4); libtinfo5; libuuid1 (>= 2.16); zlib1g (>= 1:1.1.4)
+wheezy,2013,liblzma5,xz-utils,libc6 (>= 2.4),multiarch-support
+wheezy,2013,xz-utils,xz-utils,libc6 (>= 2.7); liblzma5 (>= 5.1.1alpha+20120614),
+jessie,2015,acl,acl,libacl1 (= 2.2.52-2); libattr1 (>= 1:2.4.46-8); libc6 (>= 2.14),
+jessie,2015,libacl1,acl,libattr1 (>= 1:2.4.46-8); libc6 (>= 2.14),multiarch-support
+jessie,2015,adduser,adduser,perl-base (>= 5.6.0); passwd (>= 1:4.0.12); debconf | debconf-2.0,
+jessie,2015,libattr1,attr,libc6 (>= 2.4),multiarch-support
+jessie,2015,libaudit-common,audit,,
+jessie,2015,libaudit1,audit,libaudit-common (>= 1:2.4-1); libc6 (>= 2.14),multiarch-support
+jessie,2015,base-files,base-files,,awk
+jessie,2015,base-passwd,base-passwd,libc6 (>= 2.8); libdebconfclient0 (>= 0.145),
+jessie,2015,bash,bash,base-files (>= 2.1.12); debianutils (>= 2.15),dash (>= 0.5.5.1-2.2); libc6 (>= 2.15); libncurses5 (>= 5.5-5~); libtinfo5
+jessie,2015,libbz2-1.0,bzip2,libc6 (>= 2.4),multiarch-support
+jessie,2015,libdebconfclient0,cdebconf,libc6 (>= 2.2.5),multiarch-support
+jessie,2015,coreutils,coreutils,,libacl1 (>= 2.2.51-8); libattr1 (>= 1:2.4.46-8); libc6 (>= 2.17); libselinux1 (>= 2.1.13)
+jessie,2015,libcryptsetup4,cryptsetup,libc6 (>= 2.17); libdevmapper1.02.1 (>= 2:1.02.90); libgcrypt20 (>= 1.6.1); libuuid1 (>= 2.16); libgpg-error0 (>= 1.10-0.1),
+jessie,2015,dash,dash,debianutils (>= 2.15); dpkg (>= 1.15.0),libc6 (>= 2.14)
+jessie,2015,libdb5.3,db5.3,libc6 (>= 2.17),multiarch-support
+jessie,2015,debconf,debconf,,perl-base (>= 5.20.1-3~)
+jessie,2015,debconf-i18n,debconf,debconf (= 1.5.56+deb8u1); liblocale-gettext-perl; libtext-iconv-perl; libtext-wrapi18n-perl; libtext-charwidth-perl,
+jessie,2015,debianutils,debianutils,sensible-utils,libc6 (>= 2.15)
+jessie,2015,diffutils,diffutils,,libc6 (>= 2.17)
+jessie,2015,dpkg,dpkg,,libbz2-1.0; libc6 (>= 2.14); liblzma5 (>= 5.1.1alpha+20120614); libselinux1 (>= 2.3); zlib1g (>= 1:1.1.4); tar (>= 1.23)
+jessie,2015,e2fslibs,e2fsprogs,libc6 (>= 2.17),multiarch-support
+jessie,2015,e2fsprogs,e2fsprogs,,e2fslibs (= 1.42.12-2+b1); libblkid1 (>= 2.17.2); libc6 (>= 2.14); libcomerr2 (>= 1.42~WIP-2011-10-05-1); libss2 (>= 1.34-1); libuuid1 (>= 2.16); util-linux (>= 2.15~rc1-1)
+jessie,2015,libcomerr2,e2fsprogs,libc6 (>= 2.17),multiarch-support
+jessie,2015,libss2,e2fsprogs,libcomerr2; libc6 (>= 2.17),multiarch-support
+jessie,2015,findutils,findutils,,libc6 (>= 2.17)
+jessie,2015,gcc-4.8-base,gcc-4.8,,
+jessie,2015,gcc-4.9-base,gcc-4.9,,
+jessie,2015,libgcc1,gcc-4.9,gcc-4.9-base (= 4.9.2-10+deb8u1); libc6 (>= 2.14),multiarch-support
+jessie,2015,libc-bin,glibc,libc6 (>> 2.19); libc6 (<< 2.20),
+jessie,2015,libc6,glibc,libgcc1,
+jessie,2015,multiarch-support,glibc,libc6 (>= 2.3.6-2),
+jessie,2015,grep,grep,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.14); libpcre3 (>= 1:8.35)
+jessie,2015,gzip,gzip,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.17)
+jessie,2015,hostname,hostname,,libc6 (>= 2.4)
+jessie,2015,init,init-system-helpers,,systemd-sysv | sysvinit-core | upstart
+jessie,2015,insserv,insserv,libc6 (>= 2.7),
+jessie,2015,libkmod2,kmod,libc6 (>= 2.17),multiarch-support
+jessie,2015,libcap2,libcap2,libattr1 (>= 1:2.4.46-8); libc6 (>= 2.14),multiarch-support
+jessie,2015,libcap2-bin,libcap2,libc6 (>= 2.14); libcap2 (>= 1:2.10),
+jessie,2015,libgcrypt20,libgcrypt20,libc6 (>= 2.15); libgpg-error0 (>= 1.14),multiarch-support
+jessie,2015,libgpg-error0,libgpg-error,libc6 (>= 2.14),multiarch-support
+jessie,2015,liblocale-gettext-perl,liblocale-gettext-perl,libc6 (>= 2.2.5),perl-base (>= 5.20.0-4); perlapi-5.20.0
+jessie,2015,libselinux1,libselinux,libc6 (>= 2.14); libpcre3 (>= 8.10),multiarch-support
+jessie,2015,libsemanage-common,libsemanage,,
+jessie,2015,libsemanage1,libsemanage,libsemanage-common (= 2.3-1); libaudit1 (>= 1:2.2.1); libbz2-1.0; libc6 (>= 2.14); libselinux1 (>= 2.1.12); libsepol1 (>= 2.1.4); libustr-1.0-1 (>= 1.0.4),multiarch-support
+jessie,2015,libsepol1,libsepol,libc6 (>= 2.14),multiarch-support
+jessie,2015,libtext-charwidth-perl,libtext-charwidth-perl,libc6 (>= 2.2.5); perl-base (>= 5.20.0-4); perlapi-5.20.0,
+jessie,2015,libtext-iconv-perl,libtext-iconv-perl,libc6 (>= 2.2.5); perl-base (>= 5.20.0-4); perlapi-5.20.0,
+jessie,2015,libtext-wrapi18n-perl,libtext-wrapi18n-perl,libtext-charwidth-perl,
+jessie,2015,lsb-base,lsb,,
+jessie,2015,dmsetup,lvm2,libc6 (>= 2.14); libdevmapper1.02.1 (>= 2:1.02.90); util-linux (>> 2.16),
+jessie,2015,libdevmapper1.02.1,lvm2,libc6 (>= 2.14); libselinux1 (>= 1.32); libudev1 (>= 183); dmsetup (>= 2:1.02.90-2.2+deb8u1),multiarch-support
+jessie,2015,mawk,mawk,,libc6 (>= 2.11)
+jessie,2015,libncurses5,ncurses,libtinfo5 (= 5.9+20140913-1+deb8u3); libc6 (>= 2.15),multiarch-support; libtinfo5 (>= 5.9-3)
+jessie,2015,libncursesw5,ncurses,libtinfo5 (= 5.9+20140913-1+deb8u3); libc6 (>= 2.15),multiarch-support
+jessie,2015,libtinfo5,ncurses,libc6 (>= 2.15),multiarch-support
+jessie,2015,ncurses-base,ncurses,,
+jessie,2015,ncurses-bin,ncurses,,libc6 (>= 2.14); libtinfo5 (>= 5.9+20130119)
+jessie,2015,libpam-modules,pam,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.15); libdb5.3; libpam0g (>= 1.1.3-2); libselinux1 (>= 2.1.9); debconf (>= 0.5) | debconf-2.0; libpam-modules-bin (= 1.1.8-3.1+deb8u2+b1)
+jessie,2015,libpam-modules-bin,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32),
+jessie,2015,libpam-runtime,pam,debconf (>= 0.5) | debconf-2.0; debconf (>= 1.5.19) | cdebconf; libpam-modules (>= 1.0.1-6),
+jessie,2015,libpam0g,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); debconf (>= 0.5) | debconf-2.0,multiarch-support
+jessie,2015,libpcre3,pcre3,libc6 (>= 2.14),multiarch-support
+jessie,2015,perl-base,perl,,libc6 (>= 2.14); dpkg (>= 1.17.17)
+jessie,2015,libprocps3,procps,libc6 (>= 2.14),multiarch-support
+jessie,2015,procps,procps,libc6 (>= 2.15); libncurses5 (>= 5.5-5~); libncursesw5 (>= 5.6+20070908); libprocps3; libtinfo5; lsb-base (>= 3.0-10); initscripts,
+jessie,2015,sed,sed,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.14); libselinux1 (>= 1.32)
+jessie,2015,sensible-utils,sensible-utils,,
+jessie,2015,login,shadow,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libpam-runtime; libpam-modules (>= 1.1.8-1)
+jessie,2015,passwd,shadow,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32); libsemanage1 (>= 2.0.3); libpam-modules; debianutils (>= 2.15.2),
+jessie,2015,libslang2,slang2,libc6 (>= 2.14),multiarch-support
+jessie,2015,startpar,startpar,libc6 (>= 2.15),
+jessie,2015,libsystemd0,systemd,,libc6 (>= 2.14); libgcrypt20 (>= 1.6.1); liblzma5 (>= 5.1.1alpha+20120614); multiarch-support
+jessie,2015,libudev1,systemd,libc6 (>= 2.17),multiarch-support
+jessie,2015,systemd,systemd,libacl1 (>= 2.2.51-8); libaudit1 (>= 1:2.2.1); libblkid1 (>= 2.19.1); libcap2 (>= 1:2.10); libcryptsetup4 (>= 2:1.4.3); libkmod2 (>= 5~); libpam0g (>= 0.99.7.1); libselinux1 (>= 2.1.9); libsystemd0 (= 215-17+deb8u7); util-linux (>= 2.19.1-2); mount (>= 2.21); initscripts (>= 2.88dsf-53.2); sysv-rc; udev (>= 208-8); acl; adduser; libcap2-bin,libc6 (>= 2.17); libgcrypt20 (>= 1.6.1); liblzma5 (>= 5.1.1alpha+20120614); libselinux1 (>= 1.32)
+jessie,2015,systemd-sysv,systemd,systemd (= 215-17+deb8u7),systemd
+jessie,2015,udev,systemd,libacl1 (>= 2.2.51-8); libblkid1 (>= 2.19.1); libc6 (>= 2.17); libkmod2 (>= 5~); libselinux1 (>= 2.0.65); libudev1 (= 215-17+deb8u7); adduser; lsb-base (>= 3.0-6); util-linux (>= 2.16); procps,debconf (>= 1.4.69) | debconf-2.0
+jessie,2015,initscripts,sysvinit,libc6 (>= 2.4); mount (>= 2.11x-1); debianutils (>= 4); lsb-base (>= 3.2-14); sysvinit-utils (>= 2.88dsf-50); sysv-rc | file-rc; coreutils (>= 5.93),
+jessie,2015,sysv-rc,sysvinit,debconf (>= 0.5) | debconf-2.0; sysvinit-utils (>= 2.86.ds1-62); insserv (>> 1.12.0-10); startpar,
+jessie,2015,sysvinit-utils,sysvinit,libc6 (>= 2.14); libselinux1 (>= 1.32); startpar,
+jessie,2015,tar,tar,,libacl1 (>= 2.2.51-8); libc6 (>= 2.17); libselinux1 (>= 1.32)
+jessie,2015,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+jessie,2015,libustr-1.0-1,ustr,libc6 (>= 2.14),multiarch-support
+jessie,2015,bsdutils,util-linux,,libc6 (>= 2.15); libsystemd0
+jessie,2015,libblkid1,util-linux,libc6 (>= 2.17); libuuid1 (>= 2.16),multiarch-support
+jessie,2015,libmount1,util-linux,libblkid1 (>= 2.17.2); libc6 (>= 2.17); libselinux1 (>= 1.32),multiarch-support
+jessie,2015,libsmartcols1,util-linux,libc6 (>= 2.17),multiarch-support
+jessie,2015,libuuid1,util-linux,passwd; libc6 (>= 2.4),multiarch-support
+jessie,2015,mount,util-linux,,libc6 (>= 2.17); libmount1 (>= 2.25); libselinux1 (>= 2.0.15); libsmartcols1 (>= 2.25)
+jessie,2015,util-linux,util-linux,initscripts; lsb-base (>= 3.0-6); tzdata (>= 2006c-2),libblkid1 (>= 2.25); libc6 (>= 2.15); libmount1 (>= 2.25); libncurses5 (>= 5.5-5~); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32); libslang2 (>= 2.2.4); libsmartcols1 (>= 2.25); libtinfo5; libuuid1 (>= 2.16); zlib1g (>= 1:1.1.4)
+jessie,2015,liblzma5,xz-utils,libc6 (>= 2.14),multiarch-support
+stretch,2017,libacl1,acl,libattr1 (>= 1:2.4.46-8); libc6 (>= 2.14),
+stretch,2017,libattr1,attr,libc6 (>= 2.4),
+stretch,2017,libaudit-common,audit,,
+stretch,2017,libaudit1,audit,libaudit-common (>= 1:2.6.7-2); libc6 (>= 2.14); libcap-ng0,
+stretch,2017,base-files,base-files,,awk
+stretch,2017,base-passwd,base-passwd,libc6 (>= 2.8); libdebconfclient0 (>= 0.145),
+stretch,2017,bash,bash,base-files (>= 2.1.12); debianutils (>= 2.15),dash (>= 0.5.5.1-2.2); libc6 (>= 2.15); libtinfo5 (>= 6)
+stretch,2017,libbz2-1.0,bzip2,libc6 (>= 2.4),
+stretch,2017,libdebconfclient0,cdebconf,libc6 (>= 2.4),
+stretch,2017,coreutils,coreutils,,libacl1 (>= 2.2.51-8); libattr1 (>= 1:2.4.46-8); libc6 (>= 2.17); libselinux1 (>= 2.1.13)
+stretch,2017,dash,dash,debianutils (>= 2.15); dpkg (>= 1.15.0),libc6 (>= 2.14)
+stretch,2017,libdb5.3,db5.3,libc6 (>= 2.17),
+stretch,2017,debconf,debconf,,perl-base (>= 5.20.1-3~)
+stretch,2017,debianutils,debianutils,sensible-utils,libc6 (>= 2.15)
+stretch,2017,diffutils,diffutils,,libc6 (>= 2.17)
+stretch,2017,dpkg,dpkg,tar (>= 1.28-1),libbz2-1.0; libc6 (>= 2.14); liblzma5 (>= 5.2.2); libselinux1 (>= 2.3); zlib1g (>= 1:1.1.4)
+stretch,2017,e2fslibs,e2fsprogs,libc6 (>= 2.17),
+stretch,2017,e2fsprogs,e2fsprogs,,e2fslibs (= 1.43.4-2+deb9u1); libblkid1 (>= 2.17.2); libc6 (>= 2.14); libcomerr2 (>= 1.42~WIP-2011-10-05-1); libss2 (>= 1.34-1); libuuid1 (>= 2.16); util-linux (>= 2.15~rc1-1)
+stretch,2017,libcomerr2,e2fsprogs,libc6 (>= 2.17),
+stretch,2017,libss2,e2fsprogs,libcomerr2; libc6 (>= 2.17),
+stretch,2017,findutils,findutils,,libc6 (>= 2.17); libselinux1 (>= 1.32)
+stretch,2017,gcc-6-base,gcc-6,,
+stretch,2017,libgcc1,gcc-6,gcc-6-base (= 6.3.0-18+deb9u1); libc6 (>= 2.14),
+stretch,2017,libc-bin,glibc,libc6 (>> 2.24); libc6 (<< 2.25),
+stretch,2017,libc6,glibc,libgcc1,
+stretch,2017,multiarch-support,glibc,libc6 (>= 2.3.6-2),
+stretch,2017,grep,grep,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.14); libpcre3
+stretch,2017,gzip,gzip,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.17)
+stretch,2017,hostname,hostname,,libc6 (>= 2.4)
+stretch,2017,init-system-helpers,init-system-helpers,perl-base (>= 5.20.1-3),
+stretch,2017,libcap-ng0,libcap-ng,libc6 (>= 2.8),
+stretch,2017,libgcrypt20,libgcrypt20,libc6 (>= 2.15); libgpg-error0 (>= 1.14),
+stretch,2017,libgpg-error0,libgpg-error,libc6 (>= 2.15),
+stretch,2017,libselinux1,libselinux,libc6 (>= 2.14); libpcre3,
+stretch,2017,libsemanage-common,libsemanage,,
+stretch,2017,libsemanage1,libsemanage,libsemanage-common (= 2.6-2); libaudit1 (>= 1:2.2.1); libbz2-1.0; libc6 (>= 2.14); libselinux1 (>= 2.6); libsepol1 (>= 2.6); libustr-1.0-1 (>= 1.0.4),
+stretch,2017,libsepol1,libsepol,libc6 (>= 2.14),
+stretch,2017,lsb-base,lsb,,
+stretch,2017,liblz4-1,lz4,libc6 (>= 2.14),
+stretch,2017,mawk,mawk,,libc6 (>= 2.14)
+stretch,2017,libncursesw5,ncurses,libtinfo5 (= 6.0+20161126-1+deb9u2); libc6 (>= 2.14),
+stretch,2017,libtinfo5,ncurses,libc6 (>= 2.16),
+stretch,2017,ncurses-base,ncurses,,
+stretch,2017,ncurses-bin,ncurses,,libc6 (>= 2.14); libtinfo5 (>= 6.0+20151017); libtinfo5 (<< 6.1~)
+stretch,2017,libpam-modules,pam,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.15); libdb5.3; libpam0g (>= 1.1.3-2); libselinux1 (>= 2.1.9); debconf (>= 0.5) | debconf-2.0; libpam-modules-bin (= 1.1.8-3.6)
+stretch,2017,libpam-modules-bin,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32),
+stretch,2017,libpam-runtime,pam,debconf (>= 0.5) | debconf-2.0; debconf (>= 1.5.19) | cdebconf; libpam-modules (>= 1.0.1-6),
+stretch,2017,libpam0g,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); debconf (>= 0.5) | debconf-2.0,
+stretch,2017,libpcre3,pcre3,libc6 (>= 2.14),multiarch-support
+stretch,2017,perl-base,perl,,libc6 (>= 2.23); dpkg (>= 1.17.17)
+stretch,2017,sed,sed,,libc6 (>= 2.14); libselinux1 (>= 1.32)
+stretch,2017,sensible-utils,sensible-utils,,
+stretch,2017,login,shadow,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libpam-runtime; libpam-modules (>= 1.1.8-1)
+stretch,2017,passwd,shadow,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32); libsemanage1 (>= 2.0.3); libpam-modules,
+stretch,2017,libsystemd0,systemd,,libc6 (>= 2.17); libgcrypt20 (>= 1.7.0); liblz4-1 (>= 0.0~r113); liblzma5 (>= 5.1.1alpha+20120614); libselinux1 (>= 2.1.9)
+stretch,2017,libudev1,systemd,libc6 (>= 2.16),
+stretch,2017,sysvinit-utils,sysvinit,libc6 (>= 2.14); init-system-helpers (>= 1.25~); util-linux (>> 2.28-2~),
+stretch,2017,tar,tar,,libacl1 (>= 2.2.51-8); libc6 (>= 2.17); libselinux1 (>= 1.32)
+stretch,2017,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+stretch,2017,libustr-1.0-1,ustr,libc6 (>= 2.14),
+stretch,2017,bsdutils,util-linux,,libc6 (>= 2.16); libsystemd0
+stretch,2017,libblkid1,util-linux,libc6 (>= 2.17); libuuid1 (>= 2.16),
+stretch,2017,libfdisk1,util-linux,libblkid1 (>= 2.24.2); libc6 (>= 2.17); libuuid1 (>= 2.16),
+stretch,2017,libmount1,util-linux,libblkid1 (>= 2.17.2); libc6 (>= 2.17); libselinux1 (>= 2.6-3~),
+stretch,2017,libsmartcols1,util-linux,libc6 (>= 2.17),
+stretch,2017,libuuid1,util-linux,passwd; libc6 (>= 2.4),
+stretch,2017,mount,util-linux,,libblkid1 (>= 2.17.2); libc6 (>= 2.17); libmount1 (>= 2.25); libselinux1 (>= 2.6-3~); libsmartcols1 (>= 2.28~rc1); libudev1 (>= 183)
+stretch,2017,util-linux,util-linux,,libblkid1 (>= 2.25); libc6 (>= 2.15); libfdisk1 (>= 2.29~rc2); libmount1 (>= 2.25); libncursesw5 (>= 6); libpam0g (>= 0.99.7.1); libselinux1 (>= 2.6-3~); libsmartcols1 (>= 2.28~rc1); libsystemd0; libtinfo5 (>= 6); libudev1 (>= 183); libuuid1 (>= 2.16); zlib1g (>= 1:1.1.4)
+stretch,2017,liblzma5,xz-utils,libc6 (>= 2.17),
+buster,2019,libacl1,acl,libattr1 (>= 1:2.4.46-8); libc6 (>= 2.14),
+buster,2019,adduser,adduser,passwd; debconf (>= 0.5) | debconf-2.0,
+buster,2019,apt,apt,adduser; gpgv | gpgv2 | gpgv1; debian-archive-keyring; libapt-pkg5.0 (>= 1.7.0~alpha3~); libc6 (>= 2.15); libgcc1 (>= 1:3.0); libgnutls30 (>= 3.6.6); libseccomp2 (>= 1.0.1); libstdc++6 (>= 5.2),
+buster,2019,libapt-pkg5.0,apt,libbz2-1.0; libc6 (>= 2.27); libgcc1 (>= 1:3.0); liblz4-1 (>= 0.0~r127); liblzma5 (>= 5.1.1alpha+20120614); libstdc++6 (>= 5.2); libsystemd0 (>= 221); libudev1 (>= 183); libzstd1 (>= 1.3.2); zlib1g (>= 1:1.2.2.3),
+buster,2019,libattr1,attr,libc6 (>= 2.4),
+buster,2019,libaudit-common,audit,,
+buster,2019,libaudit1,audit,libaudit-common (>= 1:2.8.4-3); libc6 (>= 2.14); libcap-ng0 (>= 0.7.9),
+buster,2019,base-files,base-files,,awk
+buster,2019,base-passwd,base-passwd,libc6 (>= 2.8); libdebconfclient0 (>= 0.145),
+buster,2019,bash,bash,base-files (>= 2.1.12); debianutils (>= 2.15),libc6 (>= 2.15); libtinfo6 (>= 6)
+buster,2019,libbz2-1.0,bzip2,libc6 (>= 2.4),
+buster,2019,libdebconfclient0,cdebconf,libc6 (>= 2.4),
+buster,2019,coreutils,coreutils,,libacl1 (>= 2.2.23); libattr1 (>= 1:2.4.44); libc6 (>= 2.28); libselinux1 (>= 2.1.13)
+buster,2019,dash,dash,debianutils (>= 2.15); dpkg (>= 1.19.1); debconf (>= 0.5) | debconf-2.0,libc6 (>= 2.14)
+buster,2019,libdb5.3,db5.3,libc6 (>= 2.17),
+buster,2019,debconf,debconf,,perl-base (>= 5.20.1-3~)
+buster,2019,debian-archive-keyring,debian-archive-keyring,,
+buster,2019,debianutils,debianutils,,libc6 (>= 2.15)
+buster,2019,diffutils,diffutils,,libc6 (>= 2.17)
+buster,2019,dpkg,dpkg,tar (>= 1.28-1),libbz2-1.0; libc6 (>= 2.15); liblzma5 (>= 5.2.2); libselinux1 (>= 2.3); zlib1g (>= 1:1.1.4)
+buster,2019,e2fsprogs,e2fsprogs,,libblkid1 (>= 2.17.2); libc6 (>= 2.14); libcom-err2 (>= 1.43.9); libext2fs2 (= 1.44.5-1+deb10u3); libss2 (>= 1.38); libuuid1 (>= 2.16)
+buster,2019,libcom-err2,e2fsprogs,libc6 (>= 2.17),
+buster,2019,libext2fs2,e2fsprogs,libc6 (>= 2.28),
+buster,2019,libss2,e2fsprogs,libcom-err2; libc6 (>= 2.17),
+buster,2019,findutils,findutils,,libc6 (>= 2.17); libselinux1 (>= 1.32)
+buster,2019,gcc-8-base,gcc-8,,
+buster,2019,libgcc1,gcc-8,gcc-8-base (= 8.3.0-6); libc6 (>= 2.14),
+buster,2019,libstdc++6,gcc-8,gcc-8-base (= 8.3.0-6); libc6 (>= 2.18); libgcc1 (>= 1:4.2),
+buster,2019,libc-bin,glibc,libc6 (>> 2.28); libc6 (<< 2.29),
+buster,2019,libc6,glibc,libgcc1,
+buster,2019,libgmp10,gmp,libc6 (>= 2.14),
+buster,2019,gpgv,gnupg2,libbz2-1.0; libc6 (>= 2.25); libgcrypt20 (>= 1.8.0); libgpg-error0 (>= 1.35); zlib1g (>= 1:1.1.4),
+buster,2019,libgnutls30,gnutls28,libgmp10 (>= 2:6.0.0); libc6 (>= 2.25); libhogweed4 (>= 3.4.1~rc1~); libidn2-0 (>= 2.0.0); libnettle6 (>= 3.4~); libp11-kit0 (>= 0.23.11); libtasn1-6 (>= 4.12); libunistring2 (>= 0.9.7),
+buster,2019,grep,grep,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.14); libpcre3
+buster,2019,gzip,gzip,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.17)
+buster,2019,hostname,hostname,,libc6 (>= 2.4)
+buster,2019,init-system-helpers,init-system-helpers,perl-base (>= 5.20.1-3),
+buster,2019,libcap-ng0,libcap-ng,libc6 (>= 2.8),
+buster,2019,libffi6,libffi,libc6 (>= 2.14),
+buster,2019,libgcrypt20,libgcrypt20,libc6 (>= 2.15); libgpg-error0 (>= 1.25),
+buster,2019,libgpg-error0,libgpg-error,libc6 (>= 2.15),
+buster,2019,libidn2-0,libidn2,libc6 (>= 2.14); libunistring2 (>= 0.9.7),
+buster,2019,libseccomp2,libseccomp,libc6 (>= 2.4),
+buster,2019,libselinux1,libselinux,libc6 (>= 2.14); libpcre3,
+buster,2019,libsemanage-common,libsemanage,,
+buster,2019,libsemanage1,libsemanage,libsemanage-common (= 2.8-2); libaudit1 (>= 1:2.2.1); libbz2-1.0; libc6 (>= 2.14); libselinux1 (>= 2.8); libsepol1 (>= 2.8),
+buster,2019,libsepol1,libsepol,libc6 (>= 2.14),
+buster,2019,libtasn1-6,libtasn1-6,libc6 (>= 2.14),
+buster,2019,libunistring2,libunistring,libc6 (>= 2.14),
+buster,2019,libzstd1,libzstd,libc6 (>= 2.14),
+buster,2019,liblz4-1,lz4,libc6 (>= 2.14),
+buster,2019,mawk,mawk,,libc6 (>= 2.14)
+buster,2019,libncursesw6,ncurses,libtinfo6 (= 6.1+20181013-2+deb10u2); libc6 (>= 2.14),
+buster,2019,libtinfo6,ncurses,libc6 (>= 2.16),
+buster,2019,ncurses-base,ncurses,,
+buster,2019,ncurses-bin,ncurses,,libc6 (>= 2.14); libtinfo6 (>= 6.1)
+buster,2019,libhogweed4,nettle,libc6 (>= 2.14); libgmp10 (>= 2:6.0.0); libnettle6 (= 3.4.1-1+deb10u1),
+buster,2019,libnettle6,nettle,libc6 (>= 2.14),
+buster,2019,libp11-kit0,p11-kit,libc6 (>= 2.26); libffi6 (>= 3.0.4),
+buster,2019,libpam-modules,pam,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.27); libdb5.3; libpam0g (>= 1.3.1); libselinux1 (>= 2.1.9); debconf (>= 0.5) | debconf-2.0; libpam-modules-bin (= 1.3.1-5)
+buster,2019,libpam-modules-bin,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32),
+buster,2019,libpam-runtime,pam,debconf (>= 0.5) | debconf-2.0; debconf (>= 1.5.19) | cdebconf; libpam-modules (>= 1.0.1-6),
+buster,2019,libpam0g,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); debconf (>= 0.5) | debconf-2.0,
+buster,2019,libpcre3,pcre3,libc6 (>= 2.14),
+buster,2019,perl-base,perl,,libc6 (>= 2.28); dpkg (>= 1.17.17)
+buster,2019,sed,sed,,libacl1 (>= 2.2.51-8); libc6 (>= 2.14); libselinux1 (>= 1.32)
+buster,2019,login,shadow,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libpam-runtime; libpam-modules (>= 1.1.8-1)
+buster,2019,passwd,shadow,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libpam0g (>= 0.99.7.1); libselinux1 (>= 1.32); libsemanage1 (>= 2.0.3); libpam-modules,
+buster,2019,libsystemd0,systemd,,libc6 (>= 2.28); libgcrypt20 (>= 1.8.0); liblz4-1 (>= 0.0~r122); liblzma5 (>= 5.1.1alpha+20120614)
+buster,2019,libudev1,systemd,libc6 (>= 2.28),
+buster,2019,sysvinit-utils,sysvinit,init-system-helpers (>= 1.25~); util-linux (>> 2.28-2~); libc6 (>= 2.14),
+buster,2019,tar,tar,,libacl1 (>= 2.2.23); libc6 (>= 2.17); libselinux1 (>= 1.32)
+buster,2019,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+buster,2019,bsdutils,util-linux,,libc6 (>= 2.14); libsystemd0
+buster,2019,fdisk,util-linux,libc6 (>= 2.14); libfdisk1 (>= 2.33); libmount1 (>= 2.24.2); libncursesw6 (>= 6); libsmartcols1 (>= 2.28~rc1); libtinfo6 (>= 6),
+buster,2019,libblkid1,util-linux,libc6 (>= 2.25); libuuid1 (>= 2.16),
+buster,2019,libfdisk1,util-linux,libblkid1 (>= 2.24.2); libc6 (>= 2.25); libuuid1 (>= 2.16),
+buster,2019,libmount1,util-linux,libblkid1 (>= 2.17.2); libc6 (>= 2.25); libselinux1 (>= 2.6-3~),
+buster,2019,libsmartcols1,util-linux,libc6 (>= 2.25),
+buster,2019,libuuid1,util-linux,libc6 (>= 2.25),
+buster,2019,mount,util-linux,util-linux (>= 2.29.2-3~),libblkid1 (>= 2.17.2); libc6 (>= 2.17); libmount1 (>= 2.33); libselinux1 (>= 2.6-3~); libsmartcols1 (>= 2.33)
+buster,2019,util-linux,util-linux,fdisk; login (>= 1:4.5-1.1~),libaudit1 (>= 1:2.2.1); libblkid1 (>= 2.31.1); libc6 (>= 2.25); libcap-ng0 (>= 0.7.9); libmount1 (>= 2.25); libpam0g (>= 0.99.7.1); libselinux1 (>= 2.6-3~); libsmartcols1 (>= 2.33); libsystemd0; libtinfo6 (>= 6); libudev1 (>= 183); libuuid1 (>= 2.16); zlib1g (>= 1:1.1.4)
+buster,2019,liblzma5,xz-utils,libc6 (>= 2.17),
+bullseye,2021,libacl1,acl,libc6 (>= 2.14),
+bullseye,2021,adduser,adduser,passwd; debconf (>= 0.5) | debconf-2.0,
+bullseye,2021,apt,apt,adduser; gpgv | gpgv2 | gpgv1; libapt-pkg6.0 (>= 2.2.4); debian-archive-keyring; libc6 (>= 2.15); libgcc-s1 (>= 3.0); libgnutls30 (>= 3.7.0); libseccomp2 (>= 2.4.2); libstdc++6 (>= 9); libsystemd0,
+bullseye,2021,libapt-pkg6.0,apt,libbz2-1.0; libc6 (>= 2.27); libgcc-s1 (>= 3.0); libgcrypt20 (>= 1.8.0); liblz4-1 (>= 0.0~r127); liblzma5 (>= 5.1.1alpha+20120614); libstdc++6 (>= 9); libsystemd0 (>= 221); libudev1 (>= 183); libxxhash0 (>= 0.7.1); libzstd1 (>= 1.4.0); zlib1g (>= 1:1.2.2.3),
+bullseye,2021,libattr1,attr,libc6 (>= 2.4),
+bullseye,2021,libaudit-common,audit,,
+bullseye,2021,libaudit1,audit,libaudit-common (>= 1:3.0-2); libc6 (>= 2.14); libcap-ng0 (>= 0.7.9),
+bullseye,2021,base-files,base-files,,awk
+bullseye,2021,base-passwd,base-passwd,libc6 (>= 2.8); libdebconfclient0 (>= 0.145),
+bullseye,2021,bash,bash,base-files (>= 2.1.12); debianutils (>= 2.15),libc6 (>= 2.25); libtinfo6 (>= 6)
+bullseye,2021,libbz2-1.0,bzip2,libc6 (>= 2.4),
+bullseye,2021,libdebconfclient0,cdebconf,libc6 (>= 2.4),
+bullseye,2021,coreutils,coreutils,,libacl1 (>= 2.2.23); libattr1 (>= 1:2.4.44); libc6 (>= 2.28); libgmp10; libselinux1 (>= 3.1~)
+bullseye,2021,dash,dash,debianutils (>= 2.15); dpkg (>= 1.19.1); debconf (>= 0.5) | debconf-2.0,libc6 (>= 2.14)
+bullseye,2021,libdb5.3,db5.3,libc6 (>= 2.17),
+bullseye,2021,debconf,debconf,,perl-base (>= 5.20.1-3~)
+bullseye,2021,debian-archive-keyring,debian-archive-keyring,,
+bullseye,2021,debianutils,debianutils,,libc6 (>= 2.15)
+bullseye,2021,diffutils,diffutils,,libc6 (>= 2.17)
+bullseye,2021,dpkg,dpkg,tar (>= 1.28-1),libbz2-1.0; libc6 (>= 2.15); liblzma5 (>= 5.2.2); libselinux1 (>= 3.1~); zlib1g (>= 1:1.1.4)
+bullseye,2021,e2fsprogs,e2fsprogs,logsave,libblkid1 (>= 2.36); libc6 (>= 2.14); libcom-err2 (>= 1.43.9); libext2fs2 (= 1.46.2-2); libss2 (>= 1.38); libuuid1 (>= 2.16)
+bullseye,2021,libcom-err2,e2fsprogs,libc6 (>= 2.17),
+bullseye,2021,libext2fs2,e2fsprogs,libc6 (>= 2.28),
+bullseye,2021,libss2,e2fsprogs,libcom-err2; libc6 (>= 2.17),
+bullseye,2021,logsave,e2fsprogs,libc6 (>= 2.14),
+bullseye,2021,findutils,findutils,,libc6 (>= 2.17); libselinux1 (>= 3.1~)
+bullseye,2021,gcc-10-base,gcc-10,,
+bullseye,2021,libgcc-s1,gcc-10,gcc-10-base (= 10.2.1-6); libc6 (>= 2.14),
+bullseye,2021,libstdc++6,gcc-10,gcc-10-base (= 10.2.1-6); libc6 (>= 2.23); libgcc-s1 (>= 4.2),
+bullseye,2021,gcc-9-base,gcc-9,,
+bullseye,2021,libc-bin,glibc,libc6 (>> 2.31); libc6 (<< 2.32),
+bullseye,2021,libc6,glibc,libgcc-s1; libcrypt1,
+bullseye,2021,libgmp10,gmp,libc6 (>= 2.14),
+bullseye,2021,gpgv,gnupg2,libbz2-1.0; libc6 (>= 2.25); libgcrypt20 (>= 1.8.0); libgpg-error0 (>= 1.38); zlib1g (>= 1:1.1.4),
+bullseye,2021,libgnutls30,gnutls28,libgmp10 (>= 2:6.0.0); libc6 (>= 2.25); libhogweed6 (>= 3.6); libidn2-0 (>= 2.0.0); libnettle8 (>= 3.7~); libp11-kit0 (>= 0.23.18.1); libtasn1-6 (>= 4.14); libunistring2 (>= 0.9.7),
+bullseye,2021,grep,grep,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.14); libpcre3
+bullseye,2021,gzip,gzip,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.17)
+bullseye,2021,hostname,hostname,,libc6 (>= 2.4)
+bullseye,2021,init-system-helpers,init-system-helpers,perl-base (>= 5.20.1-3),
+bullseye,2021,libkeyutils1,keyutils,libc6 (>= 2.14),
+bullseye,2021,libgssapi-krb5-2,krb5,libc6 (>= 2.27); libcom-err2 (>= 1.43.9); libk5crypto3 (>= 1.16); libkrb5-3 (= 1.18.3-6+deb11u5); libkrb5support0 (>= 1.15~beta1),
+bullseye,2021,libk5crypto3,krb5,libc6 (>= 2.25); libkrb5support0 (>= 1.16),
+bullseye,2021,libkrb5-3,krb5,libc6 (>= 2.25); libcom-err2 (>= 1.43.9); libk5crypto3 (>= 1.15~beta1); libkeyutils1 (>= 1.5.9); libkrb5support0 (= 1.18.3-6+deb11u5); libssl1.1 (>= 1.1.0),
+bullseye,2021,libkrb5support0,krb5,libc6 (>= 2.25),
+bullseye,2021,libcap-ng0,libcap-ng,libc6 (>= 2.8),
+bullseye,2021,libffi7,libffi,libc6 (>= 2.14),
+bullseye,2021,libgcrypt20,libgcrypt20,libc6 (>= 2.15); libgpg-error0 (>= 1.25),
+bullseye,2021,libgpg-error0,libgpg-error,libc6 (>= 2.14),
+bullseye,2021,libidn2-0,libidn2,libc6 (>= 2.14); libunistring2 (>= 0.9.7),
+bullseye,2021,libnsl2,libnsl,libc6 (>= 2.14); libtirpc3 (>= 1.0.2),
+bullseye,2021,libseccomp2,libseccomp,libc6 (>= 2.4),
+bullseye,2021,libselinux1,libselinux,libc6 (>= 2.14); libpcre2-8-0 (>= 10.22),
+bullseye,2021,libsemanage-common,libsemanage,,
+bullseye,2021,libsemanage1,libsemanage,libsemanage-common (= 3.1-1); libaudit1 (>= 1:2.2.1); libbz2-1.0; libc6 (>= 2.14); libselinux1 (>= 3.1); libsepol1 (>= 3.1),
+bullseye,2021,libsepol1,libsepol,libc6 (>= 2.14),
+bullseye,2021,libtasn1-6,libtasn1-6,libc6 (>= 2.14),
+bullseye,2021,libtirpc-common,libtirpc,,
+bullseye,2021,libtirpc3,libtirpc,libc6 (>= 2.16); libgssapi-krb5-2 (>= 1.17); libtirpc-common (>= 1.3.1-1+deb11u1),
+bullseye,2021,libunistring2,libunistring,libc6 (>= 2.14),
+bullseye,2021,libcrypt1,libxcrypt,libc6 (>= 2.25),
+bullseye,2021,libzstd1,libzstd,libc6 (>= 2.14),
+bullseye,2021,lsb-base,lsb,,
+bullseye,2021,liblz4-1,lz4,libc6 (>= 2.14),
+bullseye,2021,mawk,mawk,libc6 (>= 2.29),
+bullseye,2021,libtinfo6,ncurses,libc6 (>= 2.16),
+bullseye,2021,ncurses-base,ncurses,,
+bullseye,2021,ncurses-bin,ncurses,,libc6 (>= 2.14); libtinfo6 (>= 6.2+20200912); libtinfo6 (<< 6.3~)
+bullseye,2021,libhogweed6,nettle,libc6 (>= 2.14); libgmp10 (>= 2:6.1.0); libnettle8,
+bullseye,2021,libnettle8,nettle,libc6 (>= 2.17),
+bullseye,2021,libssl1.1,openssl,libc6 (>= 2.25); debconf (>= 0.5) | debconf-2.0,
+bullseye,2021,libp11-kit0,p11-kit,libc6 (>= 2.26); libffi7 (>= 3.3~20180313),
+bullseye,2021,libpam-modules,pam,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.27); libcrypt1 (>= 1:4.3.0); libdb5.3; libnsl2 (>= 1.0); libpam0g (>= 1.3.2); libselinux1 (>= 3.1~); libtirpc3 (>= 1.0.2); debconf (>= 0.5) | debconf-2.0; libpam-modules-bin (= 1.4.0-9+deb11u1)
+bullseye,2021,libpam-modules-bin,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libcrypt1 (>= 1:4.3.0); libpam0g (>= 0.99.7.1); libselinux1 (>= 3.1~),
+bullseye,2021,libpam-runtime,pam,debconf (>= 0.5) | debconf-2.0; debconf (>= 1.5.19) | cdebconf; libpam-modules (>= 1.0.1-6),
+bullseye,2021,libpam0g,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); debconf (>= 0.5) | debconf-2.0,
+bullseye,2021,libpcre2-8-0,pcre2,libc6 (>= 2.14),
+bullseye,2021,libpcre3,pcre3,libc6 (>= 2.14),
+bullseye,2021,perl-base,perl,,libc6 (>= 2.29); libcrypt1 (>= 1:4.1.0); dpkg (>= 1.17.17)
+bullseye,2021,sed,sed,,libacl1 (>= 2.2.51-8); libc6 (>= 2.14); libselinux1 (>= 1.32)
+bullseye,2021,login,shadow,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libcrypt1 (>= 1:4.1.0); libpam0g (>= 0.99.7.1); libpam-runtime; libpam-modules (>= 1.1.8-1)
+bullseye,2021,passwd,shadow,libaudit1 (>= 1:2.2.1); libc6 (>= 2.14); libcrypt1 (>= 1:4.1.0); libpam0g (>= 0.99.7.1); libselinux1 (>= 2.1.9); libsemanage1 (>= 2.0.3); libpam-modules,
+bullseye,2021,libsystemd0,systemd,,libc6 (>= 2.30); libgcrypt20 (>= 1.8.0); liblz4-1 (>= 0.0~r122); liblzma5 (>= 5.1.1alpha+20120614); libzstd1 (>= 1.4.0)
+bullseye,2021,libudev1,systemd,libc6 (>= 2.30),
+bullseye,2021,sysvinit-utils,sysvinit,lsb-base (>= 11.0.0~); libc6 (>= 2.14),
+bullseye,2021,tar,tar,,libacl1 (>= 2.2.23); libc6 (>= 2.28); libselinux1 (>= 3.1~)
+bullseye,2021,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+bullseye,2021,bsdutils,util-linux,,libc6 (>= 2.17); libsystemd0
+bullseye,2021,libblkid1,util-linux,libc6 (>= 2.25),
+bullseye,2021,libmount1,util-linux,libblkid1 (>= 2.17.2); libc6 (>= 2.25); libselinux1 (>= 3.1~),
+bullseye,2021,libsmartcols1,util-linux,libc6 (>= 2.25),
+bullseye,2021,libuuid1,util-linux,libc6 (>= 2.25),
+bullseye,2021,mount,util-linux,util-linux (>= 2.29.2-3~),libblkid1 (>= 2.17.2); libc6 (>= 2.17); libmount1 (>= 2.35.1); libsmartcols1 (>= 2.33)
+bullseye,2021,util-linux,util-linux,login (>= 1:4.5-1.1~),libaudit1 (>= 1:2.2.1); libblkid1 (>= 2.31.1); libc6 (>= 2.25); libcap-ng0 (>= 0.7.9); libcrypt1 (>= 1:4.1.0); libmount1 (>= 2.34); libpam0g (>= 0.99.7.1); libselinux1 (>= 3.1~); libsmartcols1 (>= 2.34); libsystemd0; libtinfo6 (>= 6); libudev1 (>= 183); libuuid1 (>= 2.16); zlib1g (>= 1:1.1.4)
+bullseye,2021,libxxhash0,xxhash,libc6 (>= 2.14),
+bullseye,2021,liblzma5,xz-utils,libc6 (>= 2.17),
+bookworm,2023,libacl1,acl,libc6 (>= 2.33),
+bookworm,2023,adduser,adduser,passwd,
+bookworm,2023,apt,apt,adduser; gpgv | gpgv2 | gpgv1; libapt-pkg6.0 (>= 2.6.1); debian-archive-keyring; libc6 (>= 2.34); libgcc-s1 (>= 3.0); libgnutls30 (>= 3.7.5); libseccomp2 (>= 2.4.2); libstdc++6 (>= 11); libsystemd0,
+bookworm,2023,libapt-pkg6.0,apt,libbz2-1.0; libc6 (>= 2.34); libgcc-s1 (>= 3.0); libgcrypt20 (>= 1.10.0); liblz4-1 (>= 0.0~r127); liblzma5 (>= 5.1.1alpha+20120614); libstdc++6 (>= 11); libsystemd0 (>= 221); libudev1 (>= 183); libxxhash0 (>= 0.7.1); libzstd1 (>= 1.5.2); zlib1g (>= 1:1.2.2.3),
+bookworm,2023,libattr1,attr,libc6 (>= 2.4),
+bookworm,2023,libaudit-common,audit,,
+bookworm,2023,libaudit1,audit,libaudit-common (>= 1:3.0.9-1); libc6 (>= 2.33); libcap-ng0 (>= 0.7.9),
+bookworm,2023,base-files,base-files,,awk
+bookworm,2023,base-passwd,base-passwd,libc6 (>= 2.34); libdebconfclient0 (>= 0.145); libselinux1 (>= 3.1~),
+bookworm,2023,bash,bash,base-files (>= 2.1.12); debianutils (>= 5.6-0.1),libc6 (>= 2.36); libtinfo6 (>= 6)
+bookworm,2023,libbz2-1.0,bzip2,libc6 (>= 2.4),
+bookworm,2023,libdebconfclient0,cdebconf,libc6 (>= 2.4),
+bookworm,2023,coreutils,coreutils,,libacl1 (>= 2.2.23); libattr1 (>= 1:2.4.44); libc6 (>= 2.34); libgmp10 (>= 2:6.2.1+dfsg1); libselinux1 (>= 3.1~)
+bookworm,2023,dash,dash,debianutils (>= 5.6-0.1); dpkg (>= 1.19.1),libc6 (>= 2.34)
+bookworm,2023,libdb5.3,db5.3,libc6 (>= 2.34),
+bookworm,2023,debconf,debconf,,
+bookworm,2023,debian-archive-keyring,debian-archive-keyring,,
+bookworm,2023,debianutils,debianutils,,libc6 (>= 2.34)
+bookworm,2023,diffutils,diffutils,,libc6 (>= 2.34)
+bookworm,2023,dpkg,dpkg,tar (>= 1.28-1),libbz2-1.0; libc6 (>= 2.34); liblzma5 (>= 5.4.0); libmd0 (>= 0.0.0); libselinux1 (>= 3.1~); libzstd1 (>= 1.5.2); zlib1g (>= 1:1.1.4)
+bookworm,2023,e2fsprogs,e2fsprogs,logsave,libblkid1 (>= 2.36); libc6 (>= 2.34); libcom-err2 (>= 1.43.9); libext2fs2 (= 1.47.0-2+b2); libss2 (>= 1.38); libuuid1 (>= 2.16)
+bookworm,2023,libcom-err2,e2fsprogs,libc6 (>= 2.17),
+bookworm,2023,libext2fs2,e2fsprogs,libc6 (>= 2.34),
+bookworm,2023,libss2,e2fsprogs,libcom-err2; libc6 (>= 2.34),
+bookworm,2023,logsave,e2fsprogs,libc6 (>= 2.34),
+bookworm,2023,findutils,findutils,,libc6 (>= 2.34); libselinux1 (>= 3.1~)
+bookworm,2023,gcc-12-base,gcc-12,,
+bookworm,2023,libgcc-s1,gcc-12,gcc-12-base (= 12.2.0-14+deb12u1); libc6 (>= 2.35),
+bookworm,2023,libstdc++6,gcc-12,gcc-12-base (= 12.2.0-14+deb12u1); libc6 (>= 2.36); libgcc-s1 (>= 4.2),
+bookworm,2023,libc-bin,glibc,libc6 (>> 2.36); libc6 (<< 2.37),
+bookworm,2023,libc6,glibc,libgcc-s1,
+bookworm,2023,libgmp10,gmp,libc6 (>= 2.14),
+bookworm,2023,gpgv,gnupg2,libbz2-1.0; libc6 (>= 2.34); libgcrypt20 (>= 1.10.0); libgpg-error0 (>= 1.42); zlib1g (>= 1:1.1.4),
+bookworm,2023,libgnutls30,gnutls28,libc6 (>= 2.34); libgmp10 (>= 2:6.2.1+dfsg1); libhogweed6 (>= 3.6); libidn2-0 (>= 2.0.0); libnettle8 (>= 3.7~); libp11-kit0 (>= 0.23.18.1); libtasn1-6 (>= 4.14); libunistring2 (>= 0.9.7),
+bookworm,2023,grep,grep,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.34); libpcre2-8-0 (>= 10.32)
+bookworm,2023,gzip,gzip,dpkg (>= 1.15.4) | install-info,libc6 (>= 2.33)
+bookworm,2023,hostname,hostname,,libc6 (>= 2.34)
+bookworm,2023,init-system-helpers,init-system-helpers,usrmerge | usr-is-merged,
+bookworm,2023,libcap-ng0,libcap-ng,libc6 (>= 2.33),
+bookworm,2023,libcap2,libcap2,libc6 (>= 2.34),
+bookworm,2023,libffi8,libffi,libc6 (>= 2.34),
+bookworm,2023,libgcrypt20,libgcrypt20,libc6 (>= 2.34); libgpg-error0 (>= 1.27),
+bookworm,2023,libgpg-error0,libgpg-error,libc6 (>= 2.34),
+bookworm,2023,libidn2-0,libidn2,libc6 (>= 2.14); libunistring2 (>= 0.9.7),
+bookworm,2023,libmd0,libmd,libc6 (>= 2.33),
+bookworm,2023,libseccomp2,libseccomp,libc6 (>= 2.4),
+bookworm,2023,libselinux1,libselinux,libc6 (>= 2.34); libpcre2-8-0 (>= 10.22),
+bookworm,2023,libsemanage-common,libsemanage,,
+bookworm,2023,libsemanage2,libsemanage,libsemanage-common (>= 3.4-1); libaudit1 (>= 1:2.2.1); libbz2-1.0; libc6 (>= 2.34); libselinux1 (>= 3.4); libsepol2 (>= 3.4),
+bookworm,2023,libsepol2,libsepol,libc6 (>= 2.33),
+bookworm,2023,libtasn1-6,libtasn1-6,libc6 (>= 2.14),
+bookworm,2023,libunistring2,libunistring,libc6 (>= 2.34),
+bookworm,2023,libcrypt1,libxcrypt,libc6 (>= 2.36),
+bookworm,2023,libzstd1,libzstd,libc6 (>= 2.34),
+bookworm,2023,liblz4-1,lz4,libc6 (>= 2.14),
+bookworm,2023,mawk,mawk,libc6 (>= 2.29),
+bookworm,2023,libtinfo6,ncurses,libc6 (>= 2.34),
+bookworm,2023,ncurses-base,ncurses,,
+bookworm,2023,ncurses-bin,ncurses,,libc6 (>= 2.34); libtinfo6 (>= 6.3)
+bookworm,2023,libhogweed6,nettle,libc6 (>= 2.14); libgmp10 (>= 2:6.2.1+dfsg1); libnettle8,
+bookworm,2023,libnettle8,nettle,libc6 (>= 2.17),
+bookworm,2023,libp11-kit0,p11-kit,libc6 (>= 2.34); libffi8 (>= 3.4),
+bookworm,2023,libpam-modules,pam,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.34); libcrypt1 (>= 1:4.3.0); libdb5.3; libpam0g (>= 1.4.1); libselinux1 (>= 3.1~); debconf (>= 0.5) | debconf-2.0; libpam-modules-bin (= 1.5.2-6+deb12u2)
+bookworm,2023,libpam-modules-bin,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.34); libcrypt1 (>= 1:4.3.0); libpam0g (>= 0.99.7.1); libselinux1 (>= 3.1~),
+bookworm,2023,libpam-runtime,pam,debconf (>= 0.5) | debconf-2.0; debconf (>= 1.5.19) | cdebconf; libpam-modules (>= 1.0.1-6),
+bookworm,2023,libpam0g,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.34); debconf (>= 0.5) | debconf-2.0,
+bookworm,2023,libpcre2-8-0,pcre2,libc6 (>= 2.34),
+bookworm,2023,perl-base,perl,,libc6 (>= 2.35); libcrypt1 (>= 1:4.1.0); dpkg (>= 1.17.17)
+bookworm,2023,sed,sed,,libacl1 (>= 2.2.23); libc6 (>= 2.34); libselinux1 (>= 3.1~)
+bookworm,2023,login,shadow,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.34); libcrypt1 (>= 1:4.1.0); libpam0g (>= 0.99.7.1); libpam-runtime; libpam-modules
+bookworm,2023,passwd,shadow,libaudit1 (>= 1:2.2.1); libc6 (>= 2.36); libcrypt1 (>= 1:4.1.0); libpam0g (>= 0.99.7.1); libselinux1 (>= 3.1~); libsemanage2 (>= 2.0.32); libpam-modules,
+bookworm,2023,libsystemd0,systemd,libc6 (>= 2.34); libcap2 (>= 1:2.10); libgcrypt20 (>= 1.10.0); liblz4-1 (>= 0.0~r122); liblzma5 (>= 5.1.1alpha+20120614); libzstd1 (>= 1.5.2),
+bookworm,2023,libudev1,systemd,libc6 (>= 2.34),
+bookworm,2023,sysvinit-utils,sysvinit,libc6 (>= 2.34),
+bookworm,2023,tar,tar,,libacl1 (>= 2.2.23); libc6 (>= 2.34); libselinux1 (>= 3.1~)
+bookworm,2023,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+bookworm,2023,usr-is-merged,usrmerge,,
+bookworm,2023,bsdutils,util-linux,,libc6 (>= 2.34); libsystemd0
+bookworm,2023,libblkid1,util-linux,libc6 (>= 2.33),
+bookworm,2023,libmount1,util-linux,libblkid1 (>= 2.17.2); libc6 (>= 2.34); libselinux1 (>= 3.1~),
+bookworm,2023,libsmartcols1,util-linux,libc6 (>= 2.33),
+bookworm,2023,libuuid1,util-linux,libc6 (>= 2.25),
+bookworm,2023,mount,util-linux,,libblkid1 (>= 2.17.2); libc6 (>= 2.34); libmount1 (>= 2.38); libselinux1 (>= 3.1~); libsmartcols1 (>= 2.33)
+bookworm,2023,util-linux,util-linux,util-linux-extra,libblkid1 (>= 2.37.2); libc6 (>= 2.34); libcap-ng0 (>= 0.7.9); libcrypt1 (>= 1:4.1.0); libmount1 (>= 2.38); libpam0g (>= 0.99.7.1); libselinux1 (>= 3.1~); libsmartcols1 (>= 2.38); libsystemd0; libtinfo6 (>= 6); libudev1 (>= 183); libuuid1 (>= 2.16); zlib1g (>= 1:1.1.4)
+bookworm,2023,util-linux-extra,util-linux,libaudit1 (>= 1:2.2.1); libc6 (>= 2.34); libsmartcols1 (>= 2.38),
+bookworm,2023,libxxhash0,xxhash,libc6 (>= 2.14),
+bookworm,2023,liblzma5,xz-utils,libc6 (>= 2.34),
+trixie,2025,libacl1,acl,libc6 (>= 2.38),
+trixie,2025,apt,apt,base-passwd (>= 3.6.1) | adduser; sqv (>= 1.3.0); libapt-pkg7.0 (>= 3.0.3); debian-archive-keyring; libc6 (>= 2.38); libgcc-s1 (>= 3.0); libseccomp2 (>= 2.4.2); libssl3t64 (>= 3.0.0); libstdc++6 (>= 13.1); libsystemd0,
+trixie,2025,libapt-pkg7.0,apt,libbz2-1.0; libc6 (>= 2.38); libgcc-s1 (>= 3.0); liblz4-1 (>= 0.0~r127); liblzma5 (>= 5.1.1alpha+20120614); libssl3t64 (>= 3.0.0); libstdc++6 (>= 14); libsystemd0 (>= 221); libudev1 (>= 183); libxxhash0 (>= 0.8); libzstd1 (>= 1.5.5); zlib1g (>= 1:1.2.2.3),
+trixie,2025,libattr1,attr,libc6 (>= 2.4),
+trixie,2025,libaudit-common,audit,,
+trixie,2025,libaudit1,audit,libaudit-common (>= 1:4.0.2-2); libc6 (>= 2.38); libcap-ng0 (>= 0.7.9),
+trixie,2025,base-files,base-files,,awk
+trixie,2025,base-passwd,base-passwd,libc6 (>= 2.34); libdebconfclient0 (>= 0.145); libselinux1 (>= 3.1~),
+trixie,2025,bash,bash,base-files (>= 2.1.12); debianutils (>= 5.6-0.1),libc6 (>= 2.38); libtinfo6 (>= 6)
+trixie,2025,libbz2-1.0,bzip2,libc6 (>= 2.4),
+trixie,2025,libdebconfclient0,cdebconf,libc6 (>= 2.38),
+trixie,2025,coreutils,coreutils,,libacl1 (>= 2.2.23); libattr1 (>= 1:2.4.48); libc6 (>= 2.38); libcap2 (>= 1:2.10); libgmp10 (>= 2:6.3.0+dfsg); libselinux1 (>= 3.1~); libssl3t64 (>= 3.0.0); libsystemd0 (>= 254)
+trixie,2025,dash,dash,debianutils (>= 5.6-0.1),libc6 (>= 2.38)
+trixie,2025,libdb5.3t64,db5.3,libc6 (>= 2.38),
+trixie,2025,debconf,debconf,,
+trixie,2025,debian-archive-keyring,debian-archive-keyring,,
+trixie,2025,debianutils,debianutils,,libc6 (>= 2.38)
+trixie,2025,diffutils,diffutils,,libc6 (>= 2.38)
+trixie,2025,dpkg,dpkg,tar (>= 1.28-1),libbz2-1.0; libc6 (>= 2.38); liblzma5 (>= 5.4.0); libmd0 (>= 0.0.0); libselinux1 (>= 3.1~); libzstd1 (>= 1.5.5); zlib1g (>= 1:1.1.4)
+trixie,2025,findutils,findutils,,libc6 (>= 2.38); libselinux1 (>= 3.1~)
+trixie,2025,gcc-14-base,gcc-14,,
+trixie,2025,libgcc-s1,gcc-14,gcc-14-base (= 14.2.0-19); libc6 (>= 2.35),
+trixie,2025,libstdc++6,gcc-14,gcc-14-base (= 14.2.0-19); libc6 (>= 2.38); libgcc-s1 (>= 4.3),
+trixie,2025,libc-bin,glibc,libc6 (>> 2.41); libc6 (<< 2.42),
+trixie,2025,libc6,glibc,libgcc-s1,
+trixie,2025,libgmp10,gmp,libc6 (>= 2.38),
+trixie,2025,grep,grep,,libc6 (>= 2.34); libpcre2-8-0 (>= 10.32)
+trixie,2025,gzip,gzip,,libc6 (>= 2.38)
+trixie,2025,hostname,hostname,,libc6 (>= 2.34)
+trixie,2025,init-system-helpers,init-system-helpers,,
+trixie,2025,libbsd0,libbsd,libc6 (>= 2.38); libmd0 (>= 1.0.3-2),
+trixie,2025,libcap-ng0,libcap-ng,libc6 (>= 2.38),
+trixie,2025,libcap2,libcap2,libc6 (>= 2.38),
+trixie,2025,libmd0,libmd,libc6 (>= 2.33),
+trixie,2025,libseccomp2,libseccomp,libc6 (>= 2.14),
+trixie,2025,libselinux1,libselinux,libc6 (>= 2.38); libpcre2-8-0 (>= 10.22),
+trixie,2025,libsemanage-common,libsemanage,,
+trixie,2025,libsemanage2,libsemanage,libsemanage-common (>= 3.8.1-1); libaudit1 (>= 1:2.2.1); libbz2-1.0; libc6 (>= 2.38); libselinux1 (>= 3.8.1); libsepol2 (>= 3.8.1),
+trixie,2025,libsepol2,libsepol,libc6 (>= 2.38),
+trixie,2025,libcrypt1,libxcrypt,libc6 (>= 2.38),
+trixie,2025,libzstd1,libzstd,libc6 (>= 2.34),
+trixie,2025,liblz4-1,lz4,libc6 (>= 2.14); libxxhash0 (>= 0.6.5),
+trixie,2025,mawk,mawk,libc6 (>= 2.38),
+trixie,2025,libtinfo6,ncurses,libc6 (>= 2.34),
+trixie,2025,ncurses-base,ncurses,,
+trixie,2025,ncurses-bin,ncurses,,libc6 (>= 2.34); libtinfo6 (>= 6.4+20230603)
+trixie,2025,libhogweed6t64,nettle,libc6 (>= 2.14); libgmp10 (>= 2:6.3.0+dfsg); libnettle8t64,
+trixie,2025,libnettle8t64,nettle,libc6 (>= 2.17),
+trixie,2025,libssl3t64,openssl,libc6 (>= 2.38); libzstd1 (>= 1.5.5); zlib1g (>= 1:1.1.4); openssl-provider-legacy,
+trixie,2025,openssl-provider-legacy,openssl,libc6 (>= 2.14); libssl3t64 (>= 3.0.3),
+trixie,2025,libpam-modules,pam,,libaudit1 (>= 1:2.2.1); libc6 (>= 2.38); libcrypt1 (>= 1:4.3.0); libdb5.3t64; libpam0g (>= 1.4.1); libselinux1 (>= 3.1~); libsystemd0 (>= 254); debconf (>= 0.5) | debconf-2.0; libpam-modules-bin (= 1.7.0-5)
+trixie,2025,libpam-modules-bin,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.38); libcrypt1 (>= 1:4.3.0); libpam0g (>= 0.99.7.1); libselinux1 (>= 3.1~); libsystemd0 (>= 254),
+trixie,2025,libpam-runtime,pam,debconf (>= 0.5) | debconf-2.0; debconf (>= 1.5.19) | cdebconf; libpam-modules (>= 1.0.1-6),
+trixie,2025,libpam0g,pam,libaudit1 (>= 1:2.2.1); libc6 (>= 2.34); debconf (>= 0.5) | debconf-2.0,
+trixie,2025,libpcre2-8-0,pcre2,libc6 (>= 2.34),
+trixie,2025,perl-base,perl,,libc6 (>= 2.38); libcrypt1 (>= 1:4.1.0)
+trixie,2025,sqv,rust-sequoia-sqv,libc6 (>= 2.38); libgcc-s1 (>= 4.2); libgmp10 (>= 2:6.3.0+dfsg); libhogweed6t64; libnettle8t64 (>= 3.9~),
+trixie,2025,sed,sed,,libacl1 (>= 2.2.23); libc6 (>= 2.38); libselinux1 (>= 3.1~)
+trixie,2025,login.defs,shadow,,
+trixie,2025,passwd,shadow,base-passwd (>= 3.6.4); libpam-modules; login.defs; libacl1 (>= 2.2.23); libattr1 (>= 1:2.4.44); libaudit1 (>= 1:2.2.1); libbsd0 (>= 0.11.0); libc6 (>= 2.38); libcrypt1 (>= 1:4.1.0); libpam0g (>= 0.99.7.1); libselinux1 (>= 3.1~); libsemanage2 (>= 2.0.32),
+trixie,2025,libsqlite3-0,sqlite3,libc6 (>= 2.38),
+trixie,2025,libsystemd0,systemd,libc6 (>= 2.39); libcap2 (>= 1:2.10),
+trixie,2025,libudev1,systemd,libc6 (>= 2.38); libcap2 (>= 1:2.10),
+trixie,2025,sysvinit-utils,sysvinit,libc6 (>= 2.38),
+trixie,2025,tar,tar,,libacl1 (>= 2.2.23); libc6 (>= 2.38); libselinux1 (>= 3.1~)
+trixie,2025,tzdata,tzdata,debconf (>= 0.5) | debconf-2.0,
+trixie,2025,bsdutils,util-linux,,libc6 (>= 2.38); libsystemd0 (>= 254)
+trixie,2025,libblkid1,util-linux,libc6 (>= 2.38),
+trixie,2025,liblastlog2-2,util-linux,libc6 (>= 2.38); libsqlite3-0 (>= 3.5.9),
+trixie,2025,libmount1,util-linux,libblkid1 (= 2.41-5); libc6 (>= 2.38); libselinux1 (>= 3.1~),
+trixie,2025,libsmartcols1,util-linux,libc6 (>= 2.38),
+trixie,2025,libuuid1,util-linux,libc6 (>= 2.38),
+trixie,2025,login,util-linux,libpam-modules; libpam-runtime; libaudit1 (>= 1:2.2.1); libc6 (>= 2.38); libcrypt1 (>= 1:4.1.0); libpam0g (>= 0.99.7.1),login.defs (>= 1:4.16.0-1~)
+trixie,2025,mount,util-linux,,libblkid1 (= 2.41-5); libc6 (>= 2.38); libmount1 (= 2.41-5); libselinux1 (>= 3.1~); libsmartcols1 (= 2.41-5)
+trixie,2025,util-linux,util-linux,,libpam-modules; libpam-runtime; libblkid1 (= 2.41-5); libc6 (>= 2.41); libcap-ng0 (>= 0.7.9); libcrypt1 (>= 1:4.1.0); liblastlog2-2 (= 2.41-5); libmount1 (= 2.41-5); libpam0g (>= 0.99.7.1); libselinux1 (>= 3.1~); libsmartcols1 (= 2.41-5); libsystemd0; libtinfo6 (>= 6); libudev1 (>= 183); libuuid1 (= 2.41-5)
+trixie,2025,libxxhash0,xxhash,libc6 (>= 2.14),
+trixie,2025,liblzma5,xz-utils,libc6 (>= 2.34),

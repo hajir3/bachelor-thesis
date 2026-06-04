@@ -1,0 +1,3 @@
+# Streamlit Community Cloud reads this root-level file when deploying
+# webapp/app.py. The actual dependency list lives with the app.
+-r webapp/requirements.txt

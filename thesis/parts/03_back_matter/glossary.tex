@@ -1,0 +1,17 @@
+\begingroup
+\emergencystretch=1.5em
+\begin{description}[itemsep=2pt]
+    \item[cyclomatic complexity] The number of linearly independent paths through a function's control-flow graph, used as a measure of branching complexity. This thesis reports the modified variant computed by \texttt{pmccabe}, which counts a multi-way \texttt{switch} statement as a single decision point.
+    \item[\texttt{debootstrap}] The Debian utility that installs a base system into a target directory without requiring a running Debian host. Its \texttt{-{}-variant=minbase} option resolves the smallest installable package set.
+    \item[\texttt{Essential} / \texttt{Priority: required}] Control-field markings in the package index that place a binary package in the mandatory core of every Debian installation; together with their transitive dependencies these packages constitute the minbase set.
+    \item[lines of code (NLOC)] The number of physical source lines classified as code, excluding comment and blank lines, counted with \texttt{tokei}.
+    \item[merged-\texttt{/usr}] The filesystem layout that consolidates \texttt{/bin}, \texttt{/sbin}, and \texttt{/lib} into their counterparts under \texttt{/usr} with compatibility symlinks; required from Bookworm.
+    \item[minbase] The smallest \texttt{debootstrap} installation variant, containing the \texttt{Essential: yes} and \texttt{Priority: required} packages and their transitive dependencies; it carries no kernel or bootloader and targets chroot and container environments.
+    \item[native package] A package whose upstream is the Debian project itself, such as \texttt{dpkg}; it has no separate upstream tarball and therefore no distribution-specific patch archive.
+    \item[persistent package] A source package whose name, after alias resolution, appears in the minbase set of at least 11 of the 13 releases studied; the 25 packages meeting this criterion form the persistent core.
+    \item[snapshot archive] The Debian service at \texttt{snapshot.debian.org} that preserves a timestamped copy of every package version the project has distributed.
+    \item[source package / binary package] The source unit from which one or more installable binary packages are built; the \texttt{Source} field of the package index maps each binary package to its source package.
+    \item[source-package format] The declared layout of a Debian source package: under \texttt{1.0}, all distribution-specific material is bundled into a single \texttt{.diff.gz}; under \texttt{3.0 (quilt)}, packaging metadata is carried in a \texttt{.debian.tar.*} archive and modifications to upstream source as named patches under \texttt{debian/patches/}.
+    \item[transient set] The packages of a release's minbase that do not belong to the persistent core.
+\end{description}
+\endgroup
